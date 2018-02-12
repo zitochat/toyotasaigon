@@ -1,0 +1,1237 @@
+@charset "utf-8"; /*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 479px) {
+ 
+  .car-it {
+    width:100%;
+  }
+
+  .news-nb .img {
+    width: 45%;
+  }
+
+  .news-nb img {
+    width: 100%;
+    height: auto;
+  }
+
+  .newsnb-info {
+    margin-left: 160px;
+  }
+
+  .list-item .image img {
+    width: 20px;
+  }
+
+  .image-slick img {
+    height: 180px;
+  }
+
+  .contact-info .support-info .box .btntranglienhe {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .hotline-main-wrap {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .topnavi-content {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+  }
+
+  .home .topnavi-content {
+    position: relative;
+  }
+
+  .r-input-data {
+    width: 100%;
+  }
+
+  #register-form-test > .title {
+    font-size: 27px;
+  }
+
+  .muaxetragop .title {
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+
+  #try_drive h6 {
+    font-size: 27px;
+  }
+
+  .topnavi-content h2 {
+    margin-left: 0;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .topnavi-content p {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+}
+@media only screen and (max-width : 800px) {
+  aside {
+   display: none; 
+}.notaside{width:100%;}
+}
+@media only screen and (max-width : 980px) {
+}
+
+@media only screen and (min-width : 320px) {
+  .xecu-it{width:100%;float:none;}
+  .dacdiem-taglist li a{  padding: 9px 7px;font-size: 12px;}
+  .newsnb-info {
+  margin-left: 0;
+  margin-top: 10px;
+  padding: 0;
+  }
+}
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 479px) {
+  #main {
+     padding: 20px 15px; 
+  }
+  .car-it {
+    width:100%;
+  }
+
+  .news-nb .img {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+
+  .news-nb img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .list-item .image img {
+    width: 20px;
+  }
+
+  .image-slick img {
+    height: 180px;
+  }
+
+  .contact-info .support-info .box .btntranglienhe {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .hotline-main-wrap {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .topnavi-content {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+  }
+
+  .home .topnavi-content {
+    position: relative;
+  }
+
+  .r-input-data {
+    width: 100%;
+  }
+
+  #register-form-test > .title {
+    font-size: 27px;
+  }
+
+  .muaxetragop .title {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+  #try_drive h6 {
+    font-size: 27px;
+  }
+
+  .topnavi-content h2 {
+    margin-left: 0;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .topnavi-content p {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width : 980px) {
+}
+
+@media only screen and (max-width : 1280px) {
+
+  #test-driver #move-car{top: 6px !important;}
+  #move-car{left:60px;}  
+}
+
+@media only screen and (min-width : 320px) {
+  .product .title-main {
+    /* padding-left: 30px; */
+  }
+
+  .hotlinepanel {
+    position: relative;
+  }
+
+  .imgcons .fancymota {
+    width: 33.33%;
+  }
+
+  #main_menu {
+    display: block;
+  }
+
+  .home #main_menu {
+    /* position: relative */
+  }
+
+  .news-nb p {
+    /* display: none; */
+  }
+
+  .news-nb {
+    width: 100%;
+  }
+
+  .topnavi-content {
+    background: #fff;
+    border-bottom: 2px solid #f00;
+    padding-bottom: 5px;
+  }
+
+  .topnavi-content p,.topnavi-content h2 {
+    display: none;
+  }
+
+  #contact-page .contact-info,#contact-page .contact-form {
+    width: 100%;
+    display: block;
+  }
+
+  #contact-page .contact-form {
+    padding: 0 15px;
+  }
+
+  .xecu-it {
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+  }
+
+  .xecu {
+    margin: 0 auto;
+  }
+
+  #map {
+    height: 300px;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .news-box.horizal-news {
+    width: 100%;
+  }
+
+  .news-box.horizal-news h3 {
+    width: 100%;
+  }
+
+  .tag-hong {
+    /* display: none; */
+  }
+
+  .title-thongso .title,.title-thongso li a {
+    padding-left: 10px;
+  }
+
+  .title-thongso,.thongso-content {
+    width: 100%;
+  }
+
+  .pr-box {
+    width: 100%;
+  }
+
+  .first-logo {
+    /* display:none; */
+    right: 0;
+  }
+
+  #mn_top >ul {
+    display: none
+  }
+
+  #agency .agency-list {
+    position: relative;
+    width: 100%;
+    padding-left: 70px;
+  }
+
+  .contact-info.onmobile {
+    display: none;
+  }
+
+  #test-driver #move-car,#buy-sub #move-car {
+    display: none
+  }
+
+  .muaxetragop:after {
+    display: none !important;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .news-nb-wrap {
+    /* display:none; */
+    /* bottom: -120px; */
+  }
+
+  #agency .agency-list {
+    padding-left: 0;
+  }
+
+  .second-logo {
+    display: none;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .car-it {
+    width:50%;
+  }
+
+  #try_drive .col-md-5.pull-left {
+    margin-left: 50px;
+  }
+
+  #register-form-test .r-input-data, #repair-schedule .r-input-data, #scheduleModal select.r-input-data {
+    width: 49%;
+    width: calc(50% - 5px);
+    width: -moz-calc(50% - 5px);
+    width: -webkit-calc(50% - 5px);
+    float: left;
+  }
+
+  #register-form-test .r-input-data:nth-child(odd), #repair-schedule .r-input-data:nth-child(odd), #scheduleModal select.r-input-data.rm {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (min-width : 600px) {
+  .xecu-it{width:50%;float:left;}
+  .pr-box {
+    width:50%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .news-nb .img{width:150px;height: auto;}.newsnb-info {
+  margin-left: calc(100% - 194px);
+  margin-top: 0;
+}
+  .product .title-main {
+    /* padding-left: 50px; */
+  }
+
+  .hotlinepanel {
+    position: fixed;
+  }
+
+  .image-slick img {
+    height: 300px;
+  }
+
+  .topnavi-content p, .topnavi-content h2 {
+    display: initial;
+  }
+
+  #contact-page .contact-info,#contact-page .contact-form {
+    width: initial;
+    display: table-cell;
+  }
+
+  #contact-page .contact-info {
+    width: 340px;
+  }
+
+  #contact-page .contact-form {
+    padding: 0px 0px 35px 40px;
+  }
+
+  .news-box.horizal-news h3 {
+    width: initial;
+  }
+
+  .topnavi-content h2 {
+    margin-left: 70px;
+  }
+
+  .xecu-it {
+    float: left;
+    width: 33.33%;
+  }
+
+  .xecu {
+    margin: initial;
+  }
+}
+
+@media only screen and (min-width : 800px) {
+  .topnavi-content {
+    border-bottom: 0px solid #f00;
+    background: #ecebeb;
+    padding-bottom: 0;
+  }
+
+  .toplogo {
+    display: none;
+  }
+
+  .topnavi-content {
+    display: none;
+  }
+
+  .home .topnavi-content {
+    display: block;
+  }
+
+  .copyright-wrap ul {
+    float: left;
+    margin-left: 30px;
+  }
+
+  .copyright {
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .container {
+  width: 100%;
+}
+  #main_menu {
+    display:block;
+  }
+
+  .tag-hong {
+    display: block;
+  }
+
+  #mn_top > ul > li > a {
+    padding: 17px 7px;
+  }
+
+  .title-thongso {
+    width: 540px;
+    float: left;
+  }
+
+  .thongso-content {
+    width: calc(100% - 540px);
+    float: right;
+  }
+
+  .title-thongso .title,.title-thongso li a {
+    padding-left: 180px;
+  }
+
+  #main {
+    /* padding-left: 60px; */
+  }
+
+  .second-logo {
+    display: initial;
+  }
+
+  .topnavi-content p {
+    margin-right: 114px;
+  }
+
+  .topnavi-content h2 {
+    margin-left: 180px;
+  }
+
+  .home .first-logo {
+    display: initial;
+  }
+
+  #mn_top >ul {
+    display: initial
+  }
+
+  #test-driver #move-car,#buy-sub #move-car {
+    display: initial
+  }
+
+  .news-nb-wrap {
+    display: initial;
+  }
+
+  #khungdoitac {
+    width: 420px;
+    /* margin-left: 70px; */
+  }
+
+  .copyright-wrap ul {
+    margin-left: 90px;
+  }
+
+  aside {
+    display: initial;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1024px) {
+  .dacdiem-taglist li a{
+  padding: 13px 35px;
+  font-size: 16px;
+}
+  .newsnb-info {
+  margin-left: 160px;
+}
+  .product .title-main {
+    /* padding-left: 20px; */
+  }
+
+  .imgcons .fancymota {
+    width: 20%;
+  }
+
+  .first-logo {
+    /* display:none; */
+    right: initial;
+  }
+
+  .home #main_menu {
+    position: fixed
+  }
+
+  .car-it {
+    width: 25%;
+  }
+
+  .news-nb p {
+    display: initial;
+  }
+
+  .news-nb {
+    width: 440px;
+  }
+
+  .news-nb-wrap {
+    /* bottom:-70px; */
+  }
+
+  .pr-box {
+    width: 25%;
+  }
+
+  #agency .agency-list {
+    position: absolute;
+    width: 500px;
+    padding-left: 0;
+  }
+
+  .muaxetragop {
+    padding-left: 0;
+  }
+
+  .news-nb-wrap .container {
+    width: 940px !important;
+    /* margin-left: 100px; */
+  }
+
+  #test-driver .col-md-6 {
+    width: 60%;
+  }
+
+  .muaxetragop:after {
+    display: initial;
+  }
+
+  #map {
+    width: calc(100% - 500px);
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .image-slick img {
+    height:500px;
+  }
+
+  .xecudanhmuc {
+    display: none;
+  }
+
+  #map {
+    height: 600px;
+  }
+
+  #sidebar {
+    display: block;
+  }
+
+  .xecutpl #main {
+    float: right;
+    width: 918px;
+    padding: 0;
+  }
+
+  .news-box.horizal-news {
+    width: 49%;
+  }
+
+  .xecutpl #main {
+    float: right;
+    width: 918px;
+  }
+
+  #mn_top > ul > li > a {
+    padding: 17px 15px;
+  }
+
+  #mn_top >ul {
+    margin-left: 195px;
+  }
+
+  .pr-box a {
+    width: 254px;
+  }
+
+  #footer .container {
+    padding: 0;
+  }
+
+  .muaxetragop {
+    padding-left: 50px;
+  }
+
+  #test-driver .col-md-6 {
+    width: 50%
+  }
+
+  #khungdoitac {
+    width: initial;
+    margin-left: 0;
+  }
+
+  #try_drive .col-md-5.pull-left {
+    margin-left: initial;
+    padding-left: 70px;
+  }
+
+  .container {
+    /* width: 1188px! important; */
+    /* padding: 0; */
+  }
+
+  .main-container {
+    padding-top: 62px
+  }
+
+  .news-nb-wrap .container {
+    width: 1188px !important;
+  }
+
+  .topnavi-content h2 {
+    margin-left: 240px;
+  }
+
+  #mn_top >ul {
+    margin-left: 230px;
+  }
+
+  .second-logo {
+    display: initial;
+  }
+
+  .home #mn_top > ul > li > a {
+    padding: 17px 13px;
+  }
+
+  .news-nb {
+    width: 580px;
+  }
+
+  #move-car img {
+    max-width: 600px;
+  }
+
+  .copyright-wrap ul {
+    margin-left: 30px;
+  }
+
+  .muaxetragop:after {
+    width: 730px;
+    height: 320px;
+  }
+
+  .copyright-wrap .container {
+    padding: 14px 0;
+  }
+}
+
+.hotlinepanel {
+  position: relative;
+  /* top: 0; */
+}
+
+.imgcons .fancymota {
+  width: 33.33%;
+}
+
+#main_menu {
+  display: block;
+}
+
+.home #main_menu {
+  /* position: relative */
+}
+
+.news-nb p {
+  /* display: none; */
+}
+
+.news-nb {
+  width: 100%;
+}
+
+.topnavi-content {
+  background: #fff;
+  border-bottom: 2px solid #f00;
+  padding-bottom: 5px;
+}
+
+.topnavi-content p,.topnavi-content h2 {
+  display: none;
+}
+
+#contact-page .contact-info,#contact-page .contact-form {
+  width: 100%;
+  display: block;
+}
+
+#contact-page .contact-form {
+  padding: 0 15px;
+}
+
+.xecu-it {
+  /* width: 100%; */
+  margin-bottom: 20px;
+  /* float: none; */
+}
+.xecu-it:nth-child(3n+1) {clear:left}
+.xecu {
+  margin: 0 auto;
+}
+
+#map {
+  height: 300px;
+}
+
+#sidebar {
+  display: none;
+}
+
+.news-box.horizal-news {
+  width: 100%;
+}
+
+.news-box.horizal-news h3 {
+  width: 100%;
+}
+
+.tag-hong {
+  /* display: none; */
+}
+
+.title-thongso .title,.title-thongso li a {
+  padding-left: 10px;
+}
+
+.title-thongso,.thongso-content {
+  width: 100%;
+}
+
+.pr-box {
+  width: 100%;
+}
+
+.first-logo {
+  /* display:none; */
+  right: 0;
+}
+
+#mn_top >ul {
+  display: none
+}
+
+#agency .agency-list {
+  position: relative;
+  width: 100%;
+  padding-left: 70px;
+}
+
+.contact-info.onmobile {
+  display: none;
+}
+
+#test-driver #move-car,#buy-sub #move-car {
+  display: none
+}
+
+.muaxetragop:after {
+  display: none;
+}
+
+aside {
+  /* display: none; */
+}
+
+.news-nb-wrap {
+  /* display:none; */
+  /* bottom: -120px; */
+}
+
+#agency .agency-list {
+  padding-left: 0;
+}
+
+.second-logo {
+  display: none;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .car-it {
+    width:50%;
+  }
+
+  #try_drive .col-md-5.pull-left {
+    margin-left: 50px;
+  }
+
+  #register-form-test .r-input-data, #repair-schedule .r-input-data, #scheduleModal select.r-input-data {
+    width: 49%;
+    width: calc(50% - 5px);
+    width: -moz-calc(50% - 5px);
+    width: -webkit-calc(50% - 5px);
+    float: left;
+  }
+
+  #register-form-test .r-input-data:nth-child(odd), #repair-schedule .r-input-data:nth-child(odd), #scheduleModal select.r-input-data.rm {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (min-width : 600px) {
+  .pr-box {
+    width:50%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .hotlinepanel {
+  position:absolute;
+    top: 60px;
+  }
+
+  .image-slick img {
+    height: 300px;
+  }
+
+  .topnavi-content p, .topnavi-content h2 {
+    display: initial;
+  }
+
+  #contact-page .contact-info,#contact-page .contact-form {
+    width: initial;
+    display: table-cell;
+  }
+
+  #contact-page .contact-info {
+    width: 340px;
+  }
+
+  #contact-page .contact-form {
+    padding: 0px 0px 35px 40px;
+  }
+
+  .news-box.horizal-news h3 {
+    width: initial;
+  }
+
+  .topnavi-content h2 {
+    margin-left: 70px;
+  }
+
+  .xecu-it {
+    float: left;
+    width: 33.33%;
+  }
+
+  .xecu {
+    margin: initial;
+  }
+}
+
+@media only screen and (min-width : 800px) {
+  .topnavi-content {
+    border-bottom: 0px solid #f00;
+    background: #ecebeb;
+    padding-bottom: 0;
+  }
+
+  .toplogo {
+    display: none;
+  }
+
+  .topnavi-content {
+    display: none;
+  }
+
+  .home .topnavi-content {
+    display: block;
+  }
+
+  .copyright-wrap ul {
+    float: left;
+    margin-left: 30px;
+  }
+
+  .copyright {
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  #main_menu {
+    display:block;
+  }
+
+  .tag-hong {
+    display: block;
+  }
+
+  #mn_top > ul > li > a {
+    padding: 17px 7px;
+  }
+
+  .title-thongso {
+    width: 540px;
+    float: left;
+  }
+
+  .thongso-content {
+    width: calc(100% - 540px);
+    float: right;
+  }
+
+  .title-thongso .title,.title-thongso li a {
+    padding-left: 180px;
+  }
+
+  #main {
+    /* padding-left: 60px; */
+  }
+
+  .second-logo {
+    display: initial;
+  }
+
+  .topnavi-content p {
+    margin-right: 114px;
+  }
+
+  .topnavi-content h2 {
+    margin-left: 180px;
+  }
+
+  .home .first-logo {
+    display: initial;
+  }
+
+  #mn_top >ul {
+    display: initial
+  }
+
+  #test-driver #move-car,#buy-sub #move-car {
+    display: initial
+  }
+
+  .news-nb-wrap {
+    display: initial;
+  }
+
+  #khungdoitac {
+    width: 420px;
+    /* margin-left: 70px; */
+  }
+
+  .copyright-wrap ul {
+    margin-left: 90px;
+  }
+
+  aside {
+    /* display: initial; */
+  }
+
+  .first-logo {
+    /* display:none; */
+    right: initial;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1024px) {
+  .news-nb img{height:auto;}
+  .imgcons .fancymota {
+    width:20%;
+  }
+
+  .home #main_menu {
+    position: fixed
+  }
+
+  .car-it {
+    width: 25%;
+  }
+
+  .news-nb p {
+    display: initial;
+  }
+
+  .news-nb {
+    width: 440px;
+  }
+
+  .news-nb-wrap {
+    /* bottom:-70px; */
+  }
+
+  .pr-box {
+    width: 25%;
+  }
+
+  #agency .agency-list {
+    position: absolute;
+    width: 500px;
+    padding-left: 0;
+  }
+
+  .muaxetragop {
+    padding-left: 0;
+  }
+
+  .news-nb-wrap .container {
+    width: 940px !important;
+    /* margin-left: 100px; */
+  }
+
+  #test-driver .col-md-6 {
+    width: 60%;
+  }
+
+  .muaxetragop:after {
+    display: initial;
+  }
+
+  #map {
+    width: calc(100% - 500px);
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  #dacdiemxe {
+  margin-top: 56px;
+}
+  .tag-hong {
+    position:fixed;
+    z-index: 11;
+  }
+  .tag-hong.fixedhong {
+    top: 62px;
+  }
+  .imgcons{
+  /* margin-left: 76px; */
+}
+  .newsnb-info {
+  margin-left: 210px;
+}
+  .news-nb .img{width:200px;}
+  .image-slick img {
+    height: 370px;
+  }
+
+  .xecudanhmuc {
+    display: none;
+  }
+
+  #map {
+    height: 600px;
+  }
+
+  #sidebar {
+    display: block;
+  }
+
+  .xecutpl #main {
+    float: right;
+    width: 918px;
+    padding: 0;
+  }
+
+  .news-box.horizal-news {
+    width: 49%;
+  }
+
+  .xecutpl #main {
+    float: right;
+    width: calc(100% - 250px);
+  }
+
+  #mn_top > ul > li > a {
+    padding: 17px 15px;
+  }
+
+  #mn_top >ul {
+    margin-left: 195px;
+  }
+
+  .pr-box a {
+    width: 254px;
+  }
+
+  #footer .container {
+    padding: 0;
+  }
+
+  .muaxetragop {
+    padding-left: 50px;
+  }
+
+  #test-driver .col-md-6 {
+    width: 50%
+  }
+
+  #khungdoitac {
+    width: initial;
+    /* margin-left: 60px; */
+  }
+
+  #try_drive .col-md-5.pull-left {
+    margin-left: initial;
+    padding-left: 70px;
+  }
+
+  #main_mn_container.container {
+     width: 1140px! important;
+     padding: 0;
+  }
+
+  .main-container {
+    padding-top: 62px
+  }
+
+  .news-nb-wrap .container {
+    width: 1188px !important;
+  }
+
+  .topnavi-content h2 {
+    margin-left: 240px;
+  }
+
+  #mn_top >ul {
+    margin-left: 180px;
+  }
+
+  .second-logo {
+    display: initial;
+  }
+
+  .home #mn_top > ul > li > a {
+    padding: 17px 23px;
+  }
+
+  .news-nb {
+    width: 580px;
+  }
+
+  #move-car img {
+    max-width: 540px;
+  }
+
+  .copyright-wrap ul {
+    margin-left: 30px;
+  }
+
+  .muaxetragop:after {
+    width: 730px;
+    height: 320px;
+  }
+
+  .copyright-wrap .container {
+    padding: 14px 0;
+  }
+}
+@media only screen and (max-width : 1300px) {
+aside{
+  /* width: 44px; */
+}
+}
+@media only screen and (min-width : 1300px) {
+ #main_mn_container.container{
+  width: 1206px! important;
+  padding: 0;
+  }.tag-hong .container{
+  padding:0
+  
+  } 
+}
+@media only screen and (min-width : 1400px) {
+  .news-nb-wrap .container,.imgcons{margin-left:auto;}
+  #move-car{left:13%;}
+  
+}
+ @-moz-document url-prefix() {
+.home .first-logo{left:3px;}
+ }
+/* @-moz-document url-prefix() { 
+  .first-logo {
+     left:0;
+  }.hotlinepanel{top:60px;}
+  #main_menu{top:0;}
+}  */

@@ -1,0 +1,9 @@
+@extends('frontend.layouts.master')
+@section('content')
+@include('frontend.home.slide_show')
+@include('frontend.home.slick-slider')
+@include('frontend.home.test-driver')
+@include('frontend.home.muatragop')
+@include('frontend.home.dangkylaithu')
+@include('frontend.home.distribution')
+@stop
