@@ -18,6 +18,7 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
 @endphp
 
 @section('content')
+<a href="/cpanel_admin/posts/add" style="margin-left: 5px;" class="btn btn-primary">Add new</a><br/>
 <table id="show_data" class="display nowrap" cellspacing="0" width="100%" data-page-length='25'>
         <thead>
             <tr>

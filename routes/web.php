@@ -29,6 +29,9 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         //posts
         $router->get('posts', 'AdminController@getPostsIndex');
         $router->get('posts/del/{id}', 'AdminController@getPostsDel')->where(['id'=> '[0-9]+']);
+        $router->get('posts/edit/{id}', 'AdminController@getPostsEdit')->where(['id'=> '[0-9]+']);
+        $router->get('posts/add', 'AdminController@addPosts');
+        $router->post('posts/post', 'AdminController@savePosts');
         //categories
         $router->get('categories', 'AdminController@getCategoriesIndex');
         //branch

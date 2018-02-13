@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
+use App\Models\Posts;
 
 class AdminController extends Controller
 {
@@ -27,7 +28,7 @@ class AdminController extends Controller
     {
         if(DB::table('contact')->where('id', $id)->first()) {
             DB::table('contact')->where('id', $id)->delete();
-            return \Redirect::to('cpanel/contact');
+            return \Redirect::to('cpanel_admin/contact');
         }
     }
 
@@ -45,8 +46,55 @@ class AdminController extends Controller
     {
         if(DB::table('posts')->where('id', $id)->first()) {
             DB::table('posts')->where('id', $id)->delete();
-            return \Redirect::to('cpanel/posts');
+            return \Redirect::to('cpanel_admin/posts');
         }
+    }
+
+    //cpanel/posts/edit/{id}
+    public function getPostsEdit($id)
+    {
+        if($post= DB::table('posts')->where('id', $id)->first()) {
+            $action= 'edit';
+
+            return view('backend.pages.posts_edit', compact(['id', 'post', 'action']));
+        } else {
+            return \Redirect::to('cpanel_admin/posts');
+        }
+    }
+
+    //cpanel/posts/post
+    public function savePosts(Request $request)
+    {
+        $action= $request->input('action');
+        $id= $request->input('post_id');
+
+        $data = $request->only([
+            'status',
+            'slug',
+            'name',
+            'thumb',
+            'content',
+            'parent'
+        ]);
+        
+        if($action== 'edit') {
+            DB::table('posts')->where('id', $id)->update($data);
+            return redirect()->back();
+        } else {
+            $id= DB::table('posts')->insertGetId($data);
+            return \Redirect::to('cpanel_admin/posts');
+        }
+        
+    }
+
+    //cpanel/posts/add
+    public function addPosts()
+    {
+        $post= new Posts();
+        $post->status= 'publish';
+        $post->parent= 'tin-tuc';
+        $action= 'add';
+        return view('backend.pages.posts_edit', compact(['id', 'post', 'action']));
     }
 
     //cpanel/categories
@@ -78,7 +126,7 @@ class AdminController extends Controller
     {
         if(DB::table('users')->where('id', $id)->first()) {
             DB::table('users')->where('id', $id)->delete();
-            return \Redirect::to('cpanel/users');
+            return \Redirect::to('cpanel_admin/users');
         }
     }
 
@@ -95,7 +143,7 @@ class AdminController extends Controller
     {
         if(DB::table('vehicles')->where('id', $id)->first()) {
             DB::table('vehicles')->where('id', $id)->delete();
-            return \Redirect::to('cpanel/vehicles');
+            return \Redirect::to('cpanel_admin/vehicles');
         }
     }
 
@@ -113,7 +161,7 @@ class AdminController extends Controller
     {
         if(DB::table('sliders')->where('id', $id)->first()) {
             DB::table('sliders')->where('id', $id)->delete();
-            return \Redirect::to('cpanel/sliders');
+            return \Redirect::to('cpanel_admin/sliders');
         }
     }
 
@@ -131,7 +179,7 @@ class AdminController extends Controller
     {
         if(DB::table('driving')->where('id', $id)->first()) {
             DB::table('driving')->where('id', $id)->delete();
-            return \Redirect::to('cpanel/driving');
+            return \Redirect::to('cpanel_admin/driving');
         }
     }
 
@@ -148,7 +196,7 @@ class AdminController extends Controller
     {
         if(DB::table('schedule')->where('id', $id)->first()) {
             DB::table('schedule')->where('id', $id)->delete();
-            return \Redirect::to('cpanel/schedule');
+            return \Redirect::to('cpanel_admin/schedule');
         }
     }
 
