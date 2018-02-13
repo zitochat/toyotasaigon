@@ -41,7 +41,7 @@
   </aside>
   <ul class="clearfix">
     
-    <li class="  trangchu"><a href='http://toyotasaigon.com/index.html'>
+    <li class="  trangchu"><a href='/index.html'>
       <span>Trang chủ</span></a>
     </li>
 		<li class=" has-sub"><a href='gioi-thieu.html' ><span>Giới thiệu</span></a>
@@ -70,17 +70,17 @@
      <li class=" has-sub"><a href='tu-van.html' ><span>Tư vấn</span></a>
      </li>
      
-    <li class=" "><a href='http://toyotasaigon.com/tin-tuc.html'>
+    <li class=" "><a href='/tin-tuc.html'>
       <span>Tin tức</span></a>
       <ul >           <li><a href="tin-tuc/hoat-dong-tesc">Hoạt động TESC</a></li>
            
                  <li><a href="tin-tuc/thi-truong-oto">Thị trường Ôtô</a></li>
            
       </ul>    </li>
-    <li class="active "><a href='http://toyotasaigon.com/tuyen-dung.html'>
+    <li class="active "><a href='/tuyen-dung.html'>
       <span>Tuyển dụng</span></a>
     </li>
-    <li class=" last"><a href='http://toyotasaigon.com/lien-he.html'>
+    <li class=" last"><a href='/lien-he.html'>
       <span>Liên hệ</span></a>
     </li>
       

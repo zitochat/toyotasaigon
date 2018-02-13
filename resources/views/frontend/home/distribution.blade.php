@@ -7,23 +7,10 @@
                 <h2 class="title">Hệ thống chi nhánh
                 </h2>
 
-                                <ul class="list-unstyled list  " id="agency-list">
+            <ul class="list-unstyled list " id="agency-list">
 
-<li class="item item-0 active">
-                       <div class="wrapper">
-                <div onclick="showAddress('8'); return false;" style="cursor:pointer">
-                    <strong class="title">CÔNG TY CP TOYOTA ĐÔNG SÀI GÒN</strong>
-
-                    <p class="kind-agency" id="agent-8">507 Xa lộ Hà Nội, An Phú, Quận 2, TP.HCM</p>
-                    <p class="kind-agency" style="display:none" id="toado-8">10.811301,106.756080</p>
-                    <p class="kind-agency"><span>Phone:</span> (028) 3 8989 242 - <span>Fax:</span> (028) 3 8989 243</p>
-                    <p class="kind-agency"><span>Hotline:</span> 19006428 </p>
-                    <p class="kind-agency"><span>Email:</span> tesc@toyotasaigon.com </p>
-                </div>
-              </div>
-    </li>
                 
-            <li class="item  item-1">
+            <li class="item  item-1 active">
                        <div class="wrapper">
                 <div onclick="showAddress('6'); return false;" style="cursor:pointer">
                     <strong class="title">CHI NHÁNH GÒ VẤP</strong>
@@ -37,51 +24,8 @@
               </div>
     </li>
                 
-            <li class="item  item-2">
-                       <div class="wrapper">
-                <div onclick="showAddress('9'); return false;" style="cursor:pointer">
-                    <strong class="title">CHI NHÁNH NGUYỄN VĂN LƯỢNG</strong>
+                  
 
-                    <p class="kind-agency" id="agent-9">63A Nguyễn Văn Lượng, P10, Quận Gò Vấp, TP.HCM</p>
-                    <p class="kind-agency" style="display:none" id="toado-9">10.838397,106.666852</p>
-                    <p class="kind-agency"><span>Phone:</span> (028) 3 9212 808 - <span>Fax:</span> (028) 3 9212 809</p>
-                    <p class="kind-agency"><span>Hotline:</span> 0918335050 </p>
-                    <p class="kind-agency"><span>Email:</span> tesc@toyotasaigon.com </p>
-                </div>
-              </div>
-    </li>
-                
-            <li class="item  item-3">
-                       <div class="wrapper">
-                <div onclick="showAddress('11'); return false;" style="cursor:pointer">
-                    <strong class="title">CHI NHÁNH QUẬN 9</strong>
-
-                    <p class="kind-agency" id="agent-11">850 Xa Lộ Hà Nội, P. Hiệp Phú, Quận 9, TP.HCM</p>
-                    <p class="kind-agency" style="display:none" id="toado-11">10.852094,106.778754</p>
-                    <p class="kind-agency"><span>Phone:</span> (028) 37361689 - <span>Fax:</span> (028) 37361690</p>
-                    <p class="kind-agency"><span>Hotline:</span> 0901 830 833 </p>
-                    <p class="kind-agency"><span>Email:</span> tesc@toyotasaigon.com </p>
-                </div>
-              </div>
-    </li>
-                
-            <li class="item  item-4">
-                       <div class="wrapper">
-                <div onclick="showAddress('10'); return false;" style="cursor:pointer">
-                    <strong class="title">TOYOTA BÌNH THUẬN</strong>
-
-                    <p class="kind-agency" id="agent-10">Khu dân cư Bến Lội - Lại An. thôn Thắng Thuận, xã Hàm Thắng, huyện Hàm Thuận Bắc, tỉnh Bình Thuận</p>
-                    <p class="kind-agency" style="display:none" id="toado-10">10.957766,108.117306</p>
-                    <p class="kind-agency"><span>Phone:</span> (0252) 3739 212  - <span>Fax:</span> (0252) 3739 210</p>
-                    <p class="kind-agency"><span>Hotline:</span> 0901662828 </p>
-                    <p class="kind-agency"><span>Email:</span> tesc@toyotasaigon.com </p>
-                </div>
-              </div>
-    </li>
-                
-            
-
-        
 
 
 </ul>
