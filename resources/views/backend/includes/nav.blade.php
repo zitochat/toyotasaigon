@@ -1,4 +1,7 @@
-<nav class="pushmenu pushmenu-left">
+<nav class="pushmenu pushmenu-left" style="overflow-y: auto;">
+    <span id="logo" style="border-bottom: 1px solid #e0e0e0; box-sizing: border-box; display: block; height: 55px; padding: 12px 0px 10px 10px; position: relative; text-align: left;">
+      <b>Toyota Sài Gòn</b>
+    </span>
         <ul class="links">
           <li><a href="/cpanel">Admin manager</a></li>
           <li><a href="/cpanel/categories">Categories</a></li>

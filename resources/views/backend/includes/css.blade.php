@@ -4,20 +4,41 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<style>
+<style type="text/css">
+  #hor_menu {
+    border: none !important;
+  }
+#show_data_filter {
+    margin-right: 10px;
+}
+#show_data_length {
+  margin-left: 5px;
+}
     .pushmenu {
-        background: #444;
-        text-align: center;
-        font-family: Tahoma, Geneva, sans-serif;
-        width: 220px;
-        height: 100%;
-        top: 0;
-        z-index: 1000;
-        position: fixed;
-      }
+      text-align: center;
+      font-family: Tahoma, Geneva, sans-serif;
+      width: 220px;
+      height: 100%;
+      top: 0;
+      z-index: 1000;
+      position: fixed;
+      border-right: 1px solid rgba(0,0,0,.14);
+      bottom: 0;
+      background: #fff;
+      color: #212121;
+      display: block;
+      font-family: Roboto,sans-serif;
+      left: 0;
+      z-index: 4;
+      transform: translateZ(0);
+      transform-style: preserve-3d;
+      transition-delay: .1s;
+      transition-duration: .2s;
+      transition-property: transform,left;
+      transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
       
       .pushmenu h3 {
         color: #f1f1f1;
@@ -36,15 +57,19 @@
         text-align: left;
       }
       
-      .links li {  }
+      .links li { 
+        font-size: 13px;
+        padding: 12px 0 10px 0;
+        transform: translateZ(0);
+        width: 100%;
+       }
       
       .links li a {
-        position: relative;
-        display: block;
-        color: #f1f1f1;
-        font-weight: 400;
-        text-decoration: none;
-        padding: 8px;
+        border-left: 2px solid transparent;
+        color: #212121;
+        font-weight: 700;
+        margin-top: 0;
+        padding: 15px 0 15px 22px;
       }
       
       .links li a:after {
@@ -82,9 +107,6 @@
         transition: all 0.5s ease;
       }
       .buttonset {
-        background: #00A287;
-        height: 16px;
-        padding: 10px 20px 20px;
     }
     #nav_list {
         background: url(/images/icon_nav.png) no-repeat left top;
@@ -92,11 +114,38 @@
         height: 27px;
         width: 33px;
         text-indent: -99999em;
-        margin-top: -9px;
+        margin-top: 0px;
     }
     body, html {margin:0}
     table{ width: 100% }
     table.dataTable.nowrap th, table.dataTable.nowrap td {
       white-space: pre-wrap !important;
   }
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #3366FF;
+	border-radius: 10px;
+	background-image: -webkit-linear-gradient(0deg,
+	                                          rgba(255, 255, 255, 0.5) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, 0.5) 50%,
+											  rgba(255, 255, 255, 0.5) 75%,
+											  transparent 75%,
+											  transparent)
+}
 </style>
