@@ -31,7 +31,7 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
     <td>{{ $row->id }}</td>
     <td><a href="{{ $row->url }}" target="_blank">{{ $row->url }}</a></td>
     <td><img src="{{ fix_url($row->thumb) }}" style="width: 100px; height: 50px"/></td>
-    <td><a class="btn-sm btn-danger" href="/cpanel/sliders/del/{{ $row->id }}">[x]</a></td>
+    <td><a class="btn-sm btn-danger" href="/cpanel_admin/sliders/del/{{ $row->id }}">[x]</a></td>
 </tr>
 @endforeach
         </tbody>

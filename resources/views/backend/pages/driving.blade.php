@@ -28,7 +28,7 @@ $provinces= DB::table('province')->get();
     <td>{{ $provinces->where('provinceid', $row->id_tinhdatlich)->first()->name }}</td>
     <td>{{ $row->email_datlich }}</td>
     <td>{{ $row->phone_datlich }}</td>
-    <td><a class="btn-sm btn-danger" href="/cpanel/driving/del/{{ $row->id }}">[x]</a></td>
+    <td><a class="btn-sm btn-danger" href="/cpanel_admin/driving/del/{{ $row->id }}">[x]</a></td>
 </tr>
 @endforeach
         </tbody>

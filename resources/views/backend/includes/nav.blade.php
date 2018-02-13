@@ -3,20 +3,20 @@
       <b>Toyota Sài Gòn</b>
     </span>
         <ul class="links">
-          <li><a href="/cpanel">Admin manager</a></li>
-          <li><a href="/cpanel/categories">Categories</a></li>
-          <li><a href="/cpanel/products">Products</a></li>
-          <li><a href="/cpanel/vehicles">Vehicles</a></li>
-          <li><a href="/cpanel/posts">Posts</a></li>
-          <li><a href="/cpanel/sliders">Sliders</a></li>
-          <li><a href="/cpanel/branch">Branch</a></li>
-          <li><a href="/cpanel/contact">Contacts</a></li>
-          <li><a href="/cpanel/driving">Driving</a></li>
-          <li><a href="/cpanel/schedule">Schedule</a></li>
-          <li><a href="/cpanel/users">Users</a></li>
-          <li><a href="/cpanel/province">Province</a></li>
-          <li><a href="/cpanel/district">District</a></li>
-          <li><a href="/cpanel/ward">Ward</a></li>
+          <li><a href="/cpanel_admin">Admin manager</a></li>
+          <li><a href="/cpanel_admin/categories">Categories</a></li>
+          <li><a href="/cpanel_admin/products">Products</a></li>
+          <li><a href="/cpanel_admin/vehicles">Vehicles</a></li>
+          <li><a href="/cpanel_admin/posts">Posts</a></li>
+          <li><a href="/cpanel_admin/sliders">Sliders</a></li>
+          <li><a href="/cpanel_admin/branch">Branch</a></li>
+          <li><a href="/cpanel_admin/contact">Contacts</a></li>
+          <li><a href="/cpanel_admin/driving">Driving</a></li>
+          <li><a href="/cpanel_admin/schedule">Schedule</a></li>
+          <li><a href="/cpanel_admin/users">Users</a></li>
+          <li><a href="/cpanel_admin/province">Province</a></li>
+          <li><a href="/cpanel_admin/district">District</a></li>
+          <li><a href="/cpanel_admin/ward">Ward</a></li>
           <li><a href="/logout">Logout</a></li>
         </ul>
       </nav>

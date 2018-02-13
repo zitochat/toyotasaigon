@@ -18,7 +18,7 @@
     <td>{{ $row->name }}</td>
     <td>{{ $row->username }}</td>
     <td>{{ $row->email }}</td>
-    <td><a class="btn-sm btn-danger" href="/cpanel/users/del/{{ $row->id }}">[x]</a></td>
+    <td><a class="btn-sm btn-danger" href="/cpanel_admin/users/del/{{ $row->id }}">[x]</a></td>
 </tr>
 @endforeach
         </tbody>

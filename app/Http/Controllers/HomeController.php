@@ -36,7 +36,7 @@ class HomeController extends Controller
         );
         $validator = \Validator::make(Input::all(), $rules);
         if ($validator->fails()) {
-            return \Redirect::to('login')
+            return \Redirect::to('login_user')
                 ->withErrors($validator)
                 ->withInput(Input::except('password'));
         } else {
@@ -46,10 +46,10 @@ class HomeController extends Controller
             );
 
             if (\Auth::attempt($userdata)) {
-                return \Redirect::to('cpanel');
+                return \Redirect::to('cpanel_admin');
         
             } else {        
-                return \Redirect::to('login');
+                return \Redirect::to('login_user');
         
             }
         }

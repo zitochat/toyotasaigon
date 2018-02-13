@@ -35,7 +35,7 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
     <td style="width: 150px"><a href="{{ route('categories_details', ['category'=> $cat->where('slug', $row->parent)->first()->parent_slug,'slug'=> $row->slug, 'id'=> $row->id]) }}">{{ $row->name }}</a></td>
     <td style="width: 180px"><img src="{{ fix_url($row->thumb) }}" style="width: 100px; height: 50px"/></td>
     <td>{{ $row->parent }}</td>
-    <td><a class="btn-sm btn-danger" href="/cpanel/contact/del/{{ $row->id }}">[x]</a></td>
+    <td><a class="btn-sm btn-danger" href="/cpanel_admin/contact/del/{{ $row->id }}">[x]</a></td>
 </tr>
 @endforeach
         </tbody>

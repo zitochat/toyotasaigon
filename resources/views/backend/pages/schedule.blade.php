@@ -32,7 +32,7 @@ $provinces= DB::table('province')->get();
     <td>{{ $row->cn_datlich }}</td>
     <td>{{ $row->km_datlich }}</td>
     <td>{{ $row->require_baoduong }}</td>
-    <td><a class="btn-sm btn-danger" href="/cpanel/schedule/del/{{ $row->id }}">[x]</a></td>
+    <td><a class="btn-sm btn-danger" href="/cpanel_admin/schedule/del/{{ $row->id }}">[x]</a></td>
 </tr>
 @endforeach
         </tbody>

@@ -20,7 +20,7 @@
     <td style="width: 180px">{{ $row->email }}</td>
     <td style="width: 300px">{{ $row->address }}</td>
     <td>{{ $row->content }}</td>
-    <td><a class="btn-sm btn-danger" href="/cpanel/contact/del/{{ $row->id }}">[x]</a></td>
+    <td><a class="btn-sm btn-danger" href="/cpanel_admin/contact/del/{{ $row->id }}">[x]</a></td>
 </tr>
 @endforeach
         </tbody>

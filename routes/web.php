@@ -6,8 +6,8 @@ Auth::routes();
  * aut
  */
 Route::group(['middleware' => ['guest']], function () use ($router) {
-    $router->get('login', 'HomeController@showLogin');
-    $router->post('login', 'HomeController@doLogin');
+    $router->get('login_user', 'HomeController@showLogin');
+    $router->post('login_user', 'HomeController@doLogin');
 });
 
 /**
@@ -15,12 +15,12 @@ Route::group(['middleware' => ['guest']], function () use ($router) {
  */
 Route::group(['middleware' => ['auth']], function () use ($router) {
     $router->get('logout', 'HomeController@doLogout');
-    $router->get('/cpanel', 'Admin\AdminController@getAdminIndex');
+    $router->get('/cpanel_admin', 'Admin\AdminController@getAdminIndex');
 /**
  * pages
  */
     $router->group([
-        'prefix'    => 'cpanel',
+        'prefix'    => 'cpanel_admin',
         'namespace' => 'Admin',
     ], function () use ($router) {
         //contact
