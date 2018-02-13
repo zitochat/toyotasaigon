@@ -10,23 +10,11 @@
                 <div id="owl_doitac" class="clearfix slick-initialized slick-slider">
                     
                   
-                    
-                  
-                    
-                  
                   <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 402px; transform: translate3d(0px, 0px, 0px);"><div class="doitac-box slick-slide slick-current slick-active" tabindex="0" role="option" aria-describedby="slick-slide90" style="width: 134px;" data-slick-index="0" aria-hidden="false">
                   
                     <a href="" tabindex="0">
                       <div class="doitac-img">
                         <img class="img-responsive" src="http://toyotasaigon.com/upload/hinhanh/doi-tac-500011033.png" onerror="this.src='images/noimage.gif';" alt="Đối tác 5">
-                      </div>
-                          </a>
-                    
-                  </div><div class="doitac-box slick-slide slick-active" tabindex="0" role="option" aria-describedby="slick-slide91" style="width: 134px;" data-slick-index="1" aria-hidden="false">
-                  
-                    <a href="" tabindex="0">
-                      <div class="doitac-img">
-                        <img class="img-responsive" src="http://toyotasaigon.com/upload/hinhanh/doi-tac-311331202.png" onerror="this.src='images/noimage.gif';" alt="Đối tác 3">
                       </div>
                           </a>
                     
@@ -50,8 +38,8 @@
                 <div>
       <p style="color:#ff0f1e"><strong><span style="font-size:14px;">Công ty Cổ phần Toyota Đông Sài Gòn - Đại lý xe ô tô Toyota chính hãng tại TP.HCM</span></strong></p>
 
-<p style="color:#fff"><span style="font-size:12px;">Trụ sở: 507 Xa Lộ Hà Nội, P.An Phú, Q.2, TP.HCM&nbsp;<br />
-Tel: 097.684.87.07&nbsp;<br />
+<p style="color:#fff"><span style="font-size:12px;">Trụ sở: 18 Phan Văn Trị, P7, Quận Gò Vấp, TP.HCM&nbsp;<br />
+Tel: 012 1900 6066&nbsp;<br />
 Email: viennguyen0088@gmail.com</span></p>
                     
       </div>
@@ -89,7 +77,7 @@ Email: viennguyen0088@gmail.com</span></p>
         <li><a class="text-uppercase" href="lien-he.html">Liên hệ</a></li>
       <div class="clear"></div>
     </ul>
-      <p class="copyright">Copyright © 2016 Toyota Dong Sai Gon. Design by Nina</p>
+      <p class="copyright">Toyotasaigon.xyz</p>
       <div class="clear"></div>
     </div>
   </div>
