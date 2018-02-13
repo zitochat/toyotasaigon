@@ -7,7 +7,7 @@ if(!empty($str)) {
     if(strpos($str, 'http')!== false) {
         return $str;
     } else {
-        return 'http://toyotasaigon.org/' . $str;
+        return URL::to('/') . '/' . $str;
     }
 } else {
 return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
