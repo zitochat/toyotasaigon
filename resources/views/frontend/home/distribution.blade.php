@@ -17,9 +17,8 @@
 
                     <p class="kind-agency" id="agent-6">18 Phan Văn Trị, P7, Quận Gò Vấp, TP.HCM</p>
                     <p class="kind-agency" style="display:none" id="toado-6">10.829018,106.683618</p>
-                    <p class="kind-agency"><span>Phone:</span> (028) 3 989 6636 - <span>Fax:</span> (028) 3 989 6637</p>
-                    <p class="kind-agency"><span>Hotline:</span> 19006438 </p>
-                    <p class="kind-agency"><span>Email:</span> tesc@toyotasaigon.com </p>
+                    <p class="kind-agency"><span>Hotline:</span> 012 1900 6066  </p>
+                    <p class="kind-agency"><span>Email:</span> tesc@toyotasaigon.xyz </p>
                 </div>
               </div>
     </li>
