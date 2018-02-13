@@ -119,7 +119,7 @@
     body, html {margin:0}
     table{ width: 100% }
     table.dataTable.nowrap th, table.dataTable.nowrap td {
-      white-space: pre-wrap !important;
+      white-space: normal !important;
   }
 
 ::-webkit-scrollbar-track
