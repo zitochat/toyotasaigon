@@ -45,6 +45,9 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         //sliders
         $router->get('sliders', 'AdminController@getSlidersIndex');
         $router->get('sliders/del/{id}', 'AdminController@getSlidersDel')->where(['id'=> '[0-9]+']);
+        $router->get('sliders/edit/{id}', 'AdminController@getSlidersEdit')->where(['id'=> '[0-9]+']);
+        $router->get('sliders/add', 'AdminController@addSliders');
+        $router->post('sliders/post', 'AdminController@saveSliders');
         //driving
         $router->get('driving', 'AdminController@getDrivingIndex');
         $router->get('driving/del/{id}', 'AdminController@getDrivingDel')->where(['id'=> '[0-9]+']);
@@ -53,6 +56,10 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         $router->get('schedule/del/{id}', 'AdminController@getScheduleDel')->where(['id'=> '[0-9]+']);
         //products
         $router->get('products', 'AdminController@getProductsIndex');
+        $router->get('products/del/{id}', 'AdminController@getProductsDel')->where(['id'=> '[0-9]+']);
+        $router->get('products/edit/{id}', 'AdminController@getProductsEdit')->where(['id'=> '[0-9]+']);
+        $router->get('products/add', 'AdminController@addProducts');
+        $router->post('products/post', 'AdminController@saveProducts');
         //province
         $router->get('province', 'AdminController@getProvinceIndex');
         //district

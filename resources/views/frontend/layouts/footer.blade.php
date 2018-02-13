@@ -38,8 +38,8 @@
                 <div>
       <p style="color:#ff0f1e"><strong><span style="font-size:14px;">Công ty Cổ phần Toyota Đông Sài Gòn - Đại lý xe ô tô Toyota chính hãng tại TP.HCM</span></strong></p>
 
-<p style="color:#fff"><span style="font-size:12px;">Trụ sở: 18 Phan Văn Trị, P7, Quận Gò Vấp, TP.HCM&nbsp;<br />
-Tel: 012 1900 6066&nbsp;<br />
+<p style="color:#fff"><span style="font-size:12px;">Toyota Đông Sài Gòn (Chi Nhánh Gò Vấp)&nbsp;<br />
+Hotline: 0976 848 707 - 012 1900 6066&nbsp;<br />
 Email: viennguyen0088@gmail.com</span></p>
                     
       </div>

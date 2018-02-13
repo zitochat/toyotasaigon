@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
 use App\Models\Posts;
+use App\Models\Sliders;
+use App\Models\Products;
 
 class AdminController extends Controller
 {
@@ -165,6 +167,48 @@ class AdminController extends Controller
         }
     }
 
+    //cpanel/sliders/edit/{id}
+    public function getSlidersEdit($id)
+    {
+        if($slider= DB::table('sliders')->where('id', $id)->first()) {
+            $action= 'edit';
+
+            return view('backend.pages.sliders_edit', compact(['id', 'slider', 'action']));
+        } else {
+            return \Redirect::to('cpanel_admin/sliders');
+        }
+    }
+
+    //cpanel/sliders/post
+    public function saveSliders(Request $request)
+    {
+        $action= $request->input('action');
+        $id= $request->input('slider_id');
+
+        $data = $request->only([
+            'url',
+            'thumb'
+        ]);
+        
+        if($action== 'edit') {
+            DB::table('sliders')->where('id', $id)->update($data);
+            return redirect()->back();
+        } else {
+            $id= DB::table('sliders')->insertGetId($data);
+            return \Redirect::to('cpanel_admin/sliders');
+        }
+        
+    }
+
+    //cpanel/sliders/add
+    public function addSliders()
+    {
+        $slider= new Sliders();
+        $action= 'add';
+
+        return view('backend.pages.sliders_edit', compact(['id', 'slider', 'action']));
+    }
+
 
     //cpanel/driving
     public function getDrivingIndex()
@@ -206,6 +250,63 @@ class AdminController extends Controller
         $products= DB::table('products')->get();
 
         return view('backend.pages.products', compact(['products']));
+    }
+
+    //cpanel/products/del/{id}
+    public function getProductsDel($id)
+    {
+        if(DB::table('products')->where('id', $id)->first()) {
+            DB::table('products')->where('id', $id)->delete();
+            return \Redirect::to('cpanel_admin/products');
+        }
+    }
+
+    //cpanel/products/edit/{id}
+    public function getProductsEdit($id)
+    {
+        if($product= DB::table('products')->where('id', $id)->first()) {
+            $action= 'edit';
+
+            return view('backend.pages.products_edit', compact(['id', 'product', 'action']));
+        } else {
+            return \Redirect::to('cpanel_admin/products');
+        }
+    }
+
+    //cpanel/products/post
+    public function saveProducts(Request $request)
+    {
+        $action= $request->input('action');
+        $id= $request->input('product_id');
+
+        $data = $request->only([
+            'slug',
+            'name',
+            'thumb',
+            'image',
+            'description',
+            'price',
+            'parent'
+        ]);
+        
+        if($action== 'edit') {
+            DB::table('products')->where('id', $id)->update($data);
+            return redirect()->back();
+        } else {
+            $id= DB::table('products')->insertGetId($data);
+            return \Redirect::to('cpanel_admin/products');
+        }
+        
+    }
+
+    //cpanel/products/add
+    public function addProducts()
+    {
+        $product= new Products();
+        $product->price= '1 000 000';
+        $action= 'add';
+
+        return view('backend.pages.products_edit', compact(['id', 'product', 'action']));
     }
 
     //cpanel/province

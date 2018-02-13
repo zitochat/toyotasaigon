@@ -76,6 +76,7 @@
                             $(document).ready(function(){
                                 $('#show_data').DataTable();
                                 $('#lfm').filemanager('image');
+                                $('#lfm_image').filemanager('image');
                             });
                             </script>
     </body>

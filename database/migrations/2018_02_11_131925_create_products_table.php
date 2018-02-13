@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('thumb', 300);
             $table->string('image', 300)->nullable(true);
             $table->string('price', 15);
-            $table->string('description', 250);
+            $table->string('description', 400);
             $table->string('parent', 100)->default('other');
         });
     }

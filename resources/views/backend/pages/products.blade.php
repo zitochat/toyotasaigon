@@ -18,6 +18,8 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
 @endphp
 
 @section('content')
+<a href="/cpanel_admin/products/add" style="margin-left: 5px;" class="btn btn-primary">Add new</a><br/>
+
 <table id="show_data" class="display nowrap" cellspacing="0" width="100%" data-page-length='25'>
         <thead>
             <tr>
@@ -27,6 +29,7 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
                 <th>Price</th>
                 <th>Parent</th>
                 <th>Description</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -37,7 +40,11 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
     <td><img src="{{ fix_url($row->thumb) }}" style="width: 100px; height: 50px"/></td>
     <td>{{ $row->price }}</td>
     <td>{{ $row->parent }}</td>
-    <td>{{ $row->description }}</td>
+    <td style="width: 90px">{{ str_limit($row->description, 50, '..') }}</td>
+    <td>
+        <a class="btn-sm btn-danger" href="/cpanel_admin/products/del/{{ $row->id }}">[x]</a>
+        <a class="btn-sm btn-success" href="/cpanel_admin/products/edit/{{ $row->id }}">[E]</a>
+    </td>
 </tr>
 @endforeach
         </tbody>
