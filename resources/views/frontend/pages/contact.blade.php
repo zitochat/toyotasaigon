@@ -32,28 +32,12 @@
     </div>
     
     <div class="hotline-main-wrap">
-                    <p class="title">Trụ sở xa lộ Hà Nội</p>
-      <div class="hotlineinfo">
-        <p><span>Hotline:</span> 1900 6428</p>
-        <p><span>Phone:</span> (028) 3 8989 242 </p>
-                    </div>
                     <p class="title">Chi nhánh Gò Vấp</p>
       <div class="hotlineinfo">
-        <p><span>Hotline:</span> 19006438</p>
-        <p><span>Phone:</span> (028) 3 989 6636</p>
-                    </div>
-                    <p class="title">Chi nhánh Nguyễn Văn Lượng</p>
-      <div class="hotlineinfo">
-        <p><span>Hotline:</span> 0918335050</p>
-        <p><span>Phone:</span> (028) 3 9212 808</p>
-                    </div>
-                    <p class="title">Toyota Bình Thuận</p>
-      <div class="hotlineinfo">
-        <p><span>Hotline:</span> 0901662828</p>
-        <p><span>Phone:</span> (062) 3739 212</p>
+        <p><span>Hotline:</span> 012 1900 6066</p>
+        <p><span>Phone:</span> 012 1900 6066</p>
                     </div>
       
-    
       <p class="trungtamhotro"> Thanks!</p>
       
     </div>
