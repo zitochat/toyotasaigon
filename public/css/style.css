@@ -750,9 +750,7 @@ a:hover {
   letter-spacing: 0.5px;
   font-weight: bold;
 }
-#mn_top > ul > li > a >span:hover {
-  font-size: 30px;
-}
+
 
 #mn_top > ul > li > a >span {
   padding: 0;
@@ -762,8 +760,11 @@ a:hover {
   position: relative;
   margin: 0;
   display: inline-block;
-  border-bottom: 3px solid #fff;
   transition: all .3s linear;
+}
+
+#mn_top > ul > li > a >span:hover {
+  font-size: 30px;
 }
 #mn_top > ul > li.homeicon > a >span {
   /* padding: 0; */
