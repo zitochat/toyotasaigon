@@ -6,7 +6,7 @@
   width="100%"
   height="450"
   frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBD3NkHzWYnBxBtluShsuUMaXyOt22H-AE&q=Toyota Đông Sài Gòn - CN Gò Vấp&zoom=20" allowfullscreen>
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBD3NkHzWYnBxBtluShsuUMaXyOt22H-AE&q=Toyota Đông Sài Gòn - CN Gò Vấp&zoom=16&center=10.8289994,106.6839995" allowfullscreen>
 </iframe>
             <div class="agency-list">
                 <h2 class="title">Hệ thống chi nhánh
