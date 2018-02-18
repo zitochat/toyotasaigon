@@ -16,6 +16,30 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
 @endphp
 
 @section('content')
+<link rel="stylesheet" href="http://toyotasaigon.com/cssmain/style.css" />
+@if($action=='edit')
+
+
+
+
+
+
+
+<div class="tag-hong" id="gioithieuchung">
+        <div class="container">
+          <ul class="clearfix" id="chode">
+            <li class=""><a href="/cpanel_admin/products/outbuilding">Outbuilding</a></li>
+            <li class=""><a href="/cpanel_admin/products/furniture">Furniture</a></li>
+            <li class=""><a href="/cpanel_admin/products/safe">Safe</a></li>
+            <li class="lsttag"><a href="/cpanel_admin/products/operate">Operate</a></li>
+            <li class=""><a href="/cpanel_admin/products/specifications">Specifications</a></li>
+            <li><a href="/cpanel_admin/products/color">Color</a></li>
+          </ul>   
+          
+        </div>
+        
+      </div>
+@endif
 <div style="padding: 10px">
         <form action='/cpanel_admin/products/post' method="post">
             {{ csrf_field() }}

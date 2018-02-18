@@ -247,7 +247,7 @@ class AdminController extends Controller
     //cpanel/products
     public function getProductsIndex()
     {
-        $products= DB::table('products')->get();
+        $products= DB::table('products')->orderBy('id', 'ASC')->get();
 
         return view('backend.pages.products', compact(['products']));
     }
@@ -255,8 +255,15 @@ class AdminController extends Controller
     //cpanel/products/del/{id}
     public function getProductsDel($id)
     {
-        if(DB::table('products')->where('id', $id)->first()) {
+        if($product=DB::table('products')->where('id', $id)->first()) {
             DB::table('products')->where('id', $id)->delete();
+            DB::table('product_outbuilding')->where('product', $product->slug)->delete();
+            DB::table('product_furniture')->where('product', $product->slug)->delete();
+            DB::table('product_operate')->where('product', $product->slug)->delete();
+            DB::table('product_safe')->where('product', $product->slug)->delete();
+            DB::table('product_specifications')->where('product', $product->slug)->delete();
+            DB::table('product_color')->where('product', $product->slug)->delete();
+
             return \Redirect::to('cpanel_admin/products');
         }
     }
@@ -294,7 +301,7 @@ class AdminController extends Controller
             return redirect()->back();
         } else {
             $id= DB::table('products')->insertGetId($data);
-            return \Redirect::to('cpanel_admin/products');
+            return \Redirect::to('cpanel_admin/products/edit/' . $id);
         }
         
     }

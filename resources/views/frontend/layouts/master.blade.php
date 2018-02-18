@@ -27,7 +27,7 @@
             
       @include('frontend.layouts.aside')
       <div class="notaside">
-      <div class="hotlinepanel"><p><i class="fa fa-phone-square" aria-hidden="true"></i> <a href="tel:{{ env('PHONE_NUM') }}">{{ env('PHONE_NUM') }}</a></p></div>
+      <div class="hotlinepanel" style="position: fixed"><p><i class="fa fa-phone-square" aria-hidden="true"></i> <a href="tel:{{ env('PHONE_NUM') }}">{{ env('PHONE_NUM') }}</a></p></div>
 
       @yield('content')
 

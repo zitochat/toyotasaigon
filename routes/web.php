@@ -121,3 +121,6 @@ Route::get('/san-pham.html', 'PagesController@getProductsIndex');
 Route::get('/du-toan-chi-phi.html', 'PagesController@getPriceIndex');
 
 Route::post('/ajax/product_slider.php', 'PagesController@postProductSlider');
+
+
+Route::get('/facebook.php', 'PagesController@facebookIndex');
