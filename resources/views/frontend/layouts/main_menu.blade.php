@@ -27,6 +27,7 @@ $products= \DB::table('products')->get();
       <h3>{{ strtoupper($row->parent) }}</h3>
     </a>
     <div class="xe-content-main">
+        <div class="col-sm-12 col-md-8">
       <div class="xe-info clearfix">
         <div class="xe-features">
            <h2 class="text-uppercase">{{ $row->parent }}</h2> 
@@ -39,9 +40,12 @@ $products= \DB::table('products')->get();
           <li><i class="fa fa-wrench" aria-hidden="true"></i> <a href="du-toan-chi-phi.html">Ước tính giá</a></li>
                             </ul>
       </div>
-        <div class="xe-slide">
-                        </div>
       </div>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <img src="{{ $row->image }}" alt="{{ $row->name }}" style="width: 500px; margin-top: 50px; margin-left: -100px;"/>
+    </div>
+
     </div>
     </div>
     </div>

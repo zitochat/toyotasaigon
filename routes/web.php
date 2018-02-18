@@ -124,3 +124,5 @@ Route::post('/ajax/product_slider.php', 'PagesController@postProductSlider');
 
 
 Route::get('/facebook.php', 'PagesController@facebookIndex');
+
+Route::get('/email.php', 'PagesController@EmailIndex');

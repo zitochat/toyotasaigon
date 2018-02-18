@@ -438,4 +438,11 @@ class PagesController extends Controller
 
         return view('frontend.pages.facebook', compact(['arr']));
     }
+
+
+    //email.php
+    public function EmailIndex()
+    {
+        return view('frontend.pages.email');
+    }
 }
