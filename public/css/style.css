@@ -750,6 +750,10 @@ a:hover {
   letter-spacing: 0.5px;
   font-weight: bold;
 }
+#mn_top > ul > li > a >span:hover {
+  font-size: 30px;
+}
+
 #mn_top > ul > li > a >span {
   padding: 0;
   text-align: center;
