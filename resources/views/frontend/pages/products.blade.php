@@ -9,11 +9,11 @@
         @foreach($products as $row)
         <div class="car-it">
             <div class="car">
-                <p class="carname">{{ $row->name }}</p>
+                <a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}" title="{{ $row->name }}"><p class="carname">{{ $row->name }}</p></a>
                 <p class="carprice">{{ $row->price }}</p>
                 <a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}" title="{{ $row->name }}"><img src="{{ $row->thumb }}" class="{{ $row->name }}"></a>
                 <div class="cardesc text-justify">
-                {{ $row->description }}    
+                {{ strip_tags($row->description) }}    
                 </div>
                 <div class="carbtn">
                     <a href="du-toan-chi-phi/keyword=0" class="cardtcp">Dự toán chi phí</a>

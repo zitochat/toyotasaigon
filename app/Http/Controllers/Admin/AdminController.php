@@ -8,6 +8,7 @@ use DB;
 use App\Models\Posts;
 use App\Models\Sliders;
 use App\Models\Products;
+use App\Models\Items;
 
 class AdminController extends Controller
 {
@@ -338,6 +339,70 @@ class AdminController extends Controller
         $ward= DB::table('ward')->get();
 
         return view('backend.pages.ward', compact(['ward']));
+    }
+
+    //cpanel/products/{item}/{slug}
+    public function getProductItem($item, $slug)
+    {
+
+        $datas= DB::table('product_' . $item)->where('product', $slug)->get();
+
+        return view('backend.pages.product_items', compact(['item', 'slug', 'datas']));
+    }
+
+    //cpanel/products/{item}/{slug}/del/{id}
+    public function getProductItemDel($item, $slug, $id)
+    {
+
+        DB::table('product_' . $item)->where('id', $id)->delete();
+
+        return redirect()->back();
+    }
+
+    //cpanel/products/{item}/{slug}/edit/{id}
+    public function getProductItemEdit($item, $slug, $id)
+    {
+
+        $row= DB::table('product_' . $item)->where('id', $id)->get()->first();
+        $action= 'edit';
+
+        return view('backend.pages.product_items_edit', compact(['item', 'slug', 'row', 'id', 'action']));
+    }
+
+    //cpanel/products/{item}/{slug}/add/
+    public function getProductItemAdd($item, $slug)
+    {
+
+        $row= new Items();
+
+        $action= 'add';
+
+        return view('backend.pages.product_items_edit', compact(['item', 'slug', 'row', 'id', 'action']));
+    }
+
+    //cpanel/products/{item}/{slug}/post/
+    public function getProductItemPost($item, $slug, Request $request)
+    {
+        $action= $request->input('action');
+        $id= $request->input('item_id');
+
+        $data = $request->only([
+            'name',
+            'thumb',
+            'image',
+            'description',
+            'type'
+        ]);
+
+        $data['product']= $slug;
+        
+        if($action== 'edit') {
+            DB::table('product_' . $item)->where('id', $id)->update($data);
+            return redirect()->back();
+        } else {
+            $id= DB::table('product_' . $item)->insertGetId($data);
+            return \Redirect::to('cpanel_admin/products/' . $item . '/' . $slug );
+        }
     }
 
 }

@@ -66,9 +66,50 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         $router->get('district', 'AdminController@getDistrictIndex');
         //ward
         $router->get('ward', 'AdminController@getWardIndex');
+        //product item
+        $router->get('/products/{item}/{slug}', 'AdminController@getProductItem')
+        ->where([
+            'item'=> '(outbuilding|furniture|safe|operate)',
+            'slug'  => '[A-z-0-9-]+',
+            ])
+        ->name('product_items');
+        
+
+        //product item del
+        $router->get('/products/{item}/{slug}/del/{id}', 'AdminController@getProductItemDel')
+        ->where([
+            'item'=> '(outbuilding|furniture|safe|operate)',
+            'slug'=> '[A-z-0-9-]+',
+            'id'=> '[0-9]+'
+            ])
+        ->name('product_items_del');
+
+        //product item edit
+        $router->get('/products/{item}/{slug}/edit/{id}', 'AdminController@getProductItemEdit')
+        ->where([
+            'item'=> '(outbuilding|furniture|safe|operate)',
+            'slug'=> '[A-z-0-9-]+',
+            'id'=> '[0-9]+'
+            ])
+        ->name('product_items_edit');
+
+        //product item add
+        $router->get('/products/{item}/{slug}/add', 'AdminController@getProductItemAdd')
+        ->where([
+            'item'=> '(outbuilding|furniture|safe|operate)',
+            'slug'=> '[A-z-0-9-]+'
+            ])
+        ->name('product_items_add');
+
+        //product item post
+        $router->post('/products/{item}/{slug}/post', 'AdminController@getProductItemPost')
+        ->where([
+            'item'=> '(outbuilding|furniture|safe|operate)',
+            'slug'=> '[A-z-0-9-]+'
+            ])
+        ->name('product_items_post');
 
     });
-
 });
 /**
  * frontend

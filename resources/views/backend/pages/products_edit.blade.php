@@ -28,12 +28,12 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
 <div class="tag-hong" id="gioithieuchung">
         <div class="container">
           <ul class="clearfix" id="chode">
-            <li class=""><a href="/cpanel_admin/products/outbuilding">Outbuilding</a></li>
-            <li class=""><a href="/cpanel_admin/products/furniture">Furniture</a></li>
-            <li class=""><a href="/cpanel_admin/products/safe">Safe</a></li>
-            <li class="lsttag"><a href="/cpanel_admin/products/operate">Operate</a></li>
-            <li class=""><a href="/cpanel_admin/products/specifications">Specifications</a></li>
-            <li><a href="/cpanel_admin/products/color">Color</a></li>
+            <li class=""><a href="/cpanel_admin/products/outbuilding/{{ $product->slug }}">Outbuilding</a></li>
+            <li class=""><a href="/cpanel_admin/products/furniture/{{ $product->slug }}">Furniture</a></li>
+            <li class=""><a href="/cpanel_admin/products/safe/{{ $product->slug }}">Safe</a></li>
+            <li class="lsttag"><a href="/cpanel_admin/products/operate/{{ $product->slug }}">Operate</a></li>
+            <li class=""><a href="/cpanel_admin/products/specifications/{{ $product->slug }}">Specifications</a></li>
+            <li><a href="/cpanel_admin/products/color/{{ $product->slug }}">Color</a></li>
           </ul>   
           
         </div>
