@@ -647,17 +647,17 @@ a:hover {
   border-bottom: 2px solid #f00;
   z-index: 100000;
   display: none;
-  background: #fff;
+  background-color: #ca0303;
   min-height: 62px;
 }
-.fixedmenu#main_menu {background:#fff}
+.fixedmenu#main_menu {    background: #ca0303;}
 .home #main_menu {/* border:0; *//* position: absolute; */}
 #main_mn_container {
   z-index: 120;
   width: 100%;
   margin: 0 auto;
   /* background: #EFF4F7 url(../images/main_menu_bg.png) no-repeat 840px 0; */
-  background: #fff;
+  background: #ca0303;
 }
 #mn_top ul,#mn_top li,#mn_top span,#mn_top a {
   margin: 0;
@@ -761,6 +761,7 @@ a:hover {
   margin: 0;
   display: inline-block;
   transition: all .3s linear;
+  color: white;
 }
 
 #mn_top > ul > li > a >span:hover {
@@ -3354,7 +3355,7 @@ p.dkbtn span{display:inline-block;border-radius: 50%;border: 1px solid #fff;padd
   padding: 5px 10px;
   position: relative;
   margin-bottom: 23px;
-}.hotline-main-wrap .hotlineinfo:before{content:'';width:1px;height:100%;background: #ef3e54;left: 40%;top:0;position: absolute;}
+}.hotline-main-wrap .hotlineinfo:before{content:'';width:1px;height:100%;background: #ef3e54;left: 68px;top:0;position: absolute;}
             .hotline-main-wrap .hotlineinfo p{
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
@@ -3364,7 +3365,7 @@ p.dkbtn span{display:inline-block;border-radius: 50%;border: 1px solid #fff;padd
 }
             .hotline-main-wrap .hotlineinfo p span{
   display: inline-block;
-  width: 100px;
+  width: 63px;
 }
             .hotline-main-wrap .trungtamhotro{
   background: #bb162b url(../images/call_white.png) no-repeat 0 center;
