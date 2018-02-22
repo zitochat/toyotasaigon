@@ -25,7 +25,7 @@
         $(".news-nb-wrap").not('.slick-initialized').slick({
           dots: false,
           autoplay:true,
-          arrows:true,
+          arrows:false,
           infinite: true,
           speed: 300,
           slidesToShow: 2,

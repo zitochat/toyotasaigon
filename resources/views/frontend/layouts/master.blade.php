@@ -1,5 +1,9 @@
+@php
+$service_list= \DB::table('posts')->where('parent', 'dich-vu')->get();
+$products= \DB::table('products')->get();
+@endphp
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US"  xmlns:fb="http://www.facebook.com/2008/fbml"><!--<![endif]-->
 <head>
 @include('frontend.layouts.seo')
@@ -28,7 +32,7 @@
       @include('frontend.layouts.aside')
       <div class="notaside">
       <div class="hotlinepanel" style="position: fixed"><p><i class="fa fa-phone-square" aria-hidden="true"></i>
-        <a href="tel:01219006066">012 1900 6066</a> - <a href="tel:0976848707">0976 848 707</a>
+        <a href="tel:01219006066">0121 900 6066</a> - <a href="tel:0976848707">097 68 48 707</a>
       </p></div>
 
       @yield('content')
@@ -46,37 +50,31 @@
     <li class="  trangchu"><a href='/index.html'>
       <span>Trang chủ</span></a>
     </li>
-		<li class=" has-sub"><a href='gioi-thieu.html' ><span>Giới thiệu</span></a>
+<li class=" has-sub"><a href='/gioi-thieu.html' ><span>Giới thiệu</span></a>
      </li>
-     <li class=" has-sub"><a href='san-pham.html' ><span>Xe mới</span></a>
-
+     <li class=" has-sub"><a href='/san-pham.html' ><span>Xe mới</span></a>
+<ul>
+@foreach($products as $row)
+<li><a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}"><i class="fa fa-angle-right" aria-hidden="true"></i> {{$row->name}}</a></li>
+@endforeach
+</ul>
 
      </li>
       <li class=" has-sub"><a href='http://www.toyotadaquasudung.com/' target="_blank"><span>Xe cũ</span></a>
      </li>
-     <li class=" has-sub"><a href='dich-vu.html' ><span>Dịch vụ</span></a>
-     <ul >     <li><a href="dich-vu/tu-van-tai-chinh-703.html">Tư vấn tài chính</a></li>
-     
-     <li><a href="dich-vu/tu-van-bao-hiem-704.html">Tư vấn bảo hiểm</a></li>
-     
-     <li><a href="dich-vu/chinh-sach-bao-hanh-627.html">Chính sách bảo hành</a></li>
-     
-     <li><a href="dich-vu/bao-duong-dinh-ky-641.html">Bảo dưỡng định kỳ</a></li>
-     
-     <li><a href="dich-vu/dieu-kien-khong-duoc-bao-hanh-642.html">Điều kiện không được bảo hành</a></li>
-     
-     <li><a href="dich-vu/dich-vu-cho-thue-xe-toyota-dong-sai-gon-643.html">Dịch vụ cho thuê xe Toyota Đông Sài gòn</a></li>
-     
+     <li class=" has-sub"><a href='/dich-vu.html' ><span>Dịch vụ</span></a>
+     <ul >
+     @foreach($service_list as $row)
+<li><a href="dich-vu/{{ $row->slug }}-{{ $row->id }}.html"><i class="fa fa-angle-right" aria-hidden="true"></i> {{ $row->name }}</a></li>
+@endforeach
 </ul>     
-     </li>
-     <li class=" has-sub"><a href='tu-van.html' ><span>Tư vấn</span></a>
      </li>
      
     <li class=" "><a href='/tin-tuc.html'>
       <span>Tin tức</span></a>
-      <ul >           <li><a href="tin-tuc/hoat-dong-tesc">Hoạt động TESC</a></li>
+      <ul >           <li><a href="/tin-tuc/hoat-dong-tesc">Hoạt động TESC</a></li>
            
-                 <li><a href="tin-tuc/thi-truong-oto">Thị trường Ôtô</a></li>
+                 <li><a href="/tin-tuc/thi-truong-oto">Thị trường Ôtô</a></li>
            
       </ul>    </li>
     <li class="active "><a href='/tuyen-dung.html'>
@@ -130,5 +128,8 @@
 </script>
 
 @include('frontend.layouts.facebook')
+<style type="text/css">
+
+</style>
     </body>
 </html>

@@ -47,6 +47,20 @@ class PagesController extends Controller
             'content'=> $content,
             'created_at'=> date('Y/m/d H:i:s')
         );
+$province= DB::table('province')->where('provinceid', $region)->first()->name;
+
+$subject= $subject== '2'? 'Liên hệ kinh doanh': 'Liên hệ dịch vụ';
+
+   $to = "viennguyen0088@gmail.com";
+   $message = '<b>- Người gửi: ' . $name . '<br/>- Điện thoại: ' . $phone . '<br/>- Địa chỉ: ' . $address . '<br/>- Tỉnh: ' . $province . '<br/>- Nội dung: ' . $content . '</b>';
+   $from = $email;
+   
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+$headers = $headers . "From:" . $from;
+
+   mail($to,$subject,$message,$headers);
+
 
         DB::table('contact')->insert($data);
 
@@ -180,6 +194,18 @@ class PagesController extends Controller
             'created_at'=> date('Y/m/d H:i:s')
         ]);
 
+$subject= 'Đặt lịch bảo dưỡng';
+
+   $to = "viennguyen0088@gmail.com";
+   $message = '<b>- Người gửi: ' . $name_datlich . '<br/>- Điện thoại: ' . $phone_datlich . '<br/>- Dòng xe: ' . $vehicles_datlich . '<br/>- Tỉnh: ' . $id_tinhdatlich . '<br/>- Nội dung: ' . $description . '</b>';
+   $from = $email_datlich;
+   
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+$headers = $headers . "From:" . $from;
+
+   mail($to,$subject,$message,$headers);
+
         try {
             DB::table('schedule')->insert($data);
         } catch (\Illuminate\Database\QueryException $e) {
@@ -243,6 +269,18 @@ class PagesController extends Controller
             'created_at'=> date('Y/m/d H:i:s')
         ]);
         
+$subject= 'Đăng ký lái thử';
+
+   $to = "viennguyen0088@gmail.com";
+   $message = '<b>- Người gửi: ' . $name_datlich . '<br/>- Điện thoại: ' . $phone_datlich . '<br/>- Dòng xe: ' . $vehicles_datlich . '<br/>- Tỉnh: ' . $id_tinhdatlich . '<br/>- Nội dung: ' . $description . '</b>';
+   $from = $email_datlich;
+   
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+$headers = $headers . "From:" . $from;
+
+   mail($to,$subject,$message,$headers);
+
         try {
             DB::table('driving')->insert($data);
         } catch (\Illuminate\Database\QueryException $e) {

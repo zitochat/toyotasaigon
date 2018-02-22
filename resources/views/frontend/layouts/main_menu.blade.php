@@ -43,7 +43,7 @@ $products= \DB::table('products')->get();
       </div>
     </div>
     <div class="col-sm-12 col-md-4">
-        <img src="{{ $row->image }}" alt="{{ $row->name }}" style="width: 500px; margin-top: 50px; margin-left: -100px;"/>
+        <img src="{{ $row->image }}" alt="{{ $row->name }}" style="width: 500px; margin-top: 50px; margin-left: -170px;"/>
     </div>
 
     </div>

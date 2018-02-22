@@ -2,14 +2,9 @@
 
     <section id="main-content">
         <div id="agency">
-            <iframe
-  width="100%"
-  height="450"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBD3NkHzWYnBxBtluShsuUMaXyOt22H-AE&q=Toyota Đông Sài Gòn - CN Gò Vấp&zoom=16&center=10.8289994,106.6889995" allowfullscreen>
-</iframe>
+            <div id="map"></div>
             <div class="agency-list">
-
+              
             <ul class="list-unstyled list " id="agency-list">
 
                 
@@ -22,7 +17,7 @@
                     <p class="kind-agency" style="display:none" id="toado-6">10.829018,106.683618</p>
                     <p class="kind-agency"><span>Hotline 1:</span> 012 1900 6066  </p>
                     <p class="kind-agency"><span>Hotline 2:</span> 0976 848 707  </p> 
-                    <p class="kind-agency"><span>Email:</span> tesc@toyotasaigon.xyz </p>
+                    <p class="kind-agency"><span>Email:</span> banhang@toyotasaigon.xyz </p>
                 </div>
               </div>
     </li>
@@ -33,3 +28,25 @@
     </section>
 
 </div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT1PIXMnfdyI9-fGg4qR6jH4DFixOBVFw&libraries=places&callback=initAutocomplete" async defer></script>
+
+<script>
+function initAutocomplete() {
+  var myLatLng = {lat: 10.8289227, lng: 106.6839508};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'ToYoTa Đông Sài Gòn - CN Gò Vấp',
+label:'ToYoTa Đông Sài Gòn',
+    animation: google.maps.Animation.DROP,
+  });
+}
+
+</script>

@@ -4,7 +4,7 @@
   <div class="container">
           <div id="ft_container">
             <div class="clearfix">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-4">
                     <div id="khungdoitac" class="">
                 
                 <div id="owl_doitac" class="clearfix slick-initialized slick-slider">
@@ -31,14 +31,14 @@
                 
                 </div>
                   </div>
-<div class="col-sm-12 col-md-6">
+<div class="col-sm-12 col-md-8">
 <div class=" clearfix">
   <div class="col-xs-12 col-sm-6 col-md-7">
     <div class="ft-info">
                 <div>
-      <p style="color:#ff0f1e"><strong><span style="font-size:14px;">Công ty Cổ phần Toyota Đông Sài Gòn - Đại lý xe ô tô Toyota chính hãng tại TP.HCM</span></strong></p>
+      <p style="color:#ff0f1e"><strong><span style="font-size:16px;">Công ty Cổ phần Toyota Đông Sài Gòn <br/>Đại lý xe ô tô Toyota chính hãng tại TP.HCM</span></strong></p>
 
-<p style="color:#fff"><span style="font-size:12px;">Toyota Đông Sài Gòn (Chi Nhánh Gò Vấp)&nbsp;<br />
+<p style="color:#fff"><span style="font-size:16px; font-weight: bold">Toyota Đông Sài Gòn (Chi Nhánh Gò Vấp)&nbsp;<br />
 Hotline: 0976 848 707 - 012 1900 6066&nbsp;<br />
 Email: viennguyen0088@gmail.com</span></p>
                     
@@ -68,18 +68,6 @@ Email: viennguyen0088@gmail.com</span></p>
             </div><!--end #ft_container-->
           </div>
       </div> 
-      <!--end #footer-->
-  <div class="copyright-wrap">
-    <div class="container">
-    <ul>
-    
-        <li><a class="text-uppercase" href="/chinh-sach.html">Chính sách và điều khoản</a></li>
-        <li><a class="text-uppercase" href="lien-he.html">Liên hệ</a></li>
-      <div class="clear"></div>
-    </ul>
-      <p class="copyright">Toyotasaigon.xyz</p>
-      <div class="clear"></div>
-    </div>
-  </div>
+      
   </div>
   </div>
