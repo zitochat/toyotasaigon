@@ -37,7 +37,7 @@ foreach($vehicles as $vehicle) {
       @include('frontend.layouts.aside')
       <div class="notaside">
       <div class="hotlinepanel" style="position: fixed"><p><i class="fa fa-phone-square" aria-hidden="true"></i>
-        <a href="tel:01219006066">0121 900 6066</a> - <a href="tel:0976848707">097 68 48 707</a>
+        <a href="tel:01219006066">012 1900 6066</a> - <a href="tel:0976848707">097 68 48 707</a>
       </p></div>
 
       @yield('content')
