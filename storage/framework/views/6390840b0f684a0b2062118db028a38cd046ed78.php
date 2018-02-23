@@ -1,9 +1,9 @@
 <?php
 $service_list= \DB::table('posts')->where('parent', 'dich-vu')->get();
-$vehicles= DB::table('vehicles')->get();
+$vehicles= DB::table('vehicles')->orderBy('slug')->get();
 $products= \DB::table('products')->get();
 foreach($vehicles as $vehicle) {
-  $vehicle->product= $products->where('parent', $vehicle->slug);
+  $vehicle->product= $products->where('parent', $vehicle->slug)->sortBy('name');
 }
 
 ?>
