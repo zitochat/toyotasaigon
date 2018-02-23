@@ -22,7 +22,6 @@ class CreatePriceDataTable extends Migration
             $table->string('dang_kiem', 15);
             $table->string('duong_bo', 15);
             $table->string('bao_hiem', 15);
-            $table->string('tong', 15);
         });
     }
 

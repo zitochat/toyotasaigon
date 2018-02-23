@@ -22,9 +22,6 @@
     <b>Bảo hiểm trách nhiệm dân sự/năm:</b><br/>
     <input type="text" name="bao_hiem" value="{{ $price_data->bao_hiem }}"/><br/>
 
-    <b>Tổng chi phí đăng ký:</b><br/>
-    <input type="text" name="tong" value="{{ $price_data->tong }}"/><br/>
-
     <input type="submit" value="Save"/>
     <br/>
     <br/>

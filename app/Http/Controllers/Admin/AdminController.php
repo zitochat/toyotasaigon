@@ -561,8 +561,7 @@ class AdminController extends Controller
             'dang_kiem',
             'dang_ky',
             'duong_bo',
-            'bao_hiem',
-            'tong'
+            'bao_hiem'
         ]);
 
         if($row= DB::table('price_data')->where('loai_xe', $slug)->first()) {

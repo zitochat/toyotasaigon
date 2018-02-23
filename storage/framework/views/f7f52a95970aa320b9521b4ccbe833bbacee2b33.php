@@ -42,11 +42,11 @@ function format($str)
 						</tr>
 						<tr>
 							<td width="220" class="ChiPhiDetailOther"><strong>Bảo hiểm trách nhiệm dân sự/năm</strong></td>
-							<td align="Right"><strong><?php echo e($price_data->bao_hiem); ?></strong></td>
+							<td align="Right"><strong><?php echo e(format($price_data->bao_hiem)); ?></strong></td>
 						</tr>
 						<tr>
 							<td width="230" class="ChiPhiDetailMain"><strong>Tổng chi phí đăng ký</strong></td>
-							<td align="Right" class="ChiPhiDetailMain"><strong><?php echo e(format($price_data->tong)); ?></strong></td>
+							<td align="Right" class="ChiPhiDetailMain"><strong><?php echo e(format($tong)); ?></strong></td>
 						</tr>
 					</tbody></table>
 					<div class="ChiPhiTotal">

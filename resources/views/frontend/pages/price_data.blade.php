@@ -46,7 +46,7 @@ function format($str)
 						</tr>
 						<tr>
 							<td width="230" class="ChiPhiDetailMain"><strong>Tổng chi phí đăng ký</strong></td>
-							<td align="Right" class="ChiPhiDetailMain"><strong>{{ format($price_data->tong) }}</strong></td>
+							<td align="Right" class="ChiPhiDetailMain"><strong>{{ format($tong) }}</strong></td>
 						</tr>
 					</tbody></table>
 					<div class="ChiPhiTotal">

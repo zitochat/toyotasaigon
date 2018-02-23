@@ -21,9 +21,6 @@
     <b>Bảo hiểm trách nhiệm dân sự/năm:</b><br/>
     <input type="text" name="bao_hiem" value="<?php echo e($price_data->bao_hiem); ?>"/><br/>
 
-    <b>Tổng chi phí đăng ký:</b><br/>
-    <input type="text" name="tong" value="<?php echo e($price_data->tong); ?>"/><br/>
-
     <input type="submit" value="Save"/>
     <br/>
     <br/>
