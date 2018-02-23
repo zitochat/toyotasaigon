@@ -147,6 +147,61 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
             ])
         ->name('product_items_color_post');
 
+        //product specifications
+        $router->get('/products/specifications/{slug}', 'AdminController@getProductItemSpecifications')
+        ->where([
+            'slug'  => '[A-z-0-9-]+',
+            ])
+        ->name('product_items_specifications');
+
+        //product item specifications del
+        $router->get('/products/specifications/{slug}/del/{id}', 'AdminController@getProductItemSpecificationsDel')
+        ->where([
+            'slug'=> '[A-z-0-9-]+',
+            'id'=> '[0-9]+'
+            ])
+        ->name('product_items_specifications_del');
+
+        //product item specifications edit
+        $router->get('/products/specifications/{slug}/edit/{id}', 'AdminController@getProductItemSpecificationsEdit')
+        ->where([
+            'slug'=> '[A-z-0-9-]+',
+            'id'=> '[0-9]+'
+            ])
+        ->name('product_items_specifications_edit');
+
+        //product item specifications add
+        $router->get('/products/specifications/{slug}/add', 'AdminController@getProductItemSpecificationsAdd')
+        ->where([
+            'slug'=> '[A-z-0-9-]+',
+            ])
+        ->name('product_items_specifications_add');
+
+
+        //product item specifications post
+        $router->post('/products/specifications/{slug}/post', 'AdminController@getProductItemSpecificationsPost')
+        ->where([
+            'slug'=> '[A-z-0-9-]+'
+            ])
+        ->name('product_items_specifications_post');
+
+        /**
+         * Product price
+         */
+
+        //product price
+        $router->get('/products/price/{slug}', 'AdminController@getProductItemPrice')
+        ->where([
+            'slug'  => '[A-z-0-9-]+',
+            ])
+        ->name('product_items_price');
+
+        //product item price post
+        $router->post('/products/price/{slug}/post', 'AdminController@getProductItemPricePost')
+        ->where([
+            'slug'=> '[A-z-0-9-]+'
+            ])
+        ->name('product_items_price_post');
     });
 });
 /**
@@ -197,11 +252,18 @@ Route::get('/san-pham/{slug}-{id}.html', 'PagesController@getProductDetailsIndex
 
 Route::get('/san-pham.html', 'PagesController@getProductsIndex');
 
-Route::get('/du-toan-chi-phi.html', 'PagesController@getPriceIndex');
+Route::get('/du-toan-chi-phi', 'PagesController@getPriceIndex');
 
 Route::post('/ajax/product_slider.php', 'PagesController@postProductSlider');
 
+Route::get('/ve-chung-toi', 'PagesController@getAboutDetailIndex');
 
 Route::get('/facebook.php', 'PagesController@facebookIndex');
 
 Route::get('/email.php', 'PagesController@EmailIndex');
+
+//ajax_vehicles.php
+Route::get('/ajax_vehicles.php', 'PagesController@AjaxVehiclesIndex');
+
+//ajax_price.php
+Route::get('/ajax_price.php', 'PagesController@AjaxPriceIndex');

@@ -16,7 +16,7 @@
                 {{ strip_tags($row->description) }}    
                 </div>
                 <div class="carbtn">
-                    <a href="du-toan-chi-phi/keyword=0" class="cardtcp">Dự toán chi phí</a>
+                <a href="du-toan-chi-phi?slug={{ $row->parent }}" class="cardtcp">Dự toán chi phí</a>
                 </div>
             </div>
         </div>

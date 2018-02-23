@@ -2,7 +2,7 @@
     <head>
             <script src="//code.jquery.com/jquery.min.js"></script>
             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-            <script src="{{ asset('vendor/laravel-filemanager/js/lfm.js') }}"></script>
+            <script src="<?php echo e(asset('vendor/laravel-filemanager/js/lfm.js')); ?>"></script>
             
         <script>
                 function slug(title)
@@ -60,16 +60,16 @@
                 tinymce.init(editor_config);
                 
         </script>
-            @include('backend.includes.css')
+            <?php echo $__env->make('backend.includes.css', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     </head>
     <body class="pushmenu-push">
 
-            @include('backend.includes.nav')
+            <?php echo $__env->make('backend.includes.nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
                   <div class="containers">
                         <div class="main">
                         <table id="hor_menu" style=" height: 50px; box-shadow: 0 2px 5px rgba(0,0,0,.26); background-color: #007bff; "><tbody><tr><td style=" width: 5%; "><section class="buttonset"> <div id="nav_list">MENU</div> </section></td><td><b style="color:white">Toyota Sài Gòn Cpanel</b></td></tr></tbody></table>
-                          @yield('content')
+                          <?php echo $__env->yieldContent('content'); ?>
                             <!-- End Content -->
                           </div><!-- End Main -->
                     </div>

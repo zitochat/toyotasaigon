@@ -35,6 +35,7 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
             <li class="lsttag"><a href="/cpanel_admin/products/operate/{{ $product->slug }}">Operate</a></li>
             <li class=""><a href="/cpanel_admin/products/specifications/{{ $product->slug }}">Specifications</a></li>
             <li><a href="/cpanel_admin/products/color/{{ $product->slug }}">Color</a></li>
+            <li><a href="/cpanel_admin/products/price/{{ $product->slug }}">Price</a></li>
           </ul>   
           
         </div>
@@ -85,7 +86,13 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
             <input type="text" name="price" value="{{ $product->price }}"/><br/>
             
             <b>Parent</b><br/>
-            <input type="text" name="parent" value="{{ $product->parent }}"/><br/>
+            <select name="parent">
+                @foreach($vehicles as $vehicle)
+                <option @if($vehicle->slug== $product->parent) selected @endif value="{{ $vehicle->slug }}">{{ $vehicle->name }}</option>
+                @endforeach
+            </select>
+            <br/>
+            <br/>
             
             <b>Description</b><br/>
             <textarea id="content" name="description">{{ $product->description }}</textarea>

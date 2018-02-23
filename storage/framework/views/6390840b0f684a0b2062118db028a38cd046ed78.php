@@ -1,4 +1,4 @@
-@php
+<?php
 $service_list= \DB::table('posts')->where('parent', 'dich-vu')->get();
 $vehicles= DB::table('vehicles')->get();
 $products= \DB::table('products')->get();
@@ -6,12 +6,12 @@ foreach($vehicles as $vehicle) {
   $vehicle->product= $products->where('parent', $vehicle->slug);
 }
 
-@endphp
+?>
 
 <!DOCTYPE html>
 <html lang="en-US"  xmlns:fb="http://www.facebook.com/2008/fbml"><!--<![endif]-->
 <head>
-@include('frontend.layouts.seo')
+<?php echo $__env->make('frontend.layouts.seo', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 </head>    
 <body class="">
 <script language="javascript">
@@ -29,20 +29,20 @@ foreach($vehicles as $vehicle) {
     <div id="wrapper_main">
             
       <!--end #banner_main-->
-     @include('frontend.layouts.main_menu')
+     <?php echo $__env->make('frontend.layouts.main_menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
             <!--end #main_menu-->
             
             <a class="show-menumb-icon" href="#menu-mb-ll"><span><i class="fa fa-bars"></i> Menu</span></a>
             
-      @include('frontend.layouts.aside')
+      <?php echo $__env->make('frontend.layouts.aside', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
       <div class="notaside">
       <div class="hotlinepanel" style="position: fixed"><p><i class="fa fa-phone-square" aria-hidden="true"></i>
         <a href="tel:01219006066">0121 900 6066</a> - <a href="tel:0976848707">097 68 48 707</a>
       </p></div>
 
-      @yield('content')
+      <?php echo $__env->yieldContent('content'); ?>
 
-      @include('frontend.layouts.footer')	        
+      <?php echo $__env->make('frontend.layouts.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>	        
       </div>
       
 <nav id="menu-mb-ll">
@@ -62,15 +62,15 @@ foreach($vehicles as $vehicle) {
 </li>
      <li class=" has-sub"><a href='/san-pham.html' ><span>Xe mới</span></a>
 <ul>
-@foreach($vehicles as $vehicle)
-<li><span>{{ $vehicle->name }}</span>
+<?php $__currentLoopData = $vehicles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $vehicle): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+<li><span><?php echo e($vehicle->name); ?></span>
 <ul>
-  @foreach($vehicle->product as $row)
-  <li><a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}"><i class="fa fa-angle-right" aria-hidden="true"></i> {{$row->name}}</a></li>
-  @endforeach
+  <?php $__currentLoopData = $vehicle->product; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+  <li><a href="<?php echo e(route('product_details', ['slug'=> $row->slug, 'id'=> $row->id])); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i> <?php echo e($row->name); ?></a></li>
+  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </ul>
 </li>
-@endforeach
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </ul>
 
      </li>
@@ -78,9 +78,9 @@ foreach($vehicles as $vehicle) {
      </li>
      <li class=" has-sub"><a href='/dich-vu.html' ><span>Dịch vụ</span></a>
      <ul >
-     @foreach($service_list as $row)
-<li><a href="dich-vu/{{ $row->slug }}-{{ $row->id }}.html"><i class="fa fa-angle-right" aria-hidden="true"></i> {{ $row->name }}</a></li>
-@endforeach
+     <?php $__currentLoopData = $service_list; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+<li><a href="dich-vu/<?php echo e($row->slug); ?>-<?php echo e($row->id); ?>.html"><i class="fa fa-angle-right" aria-hidden="true"></i> <?php echo e($row->name); ?></a></li>
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </ul>     
      </li>
      
@@ -141,7 +141,7 @@ foreach($vehicles as $vehicle) {
   });
 </script>
 
-@include('frontend.layouts.facebook')
+<?php echo $__env->make('frontend.layouts.facebook', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <style type="text/css">
 
 </style>

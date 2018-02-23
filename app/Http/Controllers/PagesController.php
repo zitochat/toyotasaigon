@@ -351,12 +351,15 @@ $headers = $headers . "From:" . $from;
         return view('frontend.pages.products', compact(['products']));
     }
 
-    //du-toan-chi-phi.html
-    public function getPriceIndex()
+    //du-toan-chi-phi
+    public function getPriceIndex(Request $request)
     {
         SEO::setTitle('Dự toán chi phí');
+        
+        $vehicles= DB::table('vehicles')->get();
+        $slug= $request->get('slug');
 
-        return view('frontend.pages.price');
+        return view('frontend.pages.price', compact(['vehicles', 'slug']));
     }
 
     //ajax/product_slider.php
@@ -483,4 +486,42 @@ $headers = $headers . "From:" . $from;
     {
         return view('frontend.pages.email');
     }
+
+    //ve-chung-toi
+    public function getAboutDetailIndex()
+    {
+        return view('frontend.pages.about_detail');
+    }
+
+    //ajax_vehicles.php
+    public function AjaxVehiclesIndex(Request $request)
+    {
+        $slug= $request->input('slug');
+
+        $products= DB::table('products')->where('parent', $slug)->get();
+
+        return view('frontend.pages.ajax_vehicles', compact(['products']));
+    }
+
+    //ajax_price.php
+    public function AjaxPriceIndex(Request $request)
+    {
+        $bool= false;
+
+        $slug= $request->input('slug');
+
+        if($price_data= DB::table('price_data')->where('loai_xe', $slug)->first()) {
+            $product= DB::table('products')->where('slug', $slug)->first();
+            $p= $price_data;
+
+            $total= ($p->gia_xe + ($p->gia_xe * $p->muc_phi / 100) + $p->dang_ky + $p->dang_kiem + $p->duong_bo + $p->bao_hiem);
+            
+            return view('frontend.pages.price_data', compact(['price_data', 'product', 'bool', 'total']));
+        } else {
+            return '<b>Không tìm thấy dữ liệu</b>';
+        }
+
+        
+    }
+
 }

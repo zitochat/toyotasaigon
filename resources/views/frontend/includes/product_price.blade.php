@@ -15,6 +15,6 @@ $prices= DB::table('products')->where('parent', $parent->slug)->get();
         
           <h6 class="title-prdetail">Muốn sỡ hữu ngay!</h6>
           <p class="title-desc">Liên hệ với chúng tôi để biết thêm chi tiết</p>
-          <a href="du-toan-chi-phi/keyword=0" class="dutoanlink"><img src="images/dutoan.png" alt="dutoan"></a>
+        <a href="du-toan-chi-phi?slug={{ $row->parent }}" class="dutoanlink"><img src="images/dutoan.png" alt="dutoan"></a>
     </div>
 </div>

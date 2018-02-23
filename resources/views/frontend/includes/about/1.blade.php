@@ -1,0 +1,17 @@
+<p style="text-align: justify; margin-left: 40px;">Công ty ô tô Toyota Việt Nam (TMV) được thành lập vào tháng 9 năm 1995, là liên doanh với số vốn đầu tư ban đầu là 89,6 triệu USD từ Tập đoàn Toyota Nhật Bản (70%), Tổng công ty Máy Động Lực và Máy Nông Nghiệp - VEAM (20%) và Công ty TNHH KUO Singapore (10%).</p>
+
+<p style="text-align: center;"><img alt="" src="http://www.toyotavn.com.vn/uploads/editor/images/N%E1%BB%99i%20%C4%91%E1%BB%8Ba%20h%C3%B3a%20v%C3%A0%20xu%E1%BA%A5t%20kh%E1%BA%A9u/Toyota_Vietnam.jpg" style="width: 740px; height: 168px;" /></p>
+
+<p style="text-align: justify; margin-left: 40px;">Là một trong những liên doanh ô tô có mặt đầu tiên tại thị trường Việt Nam, TMV luôn nỗ lực phát triển bền vững và cùng Việt Nam “Tiến tới tương lai”. TMV đã, đang và sẽ không ngừng cung cấp những sản phẩm có chất lượng cao và dịch vụ sau bán hàng hoàn hảo nhằm mang đến sự hài lòng cao nhất cho khách hàng, cũng như đóng góp tích cực cho sự phát triển của ngành công nghiệp ô tô và đất nước Việt Nam.</p>
+
+<p style="text-align: justify; margin-left: 40px;">Kể từ khi thành lập đến nay, TMV đã không ngừng lớn mạnh và liên tục phát triển không chỉ về quy mô sản xuất, mà cả doanh số bán hàng. Hiện tại, TMV luôn giữ vị trí dẫn đầu trên thị trường ô tô Việt Nam với sản lượng nhà máy của công ty đạt trên 30.000 xe/năm (theo 2 ca làm việc). Doanh số bán cộng dồn của TMV đạt trên 305.799 chiếc, và các sản phẩm đều chiếm thị phần lớn trên thị trường. Từ 11 nhân viên trong ngày đầu thành lập, tới nay số lượng cán bộ công nhân viên của công ty đã lên tới hơn 1.900 người và hơn 6.000 nhân viên làm việc tại hệ thống 41 đại lý/chi nhánh đại lý và Trạm dịch vụ ủy quyền Toyota phủ rộng khắp trên cả nước.</p>
+
+<p style="text-align: center;"><img alt="" src="http://www.toyotavn.com.vn/uploads/editor/images/N%E1%BB%99i%20%C4%91%E1%BB%8Ba%20h%C3%B3a%20v%C3%A0%20xu%E1%BA%A5t%20kh%E1%BA%A9u/Nha_may_Toyota(2).jpg" style="width: 400px; height: 266px;" /></p>
+
+<p style="text-align: justify; margin-left: 40px;">Bên cạnh các hoạt động sản xuất kinh doanh, TMV luôn nỗ lực đóng góp tích cực cho Ngân sách Nhà nước qua việc hoàn thành tốt công tác nộp thuế, cũng như góp phần thúc đẩy sự phát triển bền vững của cộng đồng và xã hội Việt Nam với nhiều hoạt động dài hơi, thiết thực và có ý nghĩa.</p>
+
+<p style="text-align: center;"><img alt="" src="http://www.toyotavn.com.vn/uploads/editor/images/N%E1%BB%99i%20%C4%91%E1%BB%8Ba%20h%C3%B3a%20v%C3%A0%20xu%E1%BA%A5t%20kh%E1%BA%A9u/Giai_thuong_Rong_Vang.jpg" style="width: 400px; height: 266px;" /></p>
+
+<p style="text-align: justify; margin-left: 40px;"><span style="text-align: justify; line-height: 1.6em;">Trong suốt lịch sử hình thành và phát triển, với sự nỗ lực không ngừng của toàn bộ nhân viên TMV, đại lý, nhà cung cấp và đối tác, TMV đã đạt được nhiều thành tựu to lớn &amp; liên tục phát triển lớn mạnh, hoàn thành sứ mệnh đối với khách hàng, đóng góp đáng kể cho nghành công nghiệp ô tô và xã hội Việt Nam. Với những thành tích đạt được, TMV đã vinh dự được Chính phủ Việt Nam trao tặng Huân chương lao động hạng nhì và được coi là một trong những doanh nghiệp có vốn đầu tư nước ngoài hoạt động thành công nhất tại Việt Nam.</span></p>
+
+<p style="text-align: justify; margin-left: 40px;"><a href="http://www.toyotavn.com.vn/uploads/editor/files/Toyota_Long%20Thanh%20va%20Nhiet%20Huyet.pdf"><span style="color:#0000FF;">Cuốn sách “20 năm - Lòng thành và Nhiệt huyết” ghi dấu chặng đường 20 năm của Toyota Việt Nam.</span></a></p>

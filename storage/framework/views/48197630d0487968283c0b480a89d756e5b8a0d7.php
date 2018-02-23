@@ -1,6 +1,4 @@
-@extends('frontend.layouts.master')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 <div class="container main-container clearfix">
         <section id="main">
             <div class="">
@@ -13,9 +11,9 @@
                             <form name="chiphidutoan" id="chiphidutoan" action="" method="post">
                                 <div class="form-group">
                                     <select name="xe" id="xe" class="form-control frmchiphi">
-                                    @foreach($vehicles as $vehicle)
-                                    <option @if($vehicle->slug== $slug) selected @endif value="{{ $vehicle->slug }}">{{ $vehicle->name }}</option>
-                                    @endforeach
+                                    <?php $__currentLoopData = $vehicles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $vehicle): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <option <?php if($vehicle->slug== $slug): ?> selected <?php endif; ?> value="<?php echo e($vehicle->slug); ?>"><?php echo e($vehicle->name); ?></option>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                     </select>
                                 </div>
                             <div id="xe_info">
@@ -60,11 +58,11 @@ $('#dongxe').html(data);
 });
 });
 
-@if(!empty($slug))
-$.get('/ajax_vehicles.php', {slug: '{{ $slug }}'}, function(data){
+<?php if(!empty($slug)): ?>
+$.get('/ajax_vehicles.php', {slug: '<?php echo e($slug); ?>'}, function(data){
 $('#dongxe').html(data);
 });
-@endif
+<?php endif; ?>
 
 
 
@@ -82,4 +80,5 @@ $("#tinhchiphi").click(function() {
 });
 
 </script>
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

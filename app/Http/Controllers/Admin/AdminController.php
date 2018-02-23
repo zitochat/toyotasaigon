@@ -10,6 +10,8 @@ use App\Models\Sliders;
 use App\Models\Products;
 use App\Models\Items;
 use App\Models\Colors;
+use App\Models\Specifications;
+use App\Models\Prices;
 
 class AdminController extends Controller
 {
@@ -275,8 +277,9 @@ class AdminController extends Controller
     {
         if($product= DB::table('products')->where('id', $id)->first()) {
             $action= 'edit';
+            $vehicles= DB::table('vehicles')->get();
 
-            return view('backend.pages.products_edit', compact(['id', 'product', 'action']));
+            return view('backend.pages.products_edit', compact(['id', 'product', 'action', 'vehicles']));
         } else {
             return \Redirect::to('cpanel_admin/products');
         }
@@ -314,8 +317,9 @@ class AdminController extends Controller
         $product= new Products();
         $product->price= '1 000 000';
         $action= 'add';
+        $vehicles= DB::table('vehicles')->get();
 
-        return view('backend.pages.products_edit', compact(['id', 'product', 'action']));
+        return view('backend.pages.products_edit', compact(['id', 'product', 'action', 'vehicles']));
     }
 
     //cpanel/province
@@ -469,5 +473,108 @@ class AdminController extends Controller
         }
     }
 
+    /**
+     * Specifications
+     */
 
+     //cpanel/products/specifications/{slug}
+    public function getProductItemSpecifications($slug)
+    {
+
+        $datas= DB::table('product_specifications')->where('product', $slug)->get();
+
+        return view('backend.pages.product_items_specifications', compact(['slug', 'datas']));
+    }
+
+    //cpanel/products/specifications/{slug}/del/{id}
+    public function getProductItemSpecificationsDel($slug, $id)
+    {
+
+        DB::table('product_specifications')->where('id', $id)->delete();
+
+        return redirect()->back();
+    }
+
+    //cpanel/products/specifications/{slug}/edit/{id}
+    public function getProductItemSpecificationsEdit($slug, $id)
+    {
+
+        $row= DB::table('product_specifications')->where('id', $id)->get()->first();
+        $action= 'edit';
+
+        return view('backend.pages.product_items_specifications_edit', compact(['slug', 'row', 'id', 'action']));
+    }
+
+    //cpanel/products/specifications/{slug}/add
+    public function getProductItemSpecificationsAdd($slug)
+    {
+
+        $row= new Specifications();
+        $action= 'add';
+
+        return view('backend.pages.product_items_specifications_edit', compact(['slug', 'row', 'id', 'action']));
+    }
+
+
+    //cpanel/products/specifications/{slug}/post/
+    public function getProductItemSpecificationsrPost($slug, Request $request)
+    {
+        $action= $request->input('action');
+        $id= $request->input('item_id');
+
+        $data = $request->only([
+            'name',
+            'content',
+        ]);
+
+        $data['product']= $slug;
+        
+        if($action== 'edit') {
+            DB::table('product_specifications')->where('id', $id)->update($data);
+            return redirect()->back();
+        } else {
+            $id= DB::table('product_specifications')->insertGetId($data);
+            return \Redirect::to('cpanel_admin/products/specifications/' . $slug );
+        }
+    }
+
+    //cpanel/products/price/{slug}
+    public function getProductItemPrice($slug)
+    {
+        
+
+        if($price_data= DB::table('price_data')->where('loai_xe', $slug)->first()) {
+
+        } else {
+            $price_data= new Prices();
+            $price_data->muc_phi= '10';
+        }
+        return view('backend.pages.price', compact(['price_data', 'slug']));
+    }
+
+    //cpanel/products/price/{slug}/post:post
+    public function getProductItemPricePost($slug, Request $request)
+    {
+        $data= $request->only([
+            'gia_xe',
+            'muc_phi',
+            'dang_kiem',
+            'dang_ky',
+            'duong_bo',
+            'bao_hiem',
+            'tong'
+        ]);
+
+        if($row= DB::table('price_data')->where('loai_xe', $slug)->first()) {
+            //update
+            DB::table('price_data')->where('loai_xe', $slug)->update($data);
+            return \Redirect::to('/cpanel_admin/products/price/' . $slug );
+        } else {
+            //insert
+            $data['loai_xe']= $slug;
+            DB::table('price_data')->insert($data);
+
+            return \Redirect::to('cpanel_admin/products/price/' . $slug );
+        }
+    }
 }
