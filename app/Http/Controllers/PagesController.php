@@ -356,7 +356,7 @@ $headers = $headers . "From:" . $from;
     {
         SEO::setTitle('Dự toán chi phí');
         
-        $vehicles= DB::table('vehicles')->get();
+        $vehicles= DB::table('vehicles')->orderBy('slug')->get();
         $slug= $request->get('slug');
 
         return view('frontend.pages.price', compact(['vehicles', 'slug']));
