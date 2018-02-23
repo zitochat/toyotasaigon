@@ -515,7 +515,7 @@ $headers = $headers . "From:" . $from;
             $product= DB::table('products')->where('slug', $slug)->first();
             $p= $price_data;
 
-            $total= ($p->gia_xe + ($p->gia_xe * $p->muc_phi / 100) + $p->dang_ky + $p->dang_kiem + $p->duong_bo + $p->bao_hiem);
+            $total= ($p->gia_xe + ($p->gia_xe * $p->muc_phi / 100) + $p->dang_ky + $p->dang_kiem + $p->duong_bo + $p->bao_hiem + $p->tong);
             
             return view('frontend.pages.price_data', compact(['price_data', 'product', 'bool', 'total']));
         } else {
