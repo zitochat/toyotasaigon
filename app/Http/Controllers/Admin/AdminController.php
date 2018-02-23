@@ -9,6 +9,7 @@ use App\Models\Posts;
 use App\Models\Sliders;
 use App\Models\Products;
 use App\Models\Items;
+use App\Models\Colors;
 
 class AdminController extends Controller
 {
@@ -404,5 +405,69 @@ class AdminController extends Controller
             return \Redirect::to('cpanel_admin/products/' . $item . '/' . $slug );
         }
     }
+
+    //cpanel/products/color/{slug}
+    public function getProductItemColor($slug)
+    {
+
+        $datas= DB::table('product_color')->where('product', $slug)->get();
+
+        return view('backend.pages.product_items_color', compact(['slug', 'datas']));
+    }
+
+    //cpanel/products/color/{slug}/del/{id}
+    public function getProductItemColorDel($slug, $id)
+    {
+
+        DB::table('product_color')->where('id', $id)->delete();
+
+        return redirect()->back();
+    }
+
+    //cpanel/products/color/{slug}/edit/{id}
+    public function getProductItemColorEdit($slug, $id)
+    {
+
+        $row= DB::table('product_color')->where('id', $id)->get()->first();
+        $action= 'edit';
+        $colors= DB::table('colors')->get();
+
+        return view('backend.pages.product_items_color_edit', compact(['slug', 'row', 'id', 'action', 'colors']));
+    }
+
+    //cpanel/products/color/{slug}/add
+    public function getProductItemColorAdd($slug)
+    {
+
+        $row= new Colors();
+        $action= 'add';
+        $colors= DB::table('colors')->get();
+
+        return view('backend.pages.product_items_color_edit', compact(['slug', 'row', 'id', 'action', 'colors']));
+    }
+
+
+    //cpanel/products/color/{slug}/post/
+    public function getProductItemColorPost($slug, Request $request)
+    {
+        $action= $request->input('action');
+        $id= $request->input('item_id');
+
+        $data = $request->only([
+            'color_id',
+            'image',
+        ]);
+
+        $data['product']= $slug;
+        
+        if($action== 'edit') {
+            DB::table('product_color')->where('id', $id)->update($data);
+            return redirect()->back();
+        } else {
+            $id= DB::table('product_color')->insertGetId($data);
+            return \Redirect::to('cpanel_admin/products/color/' . $slug );
+        }
+    }
+
 
 }

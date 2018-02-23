@@ -69,7 +69,7 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         //product item
         $router->get('/products/{item}/{slug}', 'AdminController@getProductItem')
         ->where([
-            'item'=> '(outbuilding|furniture|safe|operate)',
+            'item'=> '(outbuilding|furniture|safe|operate|accessories)',
             'slug'  => '[A-z-0-9-]+',
             ])
         ->name('product_items');
@@ -78,7 +78,7 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         //product item del
         $router->get('/products/{item}/{slug}/del/{id}', 'AdminController@getProductItemDel')
         ->where([
-            'item'=> '(outbuilding|furniture|safe|operate)',
+            'item'=> '(outbuilding|furniture|safe|operate|accessories)',
             'slug'=> '[A-z-0-9-]+',
             'id'=> '[0-9]+'
             ])
@@ -87,7 +87,7 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         //product item edit
         $router->get('/products/{item}/{slug}/edit/{id}', 'AdminController@getProductItemEdit')
         ->where([
-            'item'=> '(outbuilding|furniture|safe|operate)',
+            'item'=> '(outbuilding|furniture|safe|operate|accessories)',
             'slug'=> '[A-z-0-9-]+',
             'id'=> '[0-9]+'
             ])
@@ -96,7 +96,7 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         //product item add
         $router->get('/products/{item}/{slug}/add', 'AdminController@getProductItemAdd')
         ->where([
-            'item'=> '(outbuilding|furniture|safe|operate)',
+            'item'=> '(outbuilding|furniture|safe|operate|accessories)',
             'slug'=> '[A-z-0-9-]+'
             ])
         ->name('product_items_add');
@@ -104,10 +104,48 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         //product item post
         $router->post('/products/{item}/{slug}/post', 'AdminController@getProductItemPost')
         ->where([
-            'item'=> '(outbuilding|furniture|safe|operate)',
+            'item'=> '(outbuilding|furniture|safe|operate|accessories)',
             'slug'=> '[A-z-0-9-]+'
             ])
         ->name('product_items_post');
+
+        //product color
+        $router->get('/products/color/{slug}', 'AdminController@getProductItemColor')
+        ->where([
+            'slug'  => '[A-z-0-9-]+',
+            ])
+        ->name('product_items_color');
+
+        //product item color del
+        $router->get('/products/color/{slug}/del/{id}', 'AdminController@getProductItemColorDel')
+        ->where([
+            'slug'=> '[A-z-0-9-]+',
+            'id'=> '[0-9]+'
+            ])
+        ->name('product_items_color_del');
+
+        //product item color edit
+        $router->get('/products/color/{slug}/edit/{id}', 'AdminController@getProductItemColorEdit')
+        ->where([
+            'slug'=> '[A-z-0-9-]+',
+            'id'=> '[0-9]+'
+            ])
+        ->name('product_items_color_edit');
+
+        //product item color add
+        $router->get('/products/color/{slug}/add', 'AdminController@getProductItemColorAdd')
+        ->where([
+            'slug'=> '[A-z-0-9-]+',
+            ])
+        ->name('product_items_color_add');
+
+
+        //product item color post
+        $router->post('/products/color/{slug}/post', 'AdminController@getProductItemColorPost')
+        ->where([
+            'slug'=> '[A-z-0-9-]+'
+            ])
+        ->name('product_items_color_post');
 
     });
 });

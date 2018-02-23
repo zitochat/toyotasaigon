@@ -31,6 +31,7 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
             <li class=""><a href="/cpanel_admin/products/outbuilding/{{ $product->slug }}">Outbuilding</a></li>
             <li class=""><a href="/cpanel_admin/products/furniture/{{ $product->slug }}">Furniture</a></li>
             <li class=""><a href="/cpanel_admin/products/safe/{{ $product->slug }}">Safe</a></li>
+            <li class=""><a href="/cpanel_admin/products/accessories/{{ $product->slug }}">Accessories</a></li>
             <li class="lsttag"><a href="/cpanel_admin/products/operate/{{ $product->slug }}">Operate</a></li>
             <li class=""><a href="/cpanel_admin/products/specifications/{{ $product->slug }}">Specifications</a></li>
             <li><a href="/cpanel_admin/products/color/{{ $product->slug }}">Color</a></li>
