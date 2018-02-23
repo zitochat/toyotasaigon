@@ -367,9 +367,10 @@ $headers = $headers . "From:" . $from;
     {
         $id= $request->input('id');
         if(isset($id)) {
-            $color= DB::table('product_color')->where('id', $id)->first();
+            $color_data= DB::table('colors')->where('id', $id)->first();
+            $colors= DB::table('product_color')->where('color_id', $id)->first();
 
-            return view('frontend.pages.product_slider', compact(['color']));
+            return view('frontend.pages.product_slider', compact(['colors', 'color_data']));
         }
         
     }
