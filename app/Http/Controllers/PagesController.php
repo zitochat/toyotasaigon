@@ -317,13 +317,13 @@ $headers = $headers . "From:" . $from;
 
         if(isset($product)) {
             $parent= DB::table('vehicles')->where('slug', $product->parent)->first();
-            $colors= DB::table('product_color')->where('product', $product->slug)->get();
-            $outbuilding= DB::table('product_outbuilding')->where('product', $product->slug)->get();
-            $furniture= DB::table('product_furniture')->where('product', $product->slug)->get();
-            $safe= DB::table('product_safe')->where('product', $product->slug)->get();
-            $operate= DB::table('product_operate')->where('product', $product->slug)->get();
-            $accessories= DB::table('product_accessories')->where('product', $product->slug)->get();
-            $specifications= DB::table('product_specifications')->where('product', $product->slug)->get();
+            $colors= DB::table('product_color')->where('product', $product->parent)->get();
+            $outbuilding= DB::table('product_outbuilding')->where('product', $product->parent)->get();
+            $furniture= DB::table('product_furniture')->where('product', $product->parent)->get();
+            $safe= DB::table('product_safe')->where('product', $product->parent)->get();
+            $operate= DB::table('product_operate')->where('product', $product->parent)->get();
+            $accessories= DB::table('product_accessories')->where('product', $product->parent)->get();
+            $specifications= DB::table('product_specifications')->where('product', $product->parent)->get();
 
             return view('frontend.pages.product_details', compact([
                 'product',

@@ -146,7 +146,6 @@ foreach($vehicles as $vehicle) {
 
 @include('frontend.layouts.facebook')
 <style type="text/css">
-
 </style>
     </body>
 </html>

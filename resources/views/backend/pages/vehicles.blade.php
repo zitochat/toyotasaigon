@@ -16,7 +16,10 @@
     <td>{{ $row->id }}</td>
     <td>{{ $row->slug }}</td>
     <td>{{ $row->name }}</td>
-    <td><a class="btn-sm btn-danger" href="/cpanel_admin/vehicles/del/{{ $row->id }}">[x]</a></td>
+    <td>
+    <!--<a class="btn-sm btn-danger" href="/cpanel_admin/vehicles/del/{{ $row->id }}">[x]</a>-->
+        <a class="btn-sm btn-success" href="/cpanel_admin/vehicles/edit/{{ $row->id }}">[E]</a>
+    </td>
 @endforeach
         </tbody>
 <table>

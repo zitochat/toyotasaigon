@@ -153,6 +153,32 @@ class AdminController extends Controller
         }
     }
 
+    //cpanel/vehicles/edit/{id}
+    public function getVehiclesEdit($id)
+    {
+        if($vehicle= DB::table('vehicles')->where('id', $id)->first()) {
+            $action= 'edit';
+            return view('backend.pages.vehicles_edit', compact(['vehicle', 'id', 'action']));
+        } else {
+            return redirect()->back();
+        }
+        
+    }
+
+    //cpanel/vehicels/post/{id}
+    public function getVehiclesPost(Request $request, $id)
+    {
+        $data= $request->only([
+            'slug',
+            'name'
+        ]);
+        $action= $request->get('action');
+
+        if($action== 'edit') {
+            DB::table('vehicles')->where('id', $id)->update($data);
+            return redirect()->back();
+        }
+    }
 
     //cpanel/sliders
     public function getSlidersIndex()
@@ -373,7 +399,7 @@ class AdminController extends Controller
         $row= DB::table('product_' . $item)->where('id', $id)->get()->first();
         $action= 'edit';
 
-        $id_product= DB::table('products')->where('slug', $slug)->first()->id;
+        $id_product= DB::table('vehicles')->where('slug', $slug)->first()->id;
 
         return view('backend.pages.product_items_edit', compact(['id_product', 'item', 'slug', 'row', 'id', 'action']));
     }
@@ -386,7 +412,7 @@ class AdminController extends Controller
 
         $action= 'add';
 
-        $id_product= DB::table('products')->where('slug', $slug)->first()->id;
+        $id_product= DB::table('vehicles')->where('slug', $slug)->first()->id;
 
         return view('backend.pages.product_items_edit', compact(['id_product', 'item', 'slug', 'row', 'id', 'action']));
     }
@@ -522,7 +548,7 @@ class AdminController extends Controller
 
 
     //cpanel/products/specifications/{slug}/post/
-    public function getProductItemSpecificationsrPost($slug, Request $request)
+    public function getProductItemSpecificationsPost($slug, Request $request)
     {
         $action= $request->input('action');
         $id= $request->input('item_id');

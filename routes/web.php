@@ -42,6 +42,9 @@ Route::group(['middleware' => ['auth']], function () use ($router) {
         //vehicles
         $router->get('vehicles', 'AdminController@getVehiclesIndex');
         $router->get('vehicles/del/{id}', 'AdminController@getVehiclesDel')->where(['id'=> '[0-9]+']);
+        $router->get('vehicles/edit/{id}', 'AdminController@getVehiclesEdit')->where(['id'=> '[0-9]+']);
+        $router->post('vehicles/post/{id}', 'AdminController@getVehiclesPost')->where(['id'=> '[0-9]+']);
+
         //sliders
         $router->get('sliders', 'AdminController@getSlidersIndex');
         $router->get('sliders/del/{id}', 'AdminController@getSlidersDel')->where(['id'=> '[0-9]+']);

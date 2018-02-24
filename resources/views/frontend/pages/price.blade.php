@@ -5,6 +5,7 @@
         <section id="main">
             <div class="">
                 <p class="title-main ">Dự toán chi phí</p>
+
                 <div class="sanpham clearfix">
     
     
@@ -32,22 +33,12 @@
                         </form>
                     </div>
                  </div>
-                    <div class="du_toan_r col-sm-12 col-md-6">
-                        <div id="priceright" class="PriceRight">
-                                    <div class="PriceRightIn"> 
-           
-                        
-                  
-                          <img src="images/chi-phi-du-tinh-resize1.jpg">
                     
-                
-                
-                </div>
-                            </div>
-                            
-                    </div>
                    
                 </div>
+<br/>
+<br/>
+      <img src="images/chi-phi-du-tinh-resize1.jpg" style="max-width: 100%"/>
                 </div>
         </section>
             </div>

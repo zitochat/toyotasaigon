@@ -14,32 +14,7 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
 ?>
 
 <?php $__env->startSection('content'); ?>
-<link rel="stylesheet" href="http://toyotasaigon.com/cssmain/style.css" />
-<?php if($action=='edit'): ?>
 
-
-
-
-
-
-
-<div class="tag-hong" id="gioithieuchung">
-        <div class="container">
-          <ul class="clearfix" id="chode">
-            <li class=""><a href="/cpanel_admin/products/outbuilding/<?php echo e($product->slug); ?>">Outbuilding</a></li>
-            <li class=""><a href="/cpanel_admin/products/furniture/<?php echo e($product->slug); ?>">Furniture</a></li>
-            <li class=""><a href="/cpanel_admin/products/safe/<?php echo e($product->slug); ?>">Safe</a></li>
-            <li class=""><a href="/cpanel_admin/products/accessories/<?php echo e($product->slug); ?>">Accessories</a></li>
-            <li class="lsttag"><a href="/cpanel_admin/products/operate/<?php echo e($product->slug); ?>">Operate</a></li>
-            <li class=""><a href="/cpanel_admin/products/specifications/<?php echo e($product->slug); ?>">Specifications</a></li>
-            <li><a href="/cpanel_admin/products/color/<?php echo e($product->slug); ?>">Color</a></li>
-            <li><a href="/cpanel_admin/products/price/<?php echo e($product->slug); ?>">Price</a></li>
-          </ul>   
-          
-        </div>
-        
-      </div>
-<?php endif; ?>
 <div style="padding: 10px">
         <form action='/cpanel_admin/products/post' method="post">
             <?php echo e(csrf_field()); ?>

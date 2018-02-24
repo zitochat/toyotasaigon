@@ -247,6 +247,9 @@
     background: #fff;
     display: none;
 }
+img {
+  max-width: 99%;
+}
 </style>
 
 

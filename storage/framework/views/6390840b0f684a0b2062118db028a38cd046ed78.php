@@ -146,7 +146,6 @@ foreach($vehicles as $vehicle) {
 
 <?php echo $__env->make('frontend.layouts.facebook', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <style type="text/css">
-
 </style>
     </body>
 </html>

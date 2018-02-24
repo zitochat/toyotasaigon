@@ -14,7 +14,7 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
 ?>
 
 <?php $__env->startSection('content'); ?>
-<a href="/cpanel_admin/products/edit/<?php echo e($id_product); ?>" style="margin-left: 5px;" class="btn btn-primary">Back to Product</a><br/>
+<a href="/cpanel_admin/vehicles/edit/<?php echo e($id_product); ?>" style="margin-left: 5px;" class="btn btn-primary">Back to Vehicle</a><br/>
 <div style="padding: 10px">
     <form action='/cpanel_admin/products/<?php echo e($item); ?>/<?php echo e($slug); ?>/post' method="post">
             <?php echo e(csrf_field()); ?>

@@ -11,7 +11,8 @@
             <div class="car">
                 <a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}" title="{{ $row->name }}"><p class="carname">{{ $row->name }}</p></a>
                 <p class="carprice">{{ $row->price }}</p>
-                <a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}" title="{{ $row->name }}"><img src="{{ $row->thumb }}" class="{{ $row->name }}"></a>
+                <a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}" title="{{ $row->name }}">
+                    <img src="{{ $row->thumb }}" class="{{ $row->name }}" style=" max-width: 100%;"></a>
                 <div class="cardesc text-justify">
                 {{ strip_tags($row->description) }}    
                 </div>
