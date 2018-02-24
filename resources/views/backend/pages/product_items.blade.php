@@ -23,7 +23,6 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
                 <th>ID</th>
                 <th>Name</th>
                 <th>Image</th>
-                <th>Thumb</th>
                 <th>Description</th>
                 <th>Typy</th>
                 <th>Action</th>
@@ -35,7 +34,6 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
     <td style="width: 10px">{{ $row->id }}</td>
     <td style="width: 150px">{{ $row->name }}</td>
     <td style="width: 180px"><img src="{{ fix_url($row->image) }}" style="width: 100px; height: 50px"/></td>
-    <td style="width: 180px"><img src="{{ fix_url($row->thumb) }}" style="width: 100px; height: 50px"/></td>
     <td width="60px">{{ str_limit($row->description, 60) }}</td>
     <td>{{ $row->type }}</td>
 

@@ -16,6 +16,7 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
 @endphp
 
 @section('content')
+<a href="/cpanel_admin/products/edit/{{ $id_product }}" style="margin-left: 5px;" class="btn btn-primary">Back to Product</a><br/>
 <div style="padding: 10px">
     <form action='/cpanel_admin/products/{{ $item }}/{{ $slug }}/post' method="post">
             {{ csrf_field() }}
@@ -25,20 +26,6 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
             @endif
             <b>Name</b><br/>
             <input id="name" type="text" name="name" value="{{ $row->name }}"/><br/>
-
-            <b>Thumb</b><br/>
-            <div class="x_content">
-                    <div class="input-group">
-                        <span class="input-group-btn">
-                            <a id="lfm" data-input="thumb" data-preview="holder" class="btn btn-primary">
-                                <i class="fa fa-picture-o"></i> Choose
-                            </a>
-                        </span>
-                        <input id="thumb" value="{{ $row->thumb }}" class="form-control" type="text" name="thumb">
-                    </div>
-                        <img id="holder" src="{{ fix_url($row->thumb) }}" class="img-responsive"  style="width: 240px; height: 150px; padding: 2px; border: 1px solid #eee;">
-                    </div>
-                <br/>
 
                 <b>Image</b><br/>
                 <div class="x_content">

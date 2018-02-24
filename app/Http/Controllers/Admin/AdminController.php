@@ -373,7 +373,9 @@ class AdminController extends Controller
         $row= DB::table('product_' . $item)->where('id', $id)->get()->first();
         $action= 'edit';
 
-        return view('backend.pages.product_items_edit', compact(['item', 'slug', 'row', 'id', 'action']));
+        $id_product= DB::table('products')->where('slug', $slug)->first()->id;
+
+        return view('backend.pages.product_items_edit', compact(['id_product', 'item', 'slug', 'row', 'id', 'action']));
     }
 
     //cpanel/products/{item}/{slug}/add/
@@ -384,7 +386,9 @@ class AdminController extends Controller
 
         $action= 'add';
 
-        return view('backend.pages.product_items_edit', compact(['item', 'slug', 'row', 'id', 'action']));
+        $id_product= DB::table('products')->where('slug', $slug)->first()->id;
+
+        return view('backend.pages.product_items_edit', compact(['id_product', 'item', 'slug', 'row', 'id', 'action']));
     }
 
     //cpanel/products/{item}/{slug}/post/
@@ -395,7 +399,6 @@ class AdminController extends Controller
 
         $data = $request->only([
             'name',
-            'thumb',
             'image',
             'description',
             'type'

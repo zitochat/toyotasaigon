@@ -15,10 +15,9 @@ class CreateProductOutbuildingTable extends Migration
     {
         Schema::create('product_outbuilding', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 100);
+            $table->string('name', 100)->nullable(true);
             $table->string('image', 250);
-            $table->string('thumb', 250);
-            $table->string('description', 300)->nullable(true);
+            $table->string('description', 400)->nullable(true);
             $table->string('type', 20)->default('thumb');
             $table->string('product', 100);
         });
