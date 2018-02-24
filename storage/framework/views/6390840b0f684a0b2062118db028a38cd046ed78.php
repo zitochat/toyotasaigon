@@ -56,14 +56,22 @@ foreach($vehicles as $vehicle) {
     </li>
 <li class=" has-sub"><a><span>Giới thiệu</span></a>
   <ul>
-    <li><a href="/gioi-thieu/ve-toyota-dong-sai-gon-10.html"><span>Về Toyota Đông Sài Gòn</span></a></li>
-    <li><a href="/ve-chung-toi"><span>Về chúng tôi</span></a></li>
+    <li><a href="/ve-chung-toi"><span>Về Toyota Việt Nam</span></a></li>
+    <li><a href="/gioi-thieu/ve-toyota-dong-sai-gon-10.html"><span>Về chúng tôi</span></a></li>
   </ul>
+</li>
+<li class="  xxx"><a href='/san-pham.html'>
+  <span>Tất cả dòng xe</span></a>
 </li>
      <li class=" has-sub"><a href='/san-pham.html' ><span>Xe mới</span></a>
 <ul>
-<?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-<li><a href="<?php echo e(route('product_details', ['slug'=> $product->slug, 'id'=> $product->id])); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i> <?php echo e($product->name); ?></a></li>
+<?php $__currentLoopData = $vehicles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $vehicle): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+<?php
+
+?>
+<?php if($p= $products->where('parent', $vehicle->slug)->first()): ?>
+<li><a href="<?php echo e(route('product_details', ['slug'=> $p->slug, 'id'=> $p->id])); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i> <?php echo e($vehicle->name); ?></a></li>
+<?php endif; ?>
 </li>
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </ul>
