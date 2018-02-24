@@ -298,7 +298,8 @@ class AdminController extends Controller
             'image',
             'description',
             'price',
-            'parent'
+            'parent',
+            'show'
         ]);
         
         if($action== 'edit') {
@@ -316,6 +317,7 @@ class AdminController extends Controller
     {
         $product= new Products();
         $product->price= '1 000 000';
+        $product->show= '0';
         $action= 'add';
         $vehicles= DB::table('vehicles')->get();
 

@@ -22,6 +22,7 @@ class CreateProductsTable extends Migration
             $table->string('price', 15);
             $table->string('description', 400);
             $table->string('parent', 100)->default('other');
+            $table->string('show', 1)->default('0');
         });
     }
 

@@ -35,7 +35,7 @@
                     <p class="title">Chi nhánh Gò Vấp</p>
       <div class="hotlineinfo">
         <p><span>Phone 1:</span> 012 1900 6066</p>
-        <p><span>Phone 2:</span> 097 68 48 707</p>
+        <p><span>Phone 2:</span> 0976 848 707</p>
                     </div>
       
       <p class="trungtamhotro"> Thanks!</p>

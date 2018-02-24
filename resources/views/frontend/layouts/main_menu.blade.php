@@ -1,6 +1,6 @@
 @php
 $service_list= \DB::table('posts')->where('parent', 'dich-vu')->get();
-$products= \DB::table('products')->orderBy('name')->get();
+$products= \DB::table('products')->where('show', '1')->get();
 @endphp
 
 <div id="main_menu" >
@@ -32,7 +32,7 @@ $products= \DB::table('products')->orderBy('name')->get();
         <div class="xe-features">
            <h2 class="text-uppercase">{{ $row->parent }}</h2> 
             <p>Giá từ: <span>{{ $row->price }} VNĐ</span></p>
-          <p class="desc">{{ $row->description }}</p>
+          <p class="desc">{{ strip_tags($row->description) }}</p>
           <ul class="clearfix features-list">
           <li><i class="fa fa-wrench" aria-hidden="true"></i> <a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}#gioithieuchung">Giới thiệu chung</a></li>
           <li><i class="fa fa-wrench" aria-hidden="true"></i> <a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}#dacdiemxe">Đặt điểm nổi bật</a></li>

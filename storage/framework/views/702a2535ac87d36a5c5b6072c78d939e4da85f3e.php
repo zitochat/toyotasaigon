@@ -96,6 +96,13 @@ return '/upload/news/dich-vu-cho-thue-xe-toyota-dong-sai-gon13001.jpg';
             <b>Description</b><br/>
             <textarea id="content" name="description"><?php echo e($product->description); ?></textarea>
             <br/>
+            <b>Show in menu:</b><br/>
+            <select name="show">
+                <option value="1" <?php if($product->show== '1'): ?> selected <?php endif; ?> >Show</option>
+                <option value="0" <?php if($product->show== '0'): ?> selected <?php endif; ?> >Hide</option>
+            </select>
+            <br/>
+            <br/>
             <input type="submit" value="Save"/>
             </form>
 </div>
