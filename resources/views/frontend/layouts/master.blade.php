@@ -1,7 +1,7 @@
 @php
 $service_list= \DB::table('posts')->where('parent', 'dich-vu')->get();
 $vehicles= DB::table('vehicles')->orderBy('slug')->get();
-$products= \DB::table('products')->get();
+$products= \DB::table('products')->orderBy('slug')->get();
 foreach($vehicles as $vehicle) {
   $vehicle->product= $products->where('parent', $vehicle->slug)->sortBy('name');
 }
@@ -62,13 +62,8 @@ foreach($vehicles as $vehicle) {
 </li>
      <li class=" has-sub"><a href='/san-pham.html' ><span>Xe mới</span></a>
 <ul>
-@foreach($vehicles as $vehicle)
-<li><span>{{ $vehicle->name }}</span>
-<ul>
-  @foreach($vehicle->product as $row)
-  <li><a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}"><i class="fa fa-angle-right" aria-hidden="true"></i> {{$row->name}}</a></li>
-  @endforeach
-</ul>
+@foreach($products as $product)
+<li><a href="{{ route('product_details', ['slug'=> $product->slug, 'id'=> $product->id]) }}"><i class="fa fa-angle-right" aria-hidden="true"></i> {{$product->name}}</a></li>
 </li>
 @endforeach
 </ul>
