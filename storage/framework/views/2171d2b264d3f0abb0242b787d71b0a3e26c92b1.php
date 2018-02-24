@@ -9,9 +9,10 @@
             <div class="car">
                 <a href="<?php echo e(route('product_details', ['slug'=> $row->slug, 'id'=> $row->id])); ?>" title="<?php echo e($row->name); ?>"><p class="carname"><?php echo e($row->name); ?></p></a>
                 <p class="carprice"><?php echo e($row->price); ?></p>
-                <a href="<?php echo e(route('product_details', ['slug'=> $row->slug, 'id'=> $row->id])); ?>" title="<?php echo e($row->name); ?>"><img src="<?php echo e($row->thumb); ?>" class="<?php echo e($row->name); ?>"></a>
+                <a href="<?php echo e(route('product_details', ['slug'=> $row->slug, 'id'=> $row->id])); ?>" title="<?php echo e($row->name); ?>">
+                    <img src="<?php echo e($row->thumb); ?>" class="<?php echo e($row->name); ?>" style=" max-width: 100%;"></a>
                 <div class="cardesc text-justify">
-                <?php echo e(strip_tags($row->description)); ?>    
+                <?php echo e(str_limit(strip_tags($row->description), 100)); ?>    
                 </div>
                 <div class="carbtn">
                 <a href="du-toan-chi-phi?slug=<?php echo e($row->parent); ?>" class="cardtcp">Dự toán chi phí</a>

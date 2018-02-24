@@ -3396,8 +3396,6 @@ p.dkbtn span{display:inline-block;border-radius: 50%;border: 1px solid #fff;padd
 }
 .xe-box{
   display: inline-block;
-  width: 19%;
-  float: left;
   position: static;
   margin: 20px 0;
   margin-right: 1%;
@@ -3853,7 +3851,9 @@ table,td{/* max-width:100% !important; *//* width:100% !important; */}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f2f2',GradientType=0 ); /* IE6-9 */
 }
 
-.car {}
+.car {
+  width: 210px;
+}
 .carname{
     text-align: center;
     margin: 8px 0 0 0;
@@ -3871,11 +3871,13 @@ color:#f00;    font-weight: bold;
     /* white-space: nowrap; */
     overflow: hidden;
     font-size: 13px;
-    height: 60;
+    height: 60px;
     color: #000;
 }
 .carbtn{
-    margin: 16px 0 14px 0;
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
 }
 .cardtcp{
     background: #787878;

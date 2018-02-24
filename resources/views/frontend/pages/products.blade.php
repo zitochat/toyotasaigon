@@ -14,7 +14,7 @@
                 <a href="{{ route('product_details', ['slug'=> $row->slug, 'id'=> $row->id]) }}" title="{{ $row->name }}">
                     <img src="{{ $row->thumb }}" class="{{ $row->name }}" style=" max-width: 100%;"></a>
                 <div class="cardesc text-justify">
-                {{ strip_tags($row->description) }}    
+                {{ str_limit(strip_tags($row->description), 100) }}    
                 </div>
                 <div class="carbtn">
                 <a href="du-toan-chi-phi?slug={{ $row->parent }}" class="cardtcp">Dự toán chi phí</a>

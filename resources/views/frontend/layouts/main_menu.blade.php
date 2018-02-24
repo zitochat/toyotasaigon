@@ -1,6 +1,6 @@
 @php
 $service_list= \DB::table('posts')->where('parent', 'dich-vu')->get();
-$products= \DB::table('products')->where('show', '1')->get();
+$products= \DB::table('products')->where('show', '1')->orderBy('slug')->get();
 @endphp
 
 <div id="main_menu" >

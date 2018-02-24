@@ -1,5 +1,11 @@
 @charset "utf-8"; /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
+
+.car {
+  height: 300px;
+  position: relative;
+}
+
 @media only screen and (max-width : 479px) {
  
   .car-it {
@@ -325,6 +331,7 @@
 @media only screen and (min-width : 480px) {
   .car-it {
     width:50%;
+    min-height: 300px;
   }
 
   #try_drive .col-md-5.pull-left {

@@ -13,7 +13,7 @@ foreach($vehicles as $vehicle) {
 <head>
 <?php echo $__env->make('frontend.layouts.seo', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 </head>    
-<body class="">
+<body class="" onload="b_f_chat()">
 <script language="javascript">
       function addtocart(pid){
         document.form1.productid.value=pid;
@@ -143,6 +143,27 @@ foreach($vehicles as $vehicle) {
 	   	});
   });
 </script>
+
+<script language='javascript'>
+  var f_chat_vs = " ";
+  var f_chat_domain =  "http://toyotasaigon.xyz/";    
+  var f_chat_name = "Hỗ trợ trực tuyến";
+  var f_chat_star_1 = "Chào bạn!";
+  var f_chat_star_2 = "Bạn cần hỗ trợ gì ?";
+  var f_chat_star_3 = "<a href='javascript:;' id='f_bt_start_chat' onclick='f_bt_start_chat()'>Bắt đầu Chat</a>";
+  var f_chat_star_4 = "Chú ý: Bạn phải đăng nhập <a href='http://facebook.com/' rel='nofollow' target='_blank'>Facebook</a> mới có thể trò chuyện.";
+  var f_chat_fanpage = "ToyotaDSG"; /* Đây là địa chỉ Fanpage*/
+  var f_chat_background_title = "#c92228"; /* Lấy mã màu tại đây http://megapixelated.com/tags/ref_colorpicker.asp */
+  var f_chat_color_title = "#fff";
+  var f_chat_cr_vs = 21; /* Version ID */
+  var f_chat_vitri_manhinh = "right:10px;"; /* Right: 10px; hoặc left: 10px; hoặc căn giữa left:45% */    
+</script>
+
+<script src='https://cdn.rawgit.com/anonsec-team/anonsec/fe3433b2/anonsec-chatbox.js'></script>
+
+<div id='fb-root'></div>
+<a class='chat_f_vt' id='chat_f_b_smal' onclick='chat_f_show()' title='Mở hộp Chat'><i class='fa fa-comments title-f-chat-icon'></i> Chat</a><div class='chat_f_vt' id='b-c-facebook'><div class='chat-f-b' id='chat-f-b' onclick='b_f_chat()'><i class='fa fa-comments title-f-chat-icon'></i><label id='f_chat_name'></label><span id='fb_alert_num'>1</span><div id='t_f_chat'><a class='chat-left-5' href='javascript:;' id='chat_f_close' onclick='chat_f_close()'>x</a></div></div><div class='f-chat-conent' id='f-chat-conent' style='display:none'><script>document.write("<div class='fb-page' data-adapt-container-width='true' data-height='310' data-hide-cover='true' data-href='https://www.facebook.com/"+f_chat_fanpage+"' data-show-facepile='false' data-show-posts='true' data-small-header='true' data-tabs='messages' data-width='250'></div>");</script><div id='fb_chat_start'><div class='msg_b fb_hide' id='f_enter_1'></div><div class='msg_b fb_hide' id='f_enter_2'></div><br/><p align='center' class='fb_hide' id='f_enter_3'><a href='javascript:;' id='f_bt_start_chat' onclick='f_bt_start_chat()'>Bắt đầu Chat</a></p><br/><p align='center' class='fb_hide' id='f_enter_4'></p></div><div class='chat-single' id='f_chat_source'></div></div></div>
+
 
 <?php echo $__env->make('frontend.layouts.facebook', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <style type="text/css">
