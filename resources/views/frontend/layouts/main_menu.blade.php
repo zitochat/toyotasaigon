@@ -18,8 +18,8 @@ $products= \DB::table('products')->where('show', '1')->orderBy('slug')->get();
 
 <div class="xe-box-main clearfix">
 <div class="xe-box-wrap clearfix">
-  @include('frontend.includes.menu', ['productx'=> $products->whereIn('parent', 'yaris')])
-  @include('frontend.includes.menu', ['productx'=> $products->whereNotIn('parent', 'yaris')])
+  
+  @include('frontend.includes.menu', ['productx'=> $products])
 
 
 

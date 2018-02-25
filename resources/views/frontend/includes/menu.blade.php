@@ -1,3 +1,5 @@
+
+<div style="flex-direction: row; justify-content: space-around; display: flex; flex-wrap: wrap; flex: 1; width: 100%;">
 @foreach($productx as $row)
   <div class="xe-box">
       <div class="items">
@@ -9,7 +11,7 @@
           <div class="col-sm-12 col-md-8">
         <div class="xe-info clearfix">
           <div class="xe-features">
-             <h2 class="text-uppercase">{{ $row->parent }}</h2> 
+             <h2 class="text-uppercase">{{ str_replace('-', ' ', strtoupper($row->parent)) }}</h2> 
               <p>Giá từ: <span>{{ $row->price }} VNĐ</span></p>
             <p class="desc">{{ strip_tags($row->description) }}</p>
             <ul class="clearfix features-list">
@@ -29,3 +31,4 @@
       </div>
       </div>
 @endforeach
+</div>

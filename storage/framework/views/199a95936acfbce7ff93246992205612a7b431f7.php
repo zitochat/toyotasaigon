@@ -18,8 +18,8 @@ $products= \DB::table('products')->where('show', '1')->orderBy('slug')->get();
 
 <div class="xe-box-main clearfix">
 <div class="xe-box-wrap clearfix">
-  <?php echo $__env->make('frontend.includes.menu', ['productx'=> $products->whereIn('parent', 'yaris')], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-  <?php echo $__env->make('frontend.includes.menu', ['productx'=> $products->whereNotIn('parent', 'yaris')], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  
+  <?php echo $__env->make('frontend.includes.menu', ['productx'=> $products], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 
 

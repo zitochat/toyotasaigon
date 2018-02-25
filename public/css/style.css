@@ -3399,9 +3399,8 @@ p.dkbtn span{display:inline-block;border-radius: 50%;border: 1px solid #fff;padd
   position: static;
   margin: 20px 0;
   margin-right: 1%;
-  z-index: 3;
   overflow: hidden;
-  padding: 0px 25px;
+  padding: 0px 10px;
 }
 
 .xe-box .items {
@@ -3449,7 +3448,7 @@ p.dkbtn span{display:inline-block;border-radius: 50%;border: 1px solid #fff;padd
 }
 .xe-features{
   float: left;
-  width: 40%;
+  width: 70%;
   padding: 23px 12px 12px;
 }
 .xe-features h2{
