@@ -346,7 +346,7 @@ $headers = $headers . "From:" . $from;
     {
         SEO::setTitle('Sản phẩm');
 
-        $products= DB::table('products')->paginate(10);
+        $products= DB::table('products')->paginate(12);
 
         return view('frontend.pages.products', compact(['products']));
     }
@@ -368,7 +368,7 @@ $headers = $headers . "From:" . $from;
         $id= $request->input('id');
         if(isset($id)) {
             $color_data= DB::table('colors')->where('id', $id)->first();
-            $colors= DB::table('product_color')->where('color_id', $id)->first();
+            $colors= DB::table('product_color')->where('id', $id)->first();
 
             return view('frontend.pages.product_slider', compact(['colors', 'color_data']));
         }

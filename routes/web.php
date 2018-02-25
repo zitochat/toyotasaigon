@@ -13,6 +13,7 @@ Route::group(['middleware' => ['guest']], function () use ($router) {
 /**
  * admin
  */
+//['middleware' => ['auth']], 
 Route::group(['middleware' => ['auth']], function () use ($router) {
     $router->get('logout', 'HomeController@doLogout');
     $router->get('/cpanel_admin', 'Admin\AdminController@getAdminIndex');

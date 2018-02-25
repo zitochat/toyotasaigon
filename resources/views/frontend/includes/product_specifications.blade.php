@@ -9,12 +9,12 @@
             <div class="panel panel-default">
                     <div class="panel-heading menus">
                       <h4 class="panel-title">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ $row->id }}">
                                 <b>{{ $row->name }}</b>
                         </a>
                       </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse content-item">
+                <div id="collapse{{ $row->id }}" class="panel-collapse collapse content-item">
                       <div class="panel-body">
                             {!! $row->content !!}
                       </div>

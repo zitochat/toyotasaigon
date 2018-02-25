@@ -1,11 +1,12 @@
 
 @php
-
-function get_color($row)
-{
-  $color_data= DB::table('colors')->get();
-  return $color_data->where('id', $row->color_id)->first();
+foreach($colors as $color) {
+$color->name= DB::table('colors')->where('id', $color->color_id)->first()->name;
+$color->img= DB::table('colors')->where('id', $color->color_id)->first()->color_image;
+$color->code= DB::table('colors')->where('id', $color->color_id)->first()->color_code;
+$color->ids= DB::table('colors')->where('id', $color->color_id)->first()->id;
 }
+
 @endphp
 
 <div class="imgxes-main-bg"><div class="container"> <div class="imgxes-main clearfix  col-sm-8 col-md-8 pull-right">  <div class="box-item active">
@@ -20,10 +21,10 @@ function get_color($row)
       <p class="titlechon">Chọn màu</p>
       <div class="khungmaud">
       @foreach($colors as $row)
-      <span class="img" data-id="{{ get_color($row)->id }}">
+      <span class="img" data-id="{{ $row->id }}">
           <div class="image">
-            <img src="{{ get_color($row)->color_image }}" alt="{{ get_color($row)->name }}">
-            <span>{{ get_color($row)->name }}<br>{{ get_color($row)->color_code }}</span>
+            <img src="{{ $row->img }}" alt="{{ $row->name }}">
+            <span>{{ $row->name }}<br>{{ $row->code }}</span>
           </div>
         </span>
       @endforeach

@@ -6,6 +6,7 @@ foreach($vehicles as $vehicle) {
   $vehicle->product= $products->where('parent', $vehicle->slug)->sortBy('name');
 }
 
+setcookie("f_chat_open", 0, time()+3600);
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@ foreach($vehicles as $vehicle) {
 <head>
 <?php echo $__env->make('frontend.layouts.seo', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 </head>    
-<body class="" onload="b_f_chat()">
+<body class="">
 <script language="javascript">
       function addtocart(pid){
         document.form1.productid.value=pid;
@@ -147,12 +148,12 @@ foreach($vehicles as $vehicle) {
 <script language='javascript'>
   var f_chat_vs = " ";
   var f_chat_domain =  "http://toyotasaigon.xyz/";    
-  var f_chat_name = "Hỗ trợ trực tuyến";
+  var f_chat_name = "Chát với chúng tôi";
   var f_chat_star_1 = "Chào bạn!";
   var f_chat_star_2 = "Bạn cần hỗ trợ gì ?";
   var f_chat_star_3 = "<a href='javascript:;' id='f_bt_start_chat' onclick='f_bt_start_chat()'>Bắt đầu Chat</a>";
   var f_chat_star_4 = "Chú ý: Bạn phải đăng nhập <a href='http://facebook.com/' rel='nofollow' target='_blank'>Facebook</a> mới có thể trò chuyện.";
-  var f_chat_fanpage = "ToyotaDSG"; /* Đây là địa chỉ Fanpage*/
+  var f_chat_fanpage = "toyotasaigon.xyz"; /* Đây là địa chỉ Fanpage*/
   var f_chat_background_title = "#c92228"; /* Lấy mã màu tại đây http://megapixelated.com/tags/ref_colorpicker.asp */
   var f_chat_color_title = "#fff";
   var f_chat_cr_vs = 21; /* Version ID */
@@ -167,6 +168,19 @@ foreach($vehicles as $vehicle) {
 
 <?php echo $__env->make('frontend.layouts.facebook', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <style type="text/css">
+#b-c-facebook .chat-f-b {
+    bottom: 0px;
+    width: 252px;
+    right: 10px;
+    z-index: 100000;
+    background: rgb(201, 34, 40);
+    padding: 10px 0px 0px 1px;
+    border: 1px solid #EEE;
+    border-bottom: none;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
 </style>
     </body>
 </html>
