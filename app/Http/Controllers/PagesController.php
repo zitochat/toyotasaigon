@@ -346,7 +346,7 @@ $headers = $headers . "From:" . $from;
     {
         SEO::setTitle('Sản phẩm');
 
-        $products= DB::table('products')->paginate(12);
+        $products= DB::table('products')->orderBy('slug')->paginate(12);
 
         return view('frontend.pages.products', compact(['products']));
     }

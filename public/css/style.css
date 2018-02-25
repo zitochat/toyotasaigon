@@ -3869,7 +3869,6 @@ color:#f00;    font-weight: bold;
 .cardesc{
     padding: 0 6px;
     /* white-space: nowrap; */
-    overflow: hidden;
     font-size: 13px;
     height: 60px;
     color: #000;
@@ -3903,10 +3902,12 @@ color:#f00;    font-weight: bold;
   text-align: right;
   margin: 10px auto;
 }
-        .imgcons .fancymota img{
-    padding: 5px;
-    height: 110px;
-}.imgcons .fancymota h6{
+.imgcons .fancymota img{
+  padding: 5px;
+  height: 140px;
+  width: 100%;
+}
+.imgcons .fancymota h6{
   text-align: center;
   color: #000;
   font-size: 16px;

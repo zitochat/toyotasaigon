@@ -17,6 +17,7 @@ class CreateVehiclesTable extends Migration
             $table->increments('id');
             $table->string('slug', 100);
             $table->string('name', 100);
+            $table->string('url', 400)->nullable(true);
         });
     }
 

@@ -530,7 +530,7 @@
   }
 
   .imgcons .fancymota {
-    width: 20%;
+    width: 25%;
   }
 
   .first-logo {
@@ -1025,7 +1025,7 @@ aside {
 @media only screen and (min-width : 1024px) {
   .news-nb img{height:auto;}
   .imgcons .fancymota {
-    width:20%;
+    width:25%;
   }
 
   .home #main_menu {
