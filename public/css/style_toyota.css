@@ -1,0 +1,3814 @@
+@charset "utf-8";
+input, textarea {
+    outline: 0;
+}
+ul {
+    list-style-type: inherit;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.clearAll {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    font-size: 0;
+    clear: both;
+}
+.left {
+    float: left;
+    margin: 0;
+}
+.right {
+    float: right;
+    cursor: pointer;
+}
+.fs18 {
+    font-size: 18px;
+}
+.color_d_red {
+    color: #cc181e;
+}
+.color_d_bl {
+    color: #000;
+}
+.txt-c {
+    text-align: center;
+}
+.font_14 {
+    font-size: 14px;
+}
+.fwb {
+    font-weight: 700;
+}
+.mt5 {
+    margin-top: 5px;
+}
+.mt8 {
+    margin-top: 8px;
+}
+.mt13 {
+    margin-top: 13px;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.contact_form_fixed #get_info_by_mail{
+    margin: 0 0 0 102px;
+    float: left;
+}
+.contact_form_fixed .mt15 label{
+    margin: 0 0 0 4px;
+}
+.mt17 {
+    margin-top: 17px;
+}
+.mt19 {
+    margin-top: 19px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.mt31 {
+    margin-top: 31px;
+}
+.mt43 {
+    margin-top: 43px;
+}
+.mt55 {
+    margin-top: 55px;
+}
+.mt70 {
+    margin-top: 70px!important;
+}
+.mt100 {
+    margin-top: 100px;
+}
+.ml20 {
+    margin-left: 20px;
+}
+.pl85 {
+    padding-left: 85px!important;
+}
+.pt30 {
+    padding-top: 30px;
+}
+.no-bg {
+    background: none!important;
+}
+.h_100 {
+    height: 100px;
+}
+.ofv {
+    overflow: visible!important;
+}
+.mgt-19 {
+    margin-top: -19px;
+}
+.camry-header {
+    width: 100%;
+    height: 180px;
+    z-index: 1;
+    min-width: 1024px;
+    position: absolute;
+}
+.camry-menu {
+    margin: 0 auto;
+    width: 986px;
+    height: 49px;
+    padding: 78px 0 0;
+    border-bottom: 2px solid #333;
+    position: relative;
+    z-index: 1;
+}
+.camry-menu .camry-logo {
+    float: left;
+    margin-top: -5px;
+    width: 204px;
+    text-align: center;
+}
+.camry-menu ul {
+    float: right;
+    list-style: none;
+    width: 780px;
+    padding-left: 2px;
+}
+.camry-menu ul li {
+    float: left;
+}
+.camry-menu ul li a {
+    padding: 12px 11px 9px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+.camry-menu ul li a:hover {
+    border-bottom: 8px solid #e1e1e1;
+    color: #ed1b2f;
+}
+.camry-menu ul li a.selected, .camry-menu ul li a.active {
+    border-bottom: 8px solid #ed1b2f;
+    color: #333;
+}
+.camry-cntwrap {
+    width: 100%;
+    position: relative;
+    z-index: 11;
+    margin-top: 0;
+    margin-top: 129px !important;
+}
+.pg-spec {
+    background: url(../images/images-corolla-altis/pg-spec.jpg) center top no-repeat;
+    height: 888px;
+}
+.pg-price {
+    background: url(../images/images-corolla-altis/pg-price.png) center top no-repeat;
+    height: 608px;
+}
+.pg-gallery {
+    background: url(../images/gallery_bg.jpg) 0 2px repeat-x;
+}
+.pg-exterior {
+    text-align: center;
+}
+.pg-interior {
+    position: relative;
+    z-index: 10;
+}
+.pg-performance, .pg-safety {
+    height: 477px;
+    margin-top: 129px;
+    position: relative;
+    z-index: 10;
+}
+.pg-accessories {
+    margin: 0 auto 0;
+    width: 930px;
+    position: relative;
+    z-index: 10;
+}
+.pg-catalogue {
+    background: url(../images/bg1.jpg) repeat-x;
+}
+.dcn {
+    text-align: center;
+}
+#cnt-wrap {
+    background: url(../images/bg.jpg) repeat-x;
+}
+.access_items .title {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 0 10px;
+    border-bottom: 1px solid #cdcdce;
+    margin-bottom: 18px;
+}
+.jcarosel_access img {
+    border: 1px solid #a8a6a6;
+}
+.jcarosel_access {
+    font-size: 13px;
+    width: 930px;
+}
+.jcarosel_access ul {
+    display: inline-block;
+}
+.jcarosel_access li {
+    margin: 0 5px;
+    float: left;
+}
+.jcarousel-clip-horizontal {
+    width: 100%!important;
+}
+.jcarosel_access .jcarousel-prev-disabled-horizontal, .jcarosel_access .jcarousel-prev-disabled-horizontal:active, .jcarosel_access .jcarousel-prev-disabled-horizontal:focus, .jcarosel_access .jcarousel-prev-disabled-horizontal:hover {
+    background-position: 0 -24px!important;
+}
+.jcarosel_access .jcarousel-prev-horizontal:focus, .jcarosel_access .jcarousel-prev-horizontal:hover {
+    background-position: 0 0;
+}
+.jcarosel_access .jcarousel-prev-horizontal {
+    background: url(../js/jcarousel/arrow.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    left: -28px;
+}
+.jcarosel_access .jcarousel-next-disabled-horizontal, .jcarosel_access .jcarousel-next-disabled-horizontal:active, .jcarosel_access .jcarousel-next-disabled-horizontal:focus, .jcarosel_access .jcarousel-next-disabled-horizontal:hover {
+    background-position: -24px -24px!important;
+}
+.jcarosel_access .jcarousel-next-horizontal:focus, .jcarosel_access .jcarousel-next-horizontal:hover {
+    background-position: -24px 0;
+}
+.jcarosel_access .jcarousel-next-horizontal {
+    background: url(../js/jcarousel/arrow.png) -24px 0 no-repeat;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    right: -28px;
+}
+.navigator-content {
+    position: relative;
+    overflow: visible!important;
+}
+.navigator-content .btn_next_thumb {
+    background: url(../js/jcarousel/arrow.png) -24px -24px no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -12px;
+    cursor: pointer;
+}
+.navigator-content .btn_next_thumb.active, .navigator-content .btn_next_thumb:hover {
+    background-position: -24px 0;
+}
+.navigator-content .btn_prev_thumb {
+    background: url(../js/jcarousel/arrow.png) 0 -24px no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    margin-top: -12px;
+    top: 50%;
+    cursor: pointer;
+}
+.navigator-content .btn_prev_thumb:active, .navigator-content .btn_prev_thumb:hover {
+    background-position: 0 0;
+}
+.list_cate {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+.image_cataloge {
+    margin: 0 auto;
+    width: 986px;
+    min-height: 100px;
+    padding: 20px 0;
+}
+.catalogue {
+    margin: 0 15px;
+    display: inline-block;
+}
+.catalogue img {
+    margin-top: -20px;
+}
+.catalogue a {
+    display: inline-block;
+    margin-right: 10px;
+}
+.catalogue .text {
+    display: inline;
+    padding-left: 10px;
+    border-left: 1px solid #c1c1c1;
+}
+.catalogue .text p {
+    margin: 0;
+    font-size: 12.78px;
+    font-weight: 700;
+    text-align: left;
+}
+.catalogue .text p.name {
+    font-weight: 400;
+}
+.camry-cntwrap.specifications {
+    width: 986px;
+    margin: 0 auto 0;
+}
+.camry-cntwrap.specifications .tab-title .btn-title {
+    display: inline-block;
+    width: 120px;
+    height: 33px;
+    background: #a82424;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 34px;
+    cursor: pointer;
+    clear: both;
+    margin-top: 0px;
+}
+.camry-cntwrap.specifications .tab-title .chiase_sosanh{
+    position:relative;
+    width:101px;
+    height:86px;
+    margin-left:120px;  
+}
+.camry-cntwrap.specifications .tab-title .chiase_sosanh .chiase_1 {
+    width:30px;
+    height:30px;
+    background: url(../dealer/images/chiase_1.png) no-repeat;
+    position:absolute;
+    top:5px;
+    left:15px;
+    cursor:pointer;
+}
+.camry-cntwrap.specifications .tab-title .chiase_sosanh .chiase_1:hover .chiase_2 {
+    display: block;
+}
+.camry-cntwrap.specifications .tab-title .chiase_sosanh .chiase_2 {
+    width:101px;
+    height:86px;
+    background: url(../dealer/images/chiase_2.png) left top no-repeat;
+    position:absolute;
+    top:25px;
+    left:-20px;
+    display: none;
+}
+.camry-cntwrap.specifications .tab-title .icon-mail {
+  display: inline-block;
+  padding-left: 34px;
+  background: url(../images/images-corolla-altis/icon/icon-mail.png) no-repeat;
+  margin: 8px 0 0 17px;
+}
+.camry-cntwrap.specifications .tab-title .menu-left-icon-share{
+    width:30px;
+    height:30px;
+    margin-left:17px;
+    margin-top:14px;
+}
+.camry-cntwrap.specifications .tab-title .tab{
+    display: inline-block;
+    width: 628px;
+    height: 27px;
+    padding: 0 23px 0 0;
+    margin: 4px 0 0;
+    position: relative;
+    z-index: 0;
+}
+.version_b .camry-cntwrap.specifications .tab-title .tab {
+    display: inline-block;
+    width: 628px;
+    height: 200px;
+    padding: 0 23px 0 0;
+    margin: -90px 0 0;
+    position: relative;
+    z-index: 0;
+}
+.camry-cntwrap.specifications .tab-title .tab table {
+    width: 100%;
+    height: 100%}
+.camry-cntwrap.specifications .tab-title .tab table td {
+    width: 157px;
+}
+.camry-cntwrap.specifications .tab-title .tab table td span {
+    margin-left: 5px;
+    display: block;
+    height: 27px;
+    font-size: 13px;
+    color: #f4f7fc;
+    text-align: right;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 0 5px;
+    line-height: 28px;
+}
+.camry-cntwrap.specifications .item-specifications .title-item {
+    width: 986px;
+    height: 44px;
+    background: url(../images/images-yaris/bg/bg-tab-specifications.png) no-repeat;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+.camry-cntwrap.specifications .item-specifications .title-item.active, .camry-cntwrap.specifications .item-specifications .title-item:hover {
+    background-position: 0 -44px;
+    color: #fff;
+}
+.camry-cntwrap.specifications .item-specifications .title-item .icon-plus {
+    width: 100%;
+    display: inline-block;
+    background: url(../images/images-corolla-altis/icon/icon-plus.png) 0 1px no-repeat;
+    margin: 11px 0 0 9px;
+    padding-left: 30px;
+    line-height: 22px;
+}
+.camry-cntwrap.specifications .item-specifications .title-item.active .icon-plus {
+    background: url(../images/images-corolla-altis/icon/icon-plus-active.png) 0 1px no-repeat;
+}
+.camry-cntwrap.specifications .item-specifications .content-item {
+    display: none;
+    width: 984px;
+    border: 1px solid #d0cece;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    position: relative;
+    background: #fff;
+    margin-top: 5px;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .color {
+    padding: 10px 0 5px;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .img {
+    text-align: center;
+    padding: 82px 0 77px;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .color span {
+    display: block;
+    height: 6px;
+    margin-left: 5px;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc {
+    width: 100%}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc td {
+    width: 155px;
+    height: 30px;
+    border-top: 1px dotted #cdc5c5;
+    border-right: 1px dotted #cdc5c5;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc td.name {
+    width: 131px;
+    text-align: left;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc td.code {
+    width: 109px;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc td.units {
+    width: 74px;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc td.last {
+    border-right: none;
+    width: 623px;
+    height: 100%}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc td.last-td {
+    border-right: none;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc td.last table {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+td.last {
+    position: relative;
+    z-index: 0;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc td.last table tr td {
+    height: 40px;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc td.last table td {
+    height: 100%;
+    border-top: none;
+    border-bottom: none;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .table-spc tr.last td {
+    border-bottom: 1px dotted #cdc5c5;
+}
+.camry-cntwrap.specifications .list-specifications {
+    text-align: center;
+    padding: 81px 0 0;
+}
+.table-spc1 {
+    width: 100%}
+.table-spc1 td {
+    border: 1px dotted #000;
+    height: 30px;
+    padding: 0 5px;
+}
+.table-spc1 .code, .table-spc1 .units {
+    width: 150px;
+}
+.table-spc1 .name {
+    border-left: none;
+}
+.table-spc1 .last {
+    width: 450px;
+    text-align: center;
+    border-right: none;
+}
+.camry-cntwrap.specifications .list-specifications span {
+    display: inline-block;
+    width: 105px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 14px;
+    padding-top: 84px;
+    margin: 0 7px;
+    vertical-align: top;
+}
+.camry-cntwrap.specifications .list-specifications a:hover {
+    color: #cf1c1c;
+}
+.camry-cntwrap.specifications .list-specifications .item .img {
+    height: 84px;
+}
+.camry-cntwrap.specifications .list-specifications .icon-bangdongho {
+    background: url(../images/images-corolla-altis/icon/icon-bangdongho.png) top center no-repeat;
+}
+.camry-cntwrap.specifications .list-specifications .icon-dieuphoi {
+    background: url(../images/images-corolla-altis/icon/icon-dieuphoi.png) top center no-repeat;
+}
+.camry-cntwrap.specifications .list-specifications .icon-vtt-i {
+    background: url(../images/icon/vtt-i.png) top center no-repeat;
+}
+.camry-cntwrap.specifications .list-specifications .icon-chongbocung {
+    background: url(../images/images-corolla-altis/icon/icon-chongbocung.png) top center no-repeat;
+}
+.camry-cntwrap.specifications .list-specifications .icon-phanphoiluc {
+    background: url(../images/images-corolla-altis/icon/icon-phanphoiluc.png) top center no-repeat;
+}
+.camry-cntwrap.specifications .list-specifications .icon-phanhkhan {
+    background: url(../images/images-corolla-altis/icon/icon-phanhkhan.png) top center no-repeat;
+}
+.camry-cntwrap.specifications .list-specifications .icon-tuikhi {
+    background: url(../images/images-corolla-altis/icon/icon-tuikhi.png) top center no-repeat;
+}
+.camry-cntwrap.specifications .list-specifications .icon-tuikhi-2 {
+    background: url(../images/images-corolla-altis/icon/tuikhi.png) top center no-repeat;
+}
+.camry-cntwrap.specifications .list-specifications .icon-cambien {
+    background: url(../images/images-corolla-altis/icon/icon-cambien.png) top center no-repeat;
+}
+.camry-cntwrap.specifications .list-specifications .icon-goa {
+    background: url(../images/images-corolla-altis/icon/icon-goa.png) top center no-repeat;
+}
+.w_1036 {
+    width: 1036px;
+    margin: 0 auto;
+}
+.w_940 {
+    width: 940px;
+    margin: 0 auto;
+}
+.w_940 .img img {
+    max-width: 940px;
+}
+.camry-cntwrap.pg-360 {
+    width: 986px;
+    margin: 0 auto;
+    background: url(../images/background-360.jpg) top center no-repeat;
+}
+.camry-cntwrap.pg-360_1 {
+    background: url(../images/background-3602.jpg) top center no-repeat!important;
+}
+.camry-cntwrap.pg-360_1.tab_line .product-car-360 {
+    padding-top: 30px;
+}
+.camry-cntwrap.pg-360_1.tab_line .js-360 {
+    height: 450px;
+}
+.camry-cntwrap.pg-360 .js-360 {
+    width: 100%;
+    height: 410px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.product-car-360 {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+.camry-cntwrap.pg-360 .button-360 .btn-control {
+    width: 215px;
+    padding-left: 150px;
+}
+.camry-cntwrap.pg-360 .button-360 .line {
+    width: 1px;
+    height: 78px;
+    background: url(../images/images-corolla-altis/line-360.png) no-repeat;
+    margin: 20px 33px 0 0;
+}
+.camry-cntwrap.pg-360 .button-360 .btn-next-360, .camry-cntwrap.pg-360 .button-360 .btn-prev-360 {
+    display: inline-block;
+    width: 21px;
+    height: 24px;
+    background: url(../images/images-corolla-altis/btn/btn-prev.png) no-repeat;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+.camry-cntwrap.pg-360 .button-360 .btn-next-360 {
+    background: url(../images/images-corolla-altis/btn/btn-next.png) no-repeat;
+}
+.camry-cntwrap.pg-360 .button-360 .btn-next-360:hover, .camry-cntwrap.pg-360 .button-360 .btn-prev-360:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.camry-cntwrap.pg-360 .button-360 .btn-control span.text {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: 7px;
+    font-size: 18px;
+}
+.camry-cntwrap.pg-360 .btn-color {
+    margin-top: 20px;
+}
+.camry-cntwrap.pg-360 .btn-color .text {
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: 34px;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.camry-cntwrap.pg-360 .btn-color a {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: #5d5c5c;
+    margin: 0 3px 10px;
+    line-height: 18px;
+    width: 130px;
+    vertical-align: top;
+}
+.camry-cntwrap.pg-360 .btn-color a.active, .camry-cntwrap.pg-360 .btn-color a:hover {
+    color: #da1a21;
+}
+.wrap_product_car {
+    width: 100%;
+    height: 410px;
+}
+.wrap_product_car .product_360 {
+    display: none;
+}
+.wrap_product_car .product_360.active {
+    display: block;
+}
+.fancybox {
+    height: 33px;
+    width: 27px;
+    display: none;
+    position: absolute;
+    background: url(../images/open_popup_btn.png) 0 -33px no-repeat;
+    left: 50%;
+    z-index: 10;
+}
+.fancybox:hover {
+    background-position: 0 0;
+}
+.safety_1 {
+    margin-left: 36px;
+    top: 172px;
+}
+.safety_2 {
+    bottom: 98px;
+    margin-left: -70px;
+}
+.safety_3 {
+    margin-left: 434px;
+    top: 164px;
+}
+.wrap_popup_content {
+    background: #fff;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    margin-left: 0px;
+    overflow: hidden;
+}
+.popup_title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 15px;
+    font-size: 24px;
+    color: #fff;
+    font-style: italic;
+    background: #c30501;
+}
+.popup_title_sv {
+    width: 98%;
+    min-height: 20px;
+    line-height: 25px;
+    font-size: 24px;
+    color: #fff;
+    font-style: italic;
+    background: #c30501;
+    margin-top: 20px;
+    padding: 10px;
+}
+.popup_content {
+    padding: 0 3px 3px;
+}
+.popup_content .note {
+    font-size: 14px;
+    padding: 30px 80px;
+    width: 240px;
+}
+.popup_content_right {
+    width: 210px;
+    padding: 0 30px 0 25px;
+    font-size: 14px;
+    line-height: 18px;
+    display: table-cell;
+    text-align: justify;
+}
+.popup_content_right a {
+    color: #085195;
+}
+.popup_content_right a:hover {
+    text-decoration: underline;
+}
+.popup_content .usual {
+    margin: 5px 15px;
+    border-bottom: 2px solid gray;
+}
+.popup_content .tab {
+    margin: 10px 15px;
+    display: none;
+}
+.popup_content .usual li {
+    float: left;
+    border-left: 1px solid #ddd;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.popup_content .usual li a {
+    display: inline-block;
+    padding: 0 10px;
+}
+.popup_content .usual li:first-child {
+    border-left: none;
+}
+.popup_content .usual li span.line {
+    display: none;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    background: #e20a0a;
+}
+.popup_content .usual li a.selected span.line {
+    display: block;
+}
+#fancybox-close {
+    width: 43px;
+    height: 47px;
+    background: url(../images/popup_close.png) no-repeat;
+    top: -19px;
+    right: 0;
+}
+.popup_slider {
+    overflow: hidden;
+}
+#fancybox-left {
+    left: -38px!important;
+    width: 100px;
+}
+#fancybox-right {
+    right: -38px!important;
+    width: 100px;
+}
+#fancybox-left-ico, #fancybox-right-ico {
+    cursor: pointer;
+    display: block;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    width: 33px;
+    z-index: 1102;
+    margin-top: -27px;
+}
+#fancybox-left-ico {
+    background: url(../images/images-corolla-altis/arrow_left.png) no-repeat!important;
+    left: 0!important;
+}
+#fancybox-right-ico {
+    background: url(../images/images-corolla-altis/arrow_right.png) no-repeat!important;
+    right: 0!important;
+    left: auto!important;
+}
+#fancybox-overlay, #fancybox-wrap {
+    z-index: 10000;
+}
+#fancybox-content {
+    border: none!important;
+}
+.performance_1 {
+    margin-left: -18px;
+    top: 152px;
+}
+.performance_2 {
+    margin-left: 130px;
+    top: 287px;
+}
+.performance_3 {
+    margin-left: 336px;
+    top: 236px;
+}
+.list_elec ul li, .list_exter ul li, .list_gene ul li, .list_inter ul li {
+    width: 176px;
+}
+.access_title_p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #414042;
+    text-align: center;
+    width: 696px;
+    height: 50px;
+}
+.exterior_1 {
+    margin-left: -65px;
+    top: 220px;
+}
+.exterior_2 {
+    margin-left: 50px;
+    top: 230px;
+}
+.exterior_3 {
+    margin-left: 223px;
+    top: 164px;
+}
+.exterior_4 {
+    margin-left: 127px;
+    top: 338px;
+}
+.interior_1 {
+    margin-left: -199px;
+    top: 120px;
+}
+.interior_2 {
+    margin-left: -4px;
+    top: 109px;
+}
+.interior_3 {
+    margin-left: -16px;
+    top: 350px;
+}
+.camry-menu .camry-logo.yaris-logo {
+    margin: 1px 0 0;
+}
+.camry-cntwrap.specifications .tab-title .title-fix.fixed {
+    width: 986px;
+    position: fixed;
+    z-index: 10000;
+    top: 70px;
+    left: 50%;
+    margin-left: -493px;
+    background: #fff;
+}
+.camry-cntwrap.specifications .tab-title.yaris .tab-2 {
+    background: #781f21;
+}
+.camry-cntwrap.specifications .tab-title.yaris .tab-1 {
+    background: #f96072;
+}
+.camry-cntwrap.specifications .list-specifications.yaris {
+    padding-left: 77px;
+}
+.camry-cntwrap.yaris .price1 {
+    background: #781f21;
+}
+.camry-cntwrap.yaris .price2 {
+    background: #f96072;
+}
+.camry-cntwrap.yaris .list_price ul li {
+    margin-bottom: 20px;
+}
+.camry-cntwrap.yaris .exterior_1 {
+    margin-left: -99px;
+    top: 218px;
+}
+.camry-cntwrap.yaris .exterior_2 {
+    margin-left: 69px;
+    top: 308px;
+}
+.camry-cntwrap.yaris .exterior_3 {
+    margin-left: 134px;
+    top: 326px;
+}
+.camry-cntwrap.yaris .interior_4 {
+    margin-left: 328px;
+    top: 286px;
+}
+.camry-cntwrap.yaris .interior_5 {
+    margin-left: 328px;
+    top: 386px;
+}
+.camry-cntwrap.yaris .interior_6 {
+    margin-left: 328px;
+    top: 146px;
+}
+.camry-cntwrap.yaris .interior_7 {
+    margin-left: 368px;
+    top: 196px;
+}
+.camry-cntwrap.yaris .interior_8 {
+    margin-left: 328px;
+    top: 246px;
+}
+.camry-cntwrap.yaris .interior_9 {
+    margin-left: 328px;
+    top: 223px;
+}
+.camry-cntwrap.yaris .exterior_10 {
+    margin-left: 120px;
+    top: 196px;
+}
+.camry-cntwrap.yaris .exterior_11 {
+    margin-left: 300px;
+    top: 196px;
+}
+.camry-cntwrap.yaris .interior_1 {
+    margin-left: 124px;
+    top: 192px;
+}
+.camry-cntwrap.yaris .interior_2 {
+    margin-left: 182px;
+    top: 176px;
+}
+.camry-cntwrap.yaris .interior_3 {
+    margin-left: 328px;
+    top: 186px;
+}
+.camry-cntwrap.yaris .performance_1 {
+    margin-left: -179px;
+    top: 174px;
+}
+.camry-cntwrap.yaris .performance_2 {
+    margin-left: -118px;
+    top: 262px;
+}
+.camry-cntwrap.yaris .performance_3 {
+    margin-left: 105px;
+    top: 333px;
+}
+.yaris-popup {
+    width: 697px;
+}
+.yaris-popup .wrap_popup_content .table-normal {
+    width: 100%}
+.yaris-popup .wrap_popup_content .popup_content_right {
+    padding: 0 20px 0 18px;
+    width: auto;
+}
+.yaris-popup .wrap_popup_content .table-center {
+    width: 100%;
+    height: 374px;
+}
+.yaris-popup .wrap_popup_content .table-center td {
+    width: 390px;
+    text-align: center;
+    vertical-align: middle;
+}
+.yaris-popup .wrap_popup_content .table-center td.popup_content_right {
+    text-align: left;
+    padding: 0 20px 0 0;
+}
+.camry-cntwrap.yaris .safety_1 {
+    margin-left: 108px;
+    top: 139px;
+}
+.camry-cntwrap.yaris .safety_2 {
+    margin-left: 204px;
+    top: 200px;
+    bottom: auto;
+}
+.camry-cntwrap.yaris .safety_3 {
+    margin-left: 242px;
+    top: 135px;
+}
+.popup_content.accessories-popup {
+    padding: 3px;
+}
+.pg-catalogue.yaris {
+    height: auto;
+}
+.pg-catalogue.yaris .list_cate {
+    bottom: auto;
+}
+.pg-catalogue.yaris .list_cate .list {
+    margin: 85px 0 0 288px!important;
+    position: relative;
+    z-index: 0;
+    left: auto;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .color.yaris span {
+    width: 309px;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .color.yaris span.color-1 {
+    background: #781f21;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .color.yaris span.color-2 {
+    background: #f96072;
+}
+.left_right_price {
+    width: 986px;
+    margin: 0 auto;
+}
+.color_red {
+    color: red;
+}
+.re_boder {
+    background: red;
+    height: 40px;
+    width: 50px;
+}
+.left_right_price .price_left {
+    float: left;
+    max-width: 550px;
+    margin-top: 100px;
+}
+.left_right_price .price_right {
+    float: right;
+    width: 390px;
+    height: 400px;
+    margin-top: 160px;
+}
+.price {
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    border-radius: 3px;
+    margin-right: 11px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: top;
+    min-width: 110px;
+    margin-top: 0px;
+}
+.unit {
+    margin-left: 5px;
+}
+.price1 {
+    background: #000;
+}
+.price2 {
+    background: #90a2a5;
+}
+.price3 {
+    background: #8c8982;
+}
+.price4 {
+    background: #5a6c6e;
+}
+.list_price {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.list_price .note {
+    margin-left: 60px;
+    color: #242320;
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 15px;
+}
+.toyota86-tab .price_color1 {
+    background: #fc7d01;
+}
+.camry-tab .price_color1 {
+    background: #3c4749;
+}
+.camry-tab .price_color2 {
+    background: #9f8467;
+}
+.camry-tab .price_color3 {
+    background: #ceb498;
+}
+.corolla-altis-tab .price_color1 {
+    background: #0b0706;
+}
+.corolla-altis-tab .price_color2 {
+    background: #90a2a5;
+}
+.corolla-altis-tab .price_color3 {
+    background: #8c8982;
+}
+.corolla-altis-tab .price_color4 {
+    background: #5a6c6e;
+}
+.vios-tab .price_color1 {
+    background: #3c4749;
+}
+.vios-tab .price_color2 {
+    background: #9f8467;
+}
+.vios-tab .price_color3 {
+    background: #ceb498;
+}
+.yaris-tab .price_color1 {
+    background: #781f21;
+}
+.yaris-tab .price_color2 {
+    background: #f96072;
+}
+.innova-tab .price_color1 {
+    background: #0b0706;
+}
+.innova-tab .price_color2 {
+    background: #90a2a5;
+}
+.innova-tab .price_color3 {
+    background: #8c8982;
+}
+.innova-tab .price_color4 {
+    background: #5a6c6e;
+}
+.fortuner-tab .price_color1 {
+    background: #90a2a5;
+}
+.fortuner-tab .price_color2 {
+    background: #8c8982;
+}
+.fortuner-tab .price_color3 {
+    background: #000;
+}
+.land-cruiser-tab .price_color1 {
+    background: #534c4d;
+}
+.land-cruiser-tab .price_color2 {
+    background: #fff;
+}
+.land-cruiser-prado-tab .price_color1 {
+    background: #3d6272;
+}
+.hilux-tab .price_color1 {
+    background: #a1a7a7;
+}
+.hilux-tab .price_color2 {
+    background: #202425;
+}
+.hiace-tab .price_color1 {
+    background: #949695;
+}
+.hiace-tab .price_color2 {
+    background: #000;
+}
+li span {
+    padding-top: 2px;
+    font-family: arial;
+    line-height: 18px;
+}
+.list_price ul li {
+    margin-bottom: 20px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+}
+.img_left {
+    margin-left: 50px;
+}
+.normal_right {
+    font-size: 14px;
+    font-family: arial;
+    margin-bottom: 40px;
+}
+.bold_right {
+    font-family: arial;
+    font-size: 24px;
+    color: #a82424;
+    line-height: 35px;
+}
+.cost {
+    background: url(../images/images-corolla-altis/cost.png) 1px -86px no-repeat;
+}
+.dealer {
+    background: url(../images/images-corolla-altis/dealer.png) 0 1px no-repeat;
+}
+.phone {
+    background: url(../images/images-corolla-altis/phone.png) 0 1px no-repeat;
+}
+.li_right {
+    margin-bottom: 7px;
+    width: 242px;
+    height: 55px;
+    line-height: 55px;
+    cursor: pointer;
+    font-size: 11px;
+    font-family: arial;
+    color: #fff;
+    padding-left: 59px;
+}
+.li_hover:hover {
+    background-position: 0 -55px;
+}
+.li_right a {
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%}
+.act {
+    width: 290px;
+    height: 70px;
+    font-size: 22px;
+    line-height: 70px;
+    background-position: 0 0;
+}
+.slogan {
+    width: 320px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -460px;
+    z-index: 100;
+    text-align: left;
+}
+.slogan p {
+    font-size: 13px;
+    color: #fff;
+}
+.slogan .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.camry-menu .camry-logo.vios-logo {
+    margin: 3px 0 0;
+}
+.color table td {
+    width: 157px;
+}
+.camry-cntwrap.vios .list_price li {
+    margin-bottom: 20px;
+}
+.list_price li.last {
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    color: #242320;
+}
+.camry-cntwrap.vios .price1 {
+    background: #3c4749;
+}
+.camry-cntwrap.vios .price2 {
+    background: #9f8467;
+}
+.camry-cntwrap.vios .price3 {
+    background: #ceb498;
+}
+.camry-cntwrap.vios .exterior_1 {
+    margin-left: -270px;
+    top: 259px;
+}
+.camry-cntwrap.vios .exterior_2 {
+    margin-left: -42px;
+    top: 217px;
+}
+.camry-cntwrap.vios .exterior_3 {
+    margin-left: 47px;
+    top: 296px;
+}
+.camry-cntwrap.vios .exterior_4 {
+    margin-left: -144px;
+    top: 265px;
+}
+.camry-cntwrap.vios .interior_1 {
+    margin-left: 237px;
+    top: 80px;
+}
+.camry-cntwrap.vios .interior_2 {
+    margin-left: 362px;
+    top: 179px;
+}
+.camry-cntwrap.vios .interior_3 {
+    margin-left: 448px;
+    top: 93px;
+}
+.camry-cntwrap.vios .performance_1 {
+    margin-left: 126px;
+    top: 174px;
+}
+.camry-cntwrap.vios .performance_2 {
+    margin-left: 404px;
+    top: 202px;
+}
+.camry-cntwrap.vios .performance_3 {
+    margin-left: 370px;
+    top: 137px;
+}
+.camry-cntwrap.vios .safety_1 {
+    margin-left: -40px;
+    top: 128px;
+}
+.camry-cntwrap.vios .safety_2 {
+    bottom: auto;
+    margin-left: 23px;
+    top: 330px;
+}
+.camry-cntwrap.vios .safety_3 {
+    margin-left: 274px;
+    top: 275px;
+}
+.camry-cntwrap.specifications.toyota86 .item-specifications .content-item .color span {
+    width: 623px;
+}
+.text-logo {
+    float: left;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.menu-text li a {
+    padding: 12px 15px 9px!important;
+}
+.wrap_news_top {
+    min-height: 270px;
+    margin-bottom: 30px;
+    width: 790px;
+    float: right;
+}
+.wrap_news_top .news_top {
+    width: 100%;
+    float: left;
+}
+.text_top_news {
+    width: 360px;
+    margin-right: 24px;
+}
+.news_top img {
+    width: 406px;
+}
+.text_top_news h1.title {
+    margin-bottom: 0;
+}
+.text_top_news h1.title a {
+    font-size: 18px;
+    color: #ed1b2f;
+    padding-top: 13px;
+}
+.text_top_news h1.title a:hover {
+    color: #a40a18;
+}
+.text_top_news p.date {
+    color: #8b8888;
+    padding-bottom: 15px;
+}
+a.more_click {
+    display: inline-block;
+    color: #ed1b2f;
+    font-weight: 700;
+    margin-top: 5px;
+}
+a.more_click:hover {
+    color: #a40a18;
+}
+.related_news {
+    width: 986px;
+    margin: 0 auto;
+}
+.related_items {
+    width: 293px;
+    margin: 20px 17px;
+}
+.related_items_2 {
+    width: 248px!important;
+    margin: 10px 0 0!important;
+    height: 330px;
+}
+.related_items p.title a {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.related_items p.title a:hover {
+    color: #a40a18;
+}
+.article-timeline {
+    margin-top: 25px;
+    float: left;
+    width: 160px;
+    border-top: 1px solid #e5e5e5;
+}
+.article-timeline li {
+    float: left;
+}
+.article-timeline li a {
+    float: left;
+    font-family: arial;
+    font-size: 12px;
+    color: #000;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    width: 130px;
+}
+.article-timeline li a:hover, .tl_act {
+    background: #f7f7f7;
+}
+.home-cntwrap {
+    position: relative;
+}
+.div-search-date-form {
+    width: 986px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+.div-search-date-content {
+    position: absolute;
+    right: 0;
+    top: -35px;
+    width: 465px;
+}
+.div-search-date-content #article_caledar_from, .div-search-date-content #article_caledar_to {
+    width: 135px;
+}
+.div-search-date-content p {
+    color: #333;
+    padding: 2px 5px;
+    float: right;
+}
+.div-search-date-content input {
+    float: right;
+}
+#article_caledar_submit {
+    border: none;
+    background: #ED1B2F;
+    color: #fff;
+    height: 25px;
+    margin: 1px 0;
+    cursor: pointer;
+}
+.home-cntwrap .paging {
+    width: 790px;
+    margin-top: 65px;
+    text-align: center;
+    float: right;
+    margin-bottom: 70px;
+}
+.paging a {
+    color: #ca0404;
+}
+.paging a.active, .paging a:hover {
+    color: #000;
+}
+.paging .prev {
+    display: inline-block;
+    margin-right: 25px;
+}
+.paging .next {
+    margin-left: 25px;
+    display: inline-block;
+}
+.paging .page {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border-left: 1px solid #ca0404;
+}
+.home-cntwrap .content {
+    width: 986px;
+    margin: 0 auto;
+}
+.home-cntwrap .social {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 100px;
+}
+.home-cntwrap .content_left {
+    width: 690px;
+    margin-right: 66px;
+    position: relative;
+}
+.content_left .banner_image img {
+    width: 690px;
+}
+.refer table td {
+    width: 275px;
+    border: 1px solid #000;
+    padding: 0 5px;
+    color: #333;
+}
+.article_right {
+    width: 230px;
+}
+.article_right .title_related {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 700;
+    font-size: 12.5px;
+    color: #ed1b2f;
+    margin-top: 40px;
+    padding-bottom: 4px;
+}
+.article_right .title_related img {
+    margin-right: 10px;
+}
+.items_related {
+    margin-top: 15px;
+}
+.items_related img {
+    width: 230px;
+    margin-bottom: 5px;
+}
+.items_related a {
+    display: inline-block;
+    color: #000;
+    line-height: 15px;
+}
+.items_related a:hover {
+    color: #ed1b2f;
+}
+.article_right .title_top {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 700;
+    font-size: 12.5px;
+    color: #ed1b2f;
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+.content_left .text_detail .title {
+    font-size: 18px;
+    color: #ed1b2f;
+    margin-top: 35px;
+}
+.content_left .refer h2 {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.camry-cntwrap.specifications .item-specifications .content-item .color.innova span {
+    width: 152px;
+}
+.click_icon {
+    margin-left: 270px;
+    margin-top: 24px;
+}
+.click_icon .click_l {
+    width: 42px;
+    height: 65px;
+    background: url(../images/l_bgluu.png) no-repeat;
+}
+.click_icon .click_bg {
+    height: 65px;
+    background: url(../images/bgluu.png) repeat-x;
+    position: relative;
+}
+.click_bg .email_send {
+    margin-left: 12px;
+    float: left;
+    display: inline-block;
+    width: 78px;
+    height: 24px;
+    background: url(../images/icon/email1.png) no-repeat;
+    margin-top: 19px;
+}
+.click_bg .email span {
+    font-size: 13px;
+    margin-top: 22px;
+    display: inline-block;
+    float: left;
+    margin-left: -5px;
+}
+.click_bg .email {
+    padding-right: 36px;
+}
+.click_bg .pdf {
+    background: url(../images/icon/line.png) 0 5px no-repeat;
+    margin-right: 14px;
+}
+.click_bg .pdf_send {
+    float: left;
+    width: 90px;
+    height: 31px;
+    background: url(../images/icon/pdf.png) no-repeat;
+    margin-top: 12px;
+    margin-left: 13px;
+}
+.click_bg .pdf span {
+    margin-top: 22px;
+    font-weight: 700;
+    font-size: 13px;
+    float: left;
+    margin-left: -9px;
+}
+.click_icon .click_r {
+    width: 42px;
+    height: 65px;
+    background: url(../images/l_bgluu.png) -42px 0 no-repeat;
+}
+.table_price table.view_tb {
+    width: 986px;
+    margin: 0 auto;
+}
+.table_price tr td {
+    height: 75px;
+    padding: 5px 0;
+    line-height: 25px;
+}
+.qc td {
+    padding: 5px 40px!important;
+}
+.table_price tr:first-child {
+    border-top: none;
+}
+.table_price tr {
+    border-top: 1px solid #d6d6d6;
+}
+.table_price tr .image {
+    width: 195px;
+}
+.table_price tr .image img {
+    margin-left: -10px;
+}
+.table_price tr .name {
+    text-align: left;
+    width: 160px;
+}
+.table_price tr .qc {
+    padding: 0 5px;
+    width: 330px;
+}
+.table_price tr .pricecar {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 10px 0 0;
+    text-align: right;
+    width: 145px;
+}
+.name td {
+    font-weight: 700;
+    font-size: 14px;
+}
+.pricecar td {
+    text-align: right;
+}
+.dtcp {
+    padding: 5px 10px!important;
+}
+.table_price tr .pricecar table tr td {
+    width: 135px;
+}
+.table_price tr .dtcp a {
+    font-size: 11px;
+    padding-left: 15px;
+    background: url(../images/arrow.png) 0 2px no-repeat;
+}
+.table_price tr .dtcp a:hover {
+    color: #eb2a2d;
+    text-decoration: underline;
+}
+.table_price table.view_tb tr td table tr td {
+    border: none!important;
+}
+p.note {
+    margin-top: 30px;
+    font-size: 14px;
+    margin-left: 85px;
+    color: #333;
+}
+ul.note {
+    width: 368px;
+}
+.text_note {
+    padding-left: 50px;
+    color: #333;
+    font-size: 11px;
+    font-style: italic;
+    text-align: justify;
+}
+.cost_form {
+    margin-top: 77px;
+    width: 100%;
+    min-height: 10px;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+.cost_form .form {
+    margin-bottom: 40px;
+    margin-top: 56px;
+    width: 450px;
+}
+.cost_form .form form {
+    margin-top: 0;
+}
+.cost_form .row_select {
+    width: 450px;
+    margin-bottom: 3px;
+    position: relative;
+    z-index: 0;
+}
+.cost_form .row_select_1 {
+    z-index: 3;
+}
+.cost_form .row_select_2 {
+    z-index: 2;
+}
+.cost_form .row_select_3 {
+    z-index: 1;
+}
+.cost_form .show {
+    width: 535px;
+    height: 483px;
+    background: url(../images/bg_form.png) left 58px no-repeat;
+}
+.cost_form .show.car {
+    background: url(../images/bg_form2.png) left 58px no-repeat;
+}
+.cost_form .row_select span.label {
+    font-size: 15px;
+    margin-left: 0;
+    width: 170px;
+}
+.cost_form .row_select span.label sup {
+    font-size: 11px;
+    color: #333;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+.cost_form .row_select span {
+    height: 36px;
+    line-height: 36px;
+}
+.cost_form .row_select .select {
+    margin-left: 10px;
+    width: 255px;
+    height: 36px;
+    background: url(../images/bg_select.png) no-repeat;
+}
+.btn_tcp {
+    display: inline-block;
+    width: 218px;
+    height: 58px;
+    background: url(../images/btn/tinhchiphi.png) no-repeat;
+    margin-top: 43px;
+    cursor: pointer;
+}
+.form .btn {
+    text-align: right;
+    padding-right: 13px;
+}
+.btn_tcp:hover, .show.car .btn_httc:hover, .show.car .btn_timdaily:hover {
+    background-position: 0 -58px;
+}
+.btn_tsct {
+    display: inline-block;
+    width: 154px;
+    height: 42px;
+    margin-top: 74px;
+    background: url(../images/btn/tsct.png) no-repeat;
+}
+.btn_tsct:hover {
+    background-position: 0 -42px;
+}
+.btn_ssct {
+    display: inline-block;
+    width: 154px;
+    height: 42px;
+    margin-top: 4px;
+    background: url(../images/btn/tsct.png) no-repeat;
+}
+.btn_ssct:hover {
+    background-position: 0 -42px;
+}
+
+.select .sbHolder {
+    background: 0 0;
+    width: 255px;
+    height: 36px;
+    border: none;
+}
+.select .sbToggle {
+    width: 50px;
+    height: 36px;
+}
+.select .sbSelector {
+    width: 205px;
+    height: 36px;
+    line-height: 36px;
+    text-align: right;
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+}
+.select .sbOptions {
+    margin-left: 1px;
+    width: 253px;
+    background: #fff;
+    border: 1px solid #666;
+}
+.select .sbOptions a {
+    color: #666;
+    text-align: right;
+    font-size: 18px;
+    font-style: italic;
+}
+.select .sbOptions a.sbFocus, .select .sbOptions a:focus, .select .sbOptions a:hover {
+    color: #000;
+}
+.cost_form .show .detail {
+    display: none;
+}
+.show.car .detail {
+    display: block;
+}
+.show.car .detail p.title {
+    margin-top: 44px;
+}
+.show.car .detail p {
+    font-size: 30px;
+    font-style: italic;
+    line-height: 36px;
+    width: 100%;
+    text-align: center;
+}
+.show.car .detail p span {
+    color: #ed1b2f;
+    text-transform: uppercase;
+}
+.show.car .btn_detail {
+    display: inline-block;
+    width: 116px;
+    height: 31px;
+    background: url(../images/btn/detail.png) no-repeat;
+    margin-top: 15px;
+}
+.show.car .btn_detail:hover {
+    background-position: 0 -31px;
+}
+.show.car .group {
+    width: 100%;
+    position: relative;
+}
+.show.car .btn_timdaily {
+    margin-top: 30px;
+    margin-left: 47px;
+    display: inline-block;
+    width: 262px;
+    height: 58px;
+    background: url(../images/btn/timdaily.png) no-repeat;
+}
+.show.car .btn_httc {
+    margin-left: 47px;
+    margin-top: 5px;
+    display: inline-block;
+    width: 262px;
+    height: 58px;
+    background: url(../images/btn/hotrotaichinh.png) no-repeat;
+}
+.show.car .group .img {
+    position: absolute;
+    top: 10px;
+    left: 240px;
+}
+.show.car .text {
+    width: 465px;
+    margin-left: 65px;
+    font-style: italic;
+    color: #494747;
+}
+.show.car .text span {
+    text-transform: uppercase;
+}
+.show.car .text .line {
+    margin-top: 17px;
+    width: 470px;
+    margin-bottom: 28px;
+}
+#chiphidt, .chiphidt {
+    padding: 14px 0 3px;
+    width: 813px;
+    background: #fff;
+}
+#chiphidt .title, .chiphidt .title {
+    margin: 0 auto;
+    background: #ed1b2f;
+    color: #fff;
+    padding: 0 30px;
+    width: 731px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    font-weight: 700;
+}
+#chiphidt .img {
+    min-height: 410px;
+    background: url(../images/bg_popup.png) right 0 no-repeat #f2f2f2;
+    width: 376px;
+    text-align: center;
+}
+#chiphidt .img img {
+    margin-top: 140px;
+    margin-bottom: 7px;
+}
+#chiphidt .table {
+    width: 405px;
+    padding: 18px 16px 14px;
+}
+#chiphidt .table table {
+    width: 405px;
+}
+#chiphidt .table td {
+    width: 100%;
+    padding: 0 9px 0 14px;
+    height: 26px;
+}
+#chiphidt .table span {
+    font-weight: 700;
+}
+#chiphidt .table span.cicle {
+//text-decoration: underline;
+}
+#chiphidt .table span.sub {
+    margin-left: 15px;
+    font-weight: 400;
+}
+#chiphidt .table .color {
+    background: #f9f8f8;
+}
+#chiphidt .table .font_14 {
+    font-size: 14px;
+    font-weight: 700;
+}
+#chiphidt .table .percent {
+    color: #bcbbbb;
+    font-style: italic;
+}
+#chiphidt .total {
+    font-size: 21.5px;
+    color: #ed1b2f;
+    width: 360px;
+    text-align: center;
+    border-top: 1px dashed #6b6b6b;
+    padding-top: 17px;
+    margin: 15px auto 0;
+    font-weight: 700;
+}
+#chiphidt .total span {
+    text-decoration: underline;
+}
+.map {
+    margin-top: 0;
+    position: relative;
+}
+.map .form_search {
+    position: absolute;
+    left: 66px;
+    top: 0;
+}
+.go_dealer {
+    cursor: pointer;
+}
+.map .form_search .top {
+    width: 243px;
+    height: 7px;
+    background: url(../images/tse.png) 1px 0 no-repeat;
+}
+.map .form_search .bt {
+    width: 243px;
+    height: 14px;
+    background: url(../images/tse.png) 1px -7px no-repeat;
+}
+.map .form_search .bg {
+    background: url(../images/tse1.png) repeat-y;
+    padding: 10px 10px 10px 12px;
+}
+.map .form_search li.list_tinh {
+    border-bottom: 1px solid #dedede;
+    width: 195px;
+}
+.map .form_search ul {
+    margin-left: 17px;
+}
+.map .form_search li a {
+    font-size: 13px;
+}
+.map .form_search li a:hover {
+    color: #eb2a2d;
+}
+.map .form_search .search_map {
+    margin-top: 20px;
+    width: 221px;
+    height: 41px;
+    background: url(../images/search1.jpg) no-repeat;
+}
+.search_map .sbHolder {
+    width: 221px;
+    height: 41px;
+    background: 0 0;
+    border: none;
+}
+.search_map .sbToggle {
+    width: 30px;
+    height: 41px;
+}
+.search_map .sbSelector {
+    width: 191px;
+    height: 41px;
+    line-height: 41px;
+    color: #333;
+}
+.search_map .sbOptions {
+    width: 221px;
+    background: #fff;
+    margin-left: 0!important;
+    border: 1px solid #cfcfcf;
+}
+.search_map .sbOptions a:link, .search_map .sbOptions a:visited {
+    color: #333;
+}
+.search_map .sbOptions a.sbFocus, .search_map .sbOptions a:focus, .search_map .sbOptions a:hover {
+    color: #df1616;
+}
+.search_map li {
+    width: 205px!important;
+}
+.search_map .ip_search {
+    float: left;
+    width: 170px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: 0 0;
+    border: none;
+}
+.search_map a.btn_search {
+    float: left;
+    width: 35px;
+    height: 41px;
+}
+.services_title {
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none!important;
+    white-space: nowrap;
+    line-height: 42px;
+}
+.services_menu {
+    background: url(../images/images-corolla-altis/black-arrow.png) 100px bottom no-repeat;
+    border-bottom: 2px solid #333;
+    height: 49px;
+    margin: 63px auto 0;
+    padding: 70px 0 0;
+    position: relative;
+    width: 986px;
+    z-index: 1;
+}
+.services_menu .services_logo {
+    float: left;
+    text-align: center;
+    width: 204px;
+}
+.services_menu ul {
+    float: right;
+    list-style: none;
+    padding-left: 2px;
+    width: 708px;
+}
+.services_menu ul li {
+    float: left;
+}
+.services_menu ul li a {
+    color: #333;
+    display: block;
+    padding: 12px 11px 9px;
+    text-decoration: none;
+}
+.services_menu ul li a.active, .services_menu ul li a:hover {
+    color: #eb1d2f;
+    border-bottom: 8px solid #ED1B2F;
+}
+.box-pt {
+    display: block;
+    width: 986px;
+    min-height: 700px;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+.box-pt .header-pt {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    clear: both;
+    margin-top: 100px;
+}
+.box-pt .header-pt .box1, .box-pt .header-pt .box2 {
+    width: 300px;
+    height: 63px;
+    top: -50px;
+    position: absolute;
+    background-image: url(../images/phutung/bg-header.png);
+}
+.box-pt .header-pt .box1 {
+    left: 90px;
+}
+.box-pt .header-pt .box2 {
+    left: 580px;
+}
+.box-pt span.line-access {
+    width: 230px;
+    height: 5px;
+    margin-left: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.box-pt .header-pt a:hover span, .box-pt .header-pt span.active {
+    background: #eb2a2d;
+    width: 230px;
+    height: 5px;
+    margin-left: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.box-pt .header-pt p {
+    margin-top: 6px;
+    font-size: 18px;
+    text-align: center;
+}
+.box-pt .bottom-pt {
+    width: 986px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    background: url(../images/phutung/bg-pt.png) no-repeat;
+}
+.box-pt .bottom-pt .box1 {
+    margin-top: 20px;
+    position: absolute;
+    left: 50px;
+    top: 110px;
+    z-index: 2;
+}
+.box-pt .bottom-pt .box2 {
+    margin-top: 20px;
+    position: absolute;
+    left: 570px;
+    top: 80px;
+    z-index: 2;
+}
+.box-pt .news-pt {
+    width: 986px;
+    height: 200px;
+    margin: 100px auto 0;
+    position: relative;
+}
+.box-pt .news-pt .box-info {
+    left: 0;
+    z-index: 1;
+    width: 580px;
+    display: inline-block;
+    position: absolute;
+}
+.box-pt .news-pt .title {
+    font-size: 18px;
+}
+.box-pt .news-pt .des {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.box-pt .news-pt img {
+    right: 0;
+    display: inline-block;
+    position: absolute;
+}
+.box-pt .header2-pt {
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
+.box-pt .header2-pt .box1, .box-pt .header2-pt .box2 {
+    width: 300px;
+    height: 63px;
+    top: -50px;
+    position: absolute;
+    background-image: url(../images/phutung/bg-header.png);
+}
+.box-pt .header2-pt .box1 {
+    left: 90px;
+    z-index: 1;
+}
+.box-pt .header2-pt .box2 {
+    left: 580px;
+}
+.box-pt .header2-pt .active {
+    z-index: 1;
+}
+.box-pt .header2-pt span.line-active {
+    width: 230px;
+    height: 5px;
+    margin-left: 30px;
+    text-align: center;
+    background: #eb2a2d;
+    display: inline-block;
+}
+.box-pt .header2-pt span.no-active {
+    width: 230px;
+    height: 5px;
+    margin-left: 30px;
+    text-align: center;
+    background: 0 0;
+    display: inline-block;
+}
+.box-pt .header2-pt p {
+    margin-top: 6px;
+    font-size: 18px;
+    text-align: center;
+}
+.box-pt .bottom2-pt {
+    width: 986px;
+    height: 380px;
+    margin: 0 auto;
+    padding-top: 150px;
+    position: relative;
+    background: url(../images/phutung/bgbt.png) no-repeat;
+}
+.list_carousel {
+    background-color: #ccc;
+    margin: 150px 0 30px 60px;
+    width: 600px;
+}
+.list_carousel ul {
+    margin: 0 0 0 50px;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+.list_carousel li {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding: 0;
+    display: block;
+    float: left;
+    height: 290px;
+}
+.list_carousel li p {
+    position: relative;
+    left: -5px;
+    font-weight: 600;
+}
+.list_carousel li.item-1 {
+    width: 120px;
+    margin: auto 30px;
+}
+.list_carousel li.item-2 {
+    width: 208px;
+    margin: auto 30px;
+}
+.list_carousel li.item-3 {
+    width: 157px;
+    margin: auto 30px;
+}
+.list_carousel li.item-4 {
+    width: 153px;
+    margin: auto 30px;
+}
+.list_carousel li.item-1 {
+    position: relative;
+}
+.list_carousel li.item-2 {
+    position: relative;
+    top: 16px;
+}
+.list_carousel li.item-3 {
+    position: relative;
+    top: -5px;
+}
+.list_carousel li.item-4 {
+    position: relative;
+    top: 30px;
+}
+.list_carousel.responsive {
+    width: auto;
+    margin-left: 0;
+}
+.clearfix {
+    float: none;
+    clear: both;
+}
+.prev {
+    float: left;
+    margin-left: 10px;
+    width: 64px;
+    height: 64px;
+    background: url(../images/phutung/arrow.png) no-repeat;
+    position: relative;
+    top: -215px;
+    left: -100px;
+}
+.next {
+    float: right;
+    margin-right: 10px;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -215px;
+    right: -100px;
+    background: url(../images/phutung/arrow.png) -64px 0 no-repeat;
+}
+.prev:hover {
+    background-position: 0 -64px;
+}
+.next:hover {
+    background-position: -64px -64px;
+}
+.prev.disabled:hover {
+    background-position: 0 0;
+}
+.next.disabled:hover {
+    background-position: -64px 0;
+}
+.pager {
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+.pager a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+.pager a.selected {
+    text-decoration: underline;
+}
+.timer {
+    background-color: #999;
+    height: 6px;
+    width: 0;
+}
+.warrant-banner {
+    position: relative;
+    width: 986px;
+    height: 232px;
+    margin: 0 auto;
+}
+.warrant-cntwrap {
+    position: relative;
+    width: 986px;
+    margin: 30px auto 0;
+    z-index: 10;
+}
+.warrant-cntwrap .tab-title-warrant {
+    height: 33px;
+}
+.warrant-cntwrap .tab-title-warrant .btn-title {
+    display: inline-block;
+    width: 184px;
+    height: 33px;
+    background: #a82424;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.warrant-cntwrap .tab-title .icon-mail {
+    display: inline-block;
+    padding-left: 34px;
+    background: url(../images/images-corolla-altis/icon/icon-mail.png) no-repeat;
+    margin: 8px 0 0 17px;
+}
+.warrant-cntwrap .tab-title .tab {
+    display: inline-block;
+    width: 628px;
+    height: 27px;
+    padding: 0 23px 0 0;
+    margin: 4px 0 0;
+    position: relative;
+    z-index: 0;
+}
+.warrant-cntwrap .item-specifications .title-item {
+    width: 986px;
+    height: 44px;
+    background: url(../images/images-yaris/bg/bg-tab-specifications.png) no-repeat;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+.warrant-cntwrap .item-specifications .content-warrant {
+    display: none;
+    width: 946px;
+    position: relative;
+    background: #fff;
+    padding: 50px 20px;
+    color: #000;
+}
+.warrant-cntwrap .item-specifications .content-warrant b {
+    font-size: 14px;
+    font-weight: 700;
+}
+.warrant-cntwrap .item-specifications .content-warrant span {
+    display: block;
+    font-size: 13px;
+    text-align: justify;
+}
+.warrant-cntwrap .item-specifications .title-item.active, .warrant-cntwrap .item-specifications .title-item:hover {
+    background-position: 0 -44px;
+    color: #fff;
+}
+.warrant-cntwrap .item-specifications .title-item .icon-plus {
+    display: inline-block;
+    background: url(../images/images-corolla-altis/icon/icon-plus.png) 0 1px no-repeat;
+    margin: 11px 0 0 9px;
+    padding-left: 30px;
+    line-height: 22px;
+}
+.warrant-cntwrap .item-specifications .title-item.active .icon-plus {
+    background: url(../images/images-corolla-altis/icon/icon-plus-active.png) 0 1px no-repeat;
+}
+.amry-cntwrap.specifications.innova .tab-title .tab .tab-1, .camry-cntwrap.specifications.corolla-altis .item-specifications .content-item .color .color-1, .camry-cntwrap.specifications.corolla-altis .tab-title .tab .tab-1, .camry-cntwrap.specifications.innova .item-specifications .content-item .color .color-1 {
+    background: #5a6c6e;
+}
+.amry-cntwrap.specifications.innova .tab-title .tab .tab-2, .camry-cntwrap.specifications.corolla-altis .item-specifications .content-item .color .color-2, .camry-cntwrap.specifications.corolla-altis .tab-title .tab .tab-2, .camry-cntwrap.specifications.innova .item-specifications .content-item .color .color-2 {
+    background: #8c8982;
+}
+.amry-cntwrap.specifications.innova .tab-title .tab .tab-3, .camry-cntwrap.specifications.corolla-altis .item-specifications .content-item .color .color-3, .camry-cntwrap.specifications.corolla-altis .tab-title .tab .tab-3, .camry-cntwrap.specifications.innova .item-specifications .content-item .color .color-3 {
+    background: #90a2a5;
+}
+.amry-cntwrap.specifications.fortuner .tab-title .tab .tab-3, .amry-cntwrap.specifications.innova .tab-title .tab .tab-4, .camry-cntwrap.specifications.corolla-altis .item-specifications .content-item .color .color-4, .camry-cntwrap.specifications.corolla-altis .tab-title .tab .tab-4, .camry-cntwrap.specifications.fortuner .item-specifications .content-item .color .color-3, .camry-cntwrap.specifications.innova .item-specifications .content-item .color .color-4 {
+    background: #0b0706;
+}
+.amry-cntwrap.specifications.toyota86 .tab-title .tab .tab-1, .camry-cntwrap.specifications.toyota86 .item-specifications .content-item .color .color-1 {
+    background: #fc7d01;
+}
+.amry-cntwrap.specifications.camry .tab-title .tab .tab-1, .amry-cntwrap.specifications.vios .tab-title .tab .tab-1, .camry-cntwrap.specifications.camry .item-specifications .content-item .color .color-1, .camry-cntwrap.specifications.vios .item-specifications .content-item .color .color-1 {
+    background: #3c4749;
+}
+.amry-cntwrap.specifications.camry .tab-title .tab .tab-2, .amry-cntwrap.specifications.vios .tab-title .tab .tab-2, .camry-cntwrap.specifications.camry .item-specifications .content-item .color .color-2, .camry-cntwrap.specifications.vios .item-specifications .content-item .color .color-2 {
+    background: #9f8467;
+}
+.amry-cntwrap.specifications.camry .tab-title .tab .tab-3, .amry-cntwrap.specifications.vios .tab-title .tab .tab-3, .camry-cntwrap.specifications.camry .item-specifications .content-item .color .color-3, .camry-cntwrap.specifications.vios .item-specifications .content-item .color .color-3 {
+    background: #ceb498;
+}
+.amry-cntwrap.specifications.fortuner .tab-title .tab .tab-1, .camry-cntwrap.specifications.fortuner .item-specifications .content-item .color .color-1 {
+    background: #676c6f;
+}
+.amry-cntwrap.specifications.fortuner .tab-title .tab .tab-2, .camry-cntwrap.specifications.fortuner .item-specifications .content-item .color .color-2 {
+    background: #acb0b1;
+}
+.amry-cntwrap.specifications.hiace .tab-title .tab .tab-1, .camry-cntwrap.specifications.hiace .item-specifications .content-item .color .color-1 {
+    background: #a0adb5;
+}
+.amry-cntwrap.specifications.hiace .tab-title .tab .tab-2, .camry-cntwrap.specifications.hiace .item-specifications .content-item .color .color-2 {
+    background: #000;
+}
+.amry-cntwrap.specifications.hilux .tab-title .tab .tab-1, .camry-cntwrap.specifications.hilux .item-specifications .content-item .color .color-1 {
+    background: #202425;
+}
+.amry-cntwrap.specifications.hilux .tab-title .tab .tab-2, .camry-cntwrap.specifications.hilux .item-specifications .content-item .color .color-2 {
+    background: #a1a7a7;
+}
+.amry-cntwrap.specifications.land-cruiser .tab-title .tab .tab-1, .camry-cntwrap.specifications.land-cruiser .item-specifications .content-item .color .color-1 {
+    background: #534c4d;
+}
+.amry-cntwrap.specifications.land-cruiser-prado .tab-title .tab .tab-1, .camry-cntwrap.specifications.land-cruiser-prado .item-specifications .content-item .color .color-1 {
+    background: #3d6272;
+}
+.amry-cntwrap.specifications.yaris .tab-title .tab .tab-1, .camry-cntwrap.specifications.yaris .item-specifications .content-item .color .color-1 {
+    background: #781f21;
+}
+.amry-cntwrap.specifications.yaris .tab-title .tab .tab-2, .camry-cntwrap.specifications.yaris .item-specifications .content-item .color .color-2 {
+    background: #f96072;
+}
+.tab-color {
+    background: #3C4749;
+}
+.tab-1 {
+    background: #3C4749!important;
+}
+.tab-2 {
+    background: #9F8467!important;
+}
+.tab-3 {
+    background: #CEB498!important;
+}
+.tab-4 {
+    background: #90A2A5!important;
+}
+.home-compare {
+    margin-top: 0!important;
+    padding-top: 0!important;
+}
+.title-compare {
+    height: 65px;
+    max-height: 65px!important;
+    min-height: 65px!important;
+}
+.title-compare p.title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 7px;
+}
+#option_compare {
+    position: relative;
+}
+.div_khongphukien {
+    width: 100%}
+.div_khongphukien p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ED1B2F;
+}
+.car_model .width_img {
+    width: 246px;
+    display: block;
+}
+.access_items.accessories li {
+    width: 176px;
+    margin: 0 5px;
+    list-style-type: none;
+}
+.access_items.accessories a {
+    display: block;
+}
+.access_items .jcarosel_access {
+    margin-left: -2px;
+}
+#popup_exter_1 {
+    width: 813px;
+    overflow: hidden;
+}
+#option_compare {
+    width: 808px;
+    margin: 0 auto;
+}
+#option_compare .price_select, #option_compare .seat_select {
+    text-align: center;
+    padding: 0 60px;
+    width: 278px;
+}
+#option_compare .title {
+    color: #2f3239;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.ui-widget-content {
+    border: none!important;
+    background: #CACACA;
+    height: 12px;
+    border-radius: 6px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url(../images/icon/option.png) no-repeat;
+    width: 27px;
+    height: 28px;
+    margin-top: -3px;
+    border: none;
+    cursor: pointer;
+}
+.ui-state-default.ui-state-hover {
+    background: url(../images/icon/option.png) 0 -28px no-repeat;
+}
+.ui-slider-horizontal .ui-slider-range {
+    background: url(../images/icon/range.png) repeat-x;
+}
+#amount1, #amount2 {
+    margin-top: 9px;
+    font-size: 14px;
+    color: #2f3239;
+}
+.option_wrap {
+    border-top: 1px dotted #aca9a9;
+    border-bottom: 1px dotted #aca9a9;
+    margin-top: 15px;
+    padding: 10px 0 10px 45px;
+}
+.option_wrap p {
+    font-size: 14px;
+    color: #2f3239;
+    font-weight: 700;
+    margin-bottom: 11px;
+    margin-left: 2px;
+}
+.option_wrap label {
+    margin-right: 25px;
+}
+.option_wrap .nhienlieu {
+    margin-left: 103px;
+}
+#compare_result {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.xe1 {
+    margin-top: 50px;
+}
+.xe1 .img {
+    width: 464px;
+    height: 183px;
+    text-align: right;
+    border-right: 1px solid #cfcfcf;
+}
+.xe1 .img img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 33px;
+}
+.xe1 .img span {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.xe1 .text {
+    text-align: left;
+    padding-left: 40px;
+}
+.xe1 .text .name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+.xe1 .text .pricecp {
+    margin-top: -4px;
+    color: #373535;
+    font-size: 13px;
+    margin-bottom: 11px;
+}
+.xe1 .text .descr {
+    line-height: 15.5px;
+    width: 200px;
+}
+.xe3 .descr {
+    float: left;
+    width: 200px;
+    margin: 3px 30px;
+    text-align: left;
+    text-align: center;
+}
+.xe3 {
+    text-align: center;
+    padding-top: 10px;
+}
+.xe3 .car_items {
+    width: 268px;
+//height: 237px;
+    border-left: 1px solid #cfcfcf;
+    margin-bottom: 22px;
+}
+.xe3 .car_items .img {
+    margin-top: 31px;
+}
+.xe3 .car_items:first-child {
+    border-left: none;
+}
+.xe3 .car_items .name {
+    font-size: 14px;
+    color: #282627;
+    margin-top: 13px;
+    font-weight: 700;
+}
+.xe3 .price_3, .xe3 .seat {
+    font-size: 13px;
+}
+.xe3 p {
+    line-height: 17px;
+}
+.xe3 .checker_3 {
+    margin-top: 5px;
+}
+.btn_bdss {
+    width: 154px;
+    height: 42px;
+    display: inline-block;
+    background: url(../images/btn/bdss.png) no-repeat;
+}
+.btn_bdss:hover {
+    background-position: 0 -42px;
+}
+.xe3 .btn_bdss {
+    margin-top: 40px;
+}
+.xe6 {
+    width: 986px;
+    margin-left: -85px;
+    padding-top: 5px;
+}
+.xe6 .car_items {
+    width: 164px;
+    margin-bottom: 8px;
+}
+.xe6 .car_items .name {
+    font-size: 13.5px;
+    font-weight: 700;
+}
+.xe6 .car_items .img {
+    height: 80px;
+}
+.xe6 .car_items .name {
+    height: 40px;
+}
+.xe6 .btn_bdss {
+    margin-top: 60px;
+}
+.xe3 .car_items .img,
+.xe3 .car_items .name,
+.xe6 .car_items .img,
+.xe6 .car_items .name {
+    cursor: pointer;
+}
+.wrap_accessories {
+    width: 100%;
+    min-height: 498px;
+    background: url(../images/phutung/bgbt2.png) no-repeat;
+    padding-top: 38px;
+}
+.accessories_content {
+    width: 925px;
+    margin: auto;
+}
+.select_car_model .sbHolder {
+    width: 400px;
+    height: 34px;
+    border: 1px solid #a5a5a5;
+    background: #fff;
+}
+.select_car_model .sbSelector {
+    width: 389px;
+    height: 34px;
+    line-height: 34px;
+    color: #000;
+}
+.select_car_model .sbOptions {
+    width: 400px;
+    max-height: 110px!important;
+    background: #fff;
+}
+.select_car_model .sbOptions a:link, .select_car_model .sbOptions a:visited {
+    color: #666;
+}
+.select_car_model .sbOptions a.sbFocus, .select_car_model .sbOptions a:focus, .select_car_model .sbOptions a:hover {
+    color: #000;
+}
+.select_car_model .sbToggle {
+    height: 20px;
+    width: 24px;
+    background: url(../images/icon/select_icon.png) no-repeat;
+    right: 12px;
+    top: 9px;
+}
+.select_car_model .sbToggleOpen {
+    background-position: 0 -20px;
+}
+.car_model {
+    margin-top: 15px;
+    position: relative;
+    z-index: 0;
+    width: 452px;
+}
+.car_model img {
+    position: relative;
+    z-index: 1;
+}
+.car_model .car_model_color {
+    position: absolute;
+    z-index: 0;
+    top: 24px;
+    right: 0;
+    height: 45px;
+    width: 230px;
+    background: #ED1B2F;
+    display: block;
+    line-height: 45px;
+    color: #f4f7fc;
+    padding-right: 15px;
+    font-size: 22px;
+    text-align: right;
+    border-radius: 0 8px 8px 0;
+    -moz-border-radius: 0 8px 8px 0;
+    -webkit-border-radius: 0 8px 8px 0;
+}
+.product_menu {
+    visibility: hidden;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding-bottom: 1px;
+}
+.row1 .product_menu {
+    top: 100px;
+}
+.row2 .product_menu {
+    top: 90px;
+}
+.product_menu_info {
+    width: 380px;
+    height: 393px;
+    background: url(../images/product_menu_info_bg.jpg) no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.product_menu_bottom_bg {
+    width: 100%;
+    height: 17px;
+    background: url(../images/product_menu_bg.png) repeat-x;
+}
+.red_line {
+    width: 100%;
+    height: 10px;
+    background: #cd0500;
+}
+.model_name {
+    color: #dc1a21;
+    font-size: 31px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 35px 0 0 15px;
+}
+.model_price {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 27px;
+    padding-left: 20px;
+}
+.model_price_number {
+    font-size: 21px;
+    font-weight: 400;
+    color: #ed1b2f;
+}
+.model_des {
+    font-size: 11px;
+    color: #000;
+    padding: 0 20px;
+    margin-top: 3px;
+    height: 42px;
+}
+.product_menu_link {
+    width: 162px;
+    padding-left: 28px;
+    margin-top: 40px;
+}
+.product_menu_link a {
+    font-size: 14px!important;
+    color: #fff!important;
+    font-weight: 400!important;
+    padding: 0 0 0 23px!important;
+    text-align: left!important;
+    background: url(../images/red_dot.png) 0 center no-repeat!important;
+    text-transform: none!important;
+    height: auto!important;
+    margin-top: 11px!important;
+}
+.product_menu_link a:hover {
+    color: #ed1b2f!important;
+}
+.product_bottom_link {
+    margin-top: 21px;
+}
+.bottom_link {
+    width: 126px;
+    height: 83px!important;
+    display: block;
+    text-align: center;
+}
+.bottom_link img {
+    vertical-align: middle;
+}
+.helper {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.product_menu_banner {
+    width: 600px;
+    height: 392px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.product_menu_banner .bx-wrapper {
+    width: 600px;
+    height: 392px;
+}
+.product_menu_banner .bx-wrapper ul li {
+    width: 600px!important;
+    height: 392px!important;
+}
+.product_menu_banner .bx-controls-direction {
+    display: none;
+}
+.product_menu_banner .bx-pager {
+    text-align: center;
+}
+.product_menu_banner .bx-pager-item {
+    width: 35px;
+    display: inline-block;
+}
+.product_menu_banner .bx-pager-link {
+    width: 21px!important;
+    height: 28px!important;
+    background: url(../images/banner_nav.png) 0 -28px no-repeat!important;
+    overflow: hidden;
+    text-indent: -999px;
+    font-size: 0;
+}
+.product_menu_banner .bx-pager-link.active, .product_menu_banner .bx-pager-link:hover {
+    background-position: 0 0!important;
+}
+.product_menu_banner .bx-controls {
+    bottom: 6px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+}
+.menu_arrow_down {
+    width: 49px;
+    height: 16px;
+    background: url(../images/product_menu_arrow.png) no-repeat;
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    margin-left: -24.5px;
+    display: none;
+}
+.form-purchase .error {
+    position: absolute;
+    color: #AD0C0C;
+    font-size: 16px;
+    font-weight: 700;
+    bottom: 85px;
+    right: 13px;
+    display: none;
+}
+.fix_top_left .error {
+    position: absolute;
+    color: #AD0C0C;
+    font-size: 16px;
+    font-weight: 700;
+    bottom: 75px;
+    left: 90px;
+    display: none;
+}
+#compare_result .error {
+    position: absolute;
+    color: #AD0C0C;
+    font-size: 16px;
+    font-weight: 700;
+    bottom: 50px;
+    left: 290px;
+    display: none;
+}
+.div-bg-loading {
+    width: 986px;
+    left: -80px;
+    height: 500px;
+    float: left;
+    position: absolute;
+    z-index: 100;
+    background: url(../images/ajax-loader.gif) #fff center no-repeat;
+    display: none;
+}
+.loading-service {
+    width: 620px;
+    right: -80px;
+    height: 390px;
+    float: left;
+    position: absolute;
+    z-index: 50;
+    background: url(../images/ajax-loader.gif) #fff center no-repeat;
+    display: none;
+}
+#compare_result .result-note {
+    width: 100%;
+    top: 20px;
+    left: 0;
+    text-align: center;
+    position: absolute;
+    color: #AD0C0C;
+    font-size: 16px;
+    font-weight: 700;
+}
+#compare_result .xe3 .img {
+    height: 110px;
+}
+#wrap_youtube_video {
+    width: 986px;
+    margin: 0 auto auto;
+    height: 509px;
+}
+.lof-slidecontent .navigator-wrapper.youtube_video {
+    color: #FFF;
+    height: 509px!important;
+    margin: 0 auto!important;
+    overflow: hidden;
+    position: relative;
+    width: 173px!important;
+    z-index: 10;
+}
+.navigator-content.youtube_video {
+    width: 173px;
+    margin: 0;
+    padding: 0;
+}
+.navigator-content.youtube_video img {
+    padding: 0 0 5px!important;
+    width: 173px!important;
+    height: 98px!important;
+    background: none!important;
+}
+#wrap_youtube_video .sliders-wrap-inner.youtube_video {
+    width: 100%}
+#wrap_youtube_video .sliders-wrap-inner .youtube_video {
+    width: 100%!important;
+}
+.sliders-wrap-inner li.youtube_video {
+    width: 798px!important;
+}
+.services_content {
+    width: 986px;
+    margin: auto;
+}
+.services_content_left {
+    width: 680px;
+    line-height: 15px;
+}
+.services_content_left p {
+    text-align: justify;
+}
+.services_content_left img {
+    width: 680px;
+}
+.services_content_right {
+    width: 230px;
+    margin-top: 20px;
+}
+.other_service {
+    margin-top: 15px;
+}
+.other_service:first-child {
+    margin-top: 24px;
+}
+.other_service_img {
+    width: 80px;
+}
+.other_service_img img {
+    padding: 2px;
+    border: 1px solid #c7c7c7;
+}
+.other_service_info {
+    background: url(../images/service_news_bg.png) right bottom repeat-x;
+    height: 89px;
+    line-height: 15px;
+    margin-left: 6px;
+    padding-left: 10px;
+    width: 134px;
+}
+.other_service_info p {
+    display: inline-block;
+    height: 89px;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 25px;
+}
+.other_service_info p span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%}
+.other_service_info a:hover p {
+    color: #666!important;
+}
+.bg-loading {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+}
+.scrollup {
+    width: 40px;
+    height: 21px;
+    position: fixed;
+    bottom: 26px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url(../images/admin/icons/ui.totop.png) no-repeat;
+}
+.lkname {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #333;
+    padding-bottom: 15px;
+}
+.tbl_lienket {
+    width: 100%}
+.tbl_lienket .stt {
+    width: 30px;
+}
+.tbl_lienket .name {
+    width: 400px;
+}
+.tbl_lienket .bg {
+    color: #fff;
+    background: #7a7a7a;
+    font-weight: 700;
+    text-align: center;
+}
+.tbl_lienket .ct {
+    text-align: center;
+}
+.row_add .row_add_value a:link, .tbl_lienket .ct a:link {
+    color: #00e;
+}
+.row_add .row_add_value a:hover {
+    text-decoration: underline;
+}
+.row_add .row_add_value a:visited, .tbl_lienket .ct a:visited {
+    color: #551a8b;
+}
+.tbl_lienket .ct a:hover {
+    text-decoration: underline;
+}
+.tbl_lienket td {
+    border: 1px solid #333;
+    color: #333;
+    padding: 5px 10px;
+}
+.ct_dk {
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 25px;
+}
+.ct_dk .tt {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.ct_dk ul {
+    list-style: disc;
+}
+.ct_dk ul li {
+    margin-left: 30px;
+}
+.sitemap .col {
+    width: 300px;
+    border-left: 1px solid #333;
+    padding: 14px;
+    min-height: 400px;
+}
+.sitemap .col:first-child {
+    border-left: none;
+}
+.sitemap .col .title {
+    width: 290px;
+    padding: 0 5px;
+    background: silver;
+    font-weight: 700;
+}
+.sitemap .col a {
+    padding-left: 15px;
+    line-height: 25px;
+}
+.sitemap .col a:hover {
+    text-decoration: underline;
+}
+.click_bg .email_send {
+    position: relative;
+    left: 0;
+}
+#popup_email_send .popup_content {
+    margin-top: 30px;
+}
+#popup_email_send .row {
+    margin-bottom: 10px;
+}
+#popup_email_send .row .row_left {
+    float: left;
+    width: 100px;
+    padding-left: 20px;
+}
+#popup_email_send .row .row_right {
+    float: right;
+    width: 400px;
+    margin-bottom: 5px;
+}
+#popup_email_send .row .row_right #email_bg, .row .row_right #content_bg {
+    width: 300px;
+}
+#popup_email_send #submit_bg {
+    background-color: #C30501;
+    border: 0;
+    color: #FFF;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+#popup_email_send #error_bg {
+    color: #C30501;
+    padding-left: 120px;
+    display: none;
+    margin-bottom: 10px;
+}
+.popup_mail_fixed #get_info_by_mail_p1, .popup_mail_fixed #get_info_by_mail_p2, .popup_mail_fixed #get_info_by_mail_p3, .popup_mail_fixed #get_info_by_mail_p4{
+    margin: 3px 0 0 120px;
+    float: left;
+}
+.popup_mail_fixed label{
+    margin: 0 0 0 4px;
+}
+.txt_tfs {
+    background: 0 0;
+    height: 32px;
+    padding: 2px 9px;
+    font-size: 17px;
+    text-align: left;
+}
+.text_detail table {
+    table-layout: fixed;
+}
+.text_detail table td {
+    max-width: 690px;
+}
+.content-contact a, .text_detail a, .wrap_intro a {
+    color: #00f!important;
+}
+.title_scc {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.btn_search_faq {
+    background: url(../images/search_icon.png) no-repeat!important;
+    border: none!important;
+    float: right;
+    cursor: pointer;
+    margin-top: 12px!important;
+    margin-left: -100px!important;
+    width: 20px!important;
+    height: 27px!important;
+}
+.span_gallery_play {
+    position: absolute;
+    width: 189px;
+    height: 92px;
+    top: 0;
+    left: 0;
+    background: url(../images/icon/icon_play.png) no-repeat center;
+}
+.ui-datepicker-calendar {
+    background: #fff;
+}
+.chuyen-gia-active {
+    font-weight: 700;
+    color: #ED1B2F!important;
+    text-decoration: underline!important;
+}
+.js-360 .view_overlay {
+    background: url(blank.gif);
+}
+.select_car_model .sbHolder {
+    z-index: 10;
+}
+.banner_text p:first-child {
+    line-height: 24px;
+}
+.row_select .sbOptions a {
+    padding-top: 0;
+    margin-top: 7px;
+}
+#chiphidt tr td {
+    padding-left: 10px;
+}
+#chiphidt tr.first td, #chiphidt tr.last td {
+    padding-left: 0;
+}
+.select_car_model {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.font_normal {
+    font-size: 13px!important;
+}
+.title_ex {
+    font-weight: 700;
+    padding-top: 20px;
+}
+.content_right_title a {
+    color: #000!important;
+}
+.content_right_title a:hover {
+    color: #ed1b2f!important;
+}
+a.view_map {
+    display: inline-block;
+    float: right;
+    color: #ed1b2f!important;
+    font-size: 11px;
+    padding-top: 9px;
+    padding-bottom: 1px;
+}
+a.view_map:hover {
+    color: #00f!important;
+}
+a.view_map span {
+    text-decoration: underline;
+}
+.table_border td, .table_border th {
+    border: 1px solid #cdcdcd;
+}
+#car-logo {
+    background: url(../images/images-corolla-altis/black-arrow.png) 88px bottom no-repeat;
+}
+.camry-logo, .text-logo {
+    position: relative;
+}
+.text-logo .arrow {
+    width: 20px;
+    height: 12px;
+    background: url(../images/images-corolla-altis/black-arrow.png) no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: 22px;
+}
+.camry-logo .arrow {
+    width: 20px;
+    height: 12px;
+    background: url(../images/images-corolla-altis/black-arrow.png) no-repeat;
+    position: absolute;
+    left: 40%;
+    top: 42px;
+    z-index: 100;
+}
+.model_all {
+    padding: 15px 90px 20px 0;
+    position: relative;
+}
+.model_all .xem_tskt {
+    display: inline-block;
+    padding: 2px 8px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.model_all .item_tskt {
+    display: inline-block;
+    float: left;
+    height: 26px;
+    padding-bottom: 7px;
+    width: 178px;
+}
+.grade-wrap {
+    width: 275px;
+    margin-top: 20px;
+}
+.grade-wrap .grade-bg {
+    background: url(../images/360/select_bg.png) no-repeat;
+    width: 250px;
+    height: 43px;
+}
+.grade-bg .sbHolder {
+    width: 247px;
+    margin-left: 1px;
+    background: 0 0;
+    border: none;
+}
+.grade-bg .sbOptions {
+    width: 247px;
+    margin-left: 1px;
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    -moz-border-radius: 5px;
+}
+.grade-bg .sbOptions a {
+    color: #666;
+}
+.grade-bg .sbOptions a:hover {
+    color: #141414;
+}
+.grade-bg .sbSelector {
+    text-indent: 13px;
+    color: #333;
+    font-size: 14px;
+    height: 41px;
+    line-height: 43px;
+    width: 205px;
+}
+.js-360 .icon-360 {
+    background: url(../images/360/360_icon.png) no-repeat;
+    width: 97px;
+    height: 96px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    z-index: 9999;
+}
+.grade-title {
+    font-size: 18px;
+    margin-bottom: 11px;
+}
+.js-360 {
+    width: 946px;
+    height: 410px;
+    display: block;
+}
+.banner-page-over {
+    display: block;
+}
+.banner-page-over .overlay {
+    background: #000;
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10003;
+}
+.banner-page-over .banner-content-wrap {
+    left: 0;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 10004;
+}
+.banner-page-over .banner-content {
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.banner-page-over .close-banner-sys {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    background: url(../images/icon/close_btn.png) 0 0/100% no-repeat;
+    -webkit-background-size: 100%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.banner-bottom {
+    display: block;
+}
+.banner-bottom .banner-content-wrap {
+    bottom: 0;
+    height: 250px;
+    position: fixed;
+    right: 0;
+    width: 300px;
+    z-index: 10001;
+}
+.banner-bottom .banner-content {
+    width: 300px;
+    height: 250px;
+    display: block;
+    float: right;
+    text-align: center;
+    position: relative;
+}
+.banner-bottom .close-banner-sys {
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    background: url(../images/icon/close_btn.png) 0 0/100% no-repeat;
+    -webkit-background-size: 100%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.banner-tracking-script img {
+    width: 1px;
+    height: 1px;
+}
+#_frFollowbottom {
+    width: 275px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.edm_content {
+    width: 321px;
+    height: 140px;
+    float: left;
+    margin-left: 20px;
+}
+.edm_content .row {
+    width: 100%;
+    float: left;
+}
+.edm_content .row .row_left {
+    float: left;
+}
+.information_combobox{
+    width: 100%;
+}
+.information_combobox .sbHolder{
+    width: 320px;
+    background: #FFF;
+    border: 1px solid #cac9ca;
+    margin-bottom: 7px;
+}
+.information_combobox .sbOptions{
+    width: 320px;
+    height: 164px;
+    background: #fff;
+    border: 1px solid #A4A4A4;
+}
+.information_combobox .sbToggle{
+    background: url(../images/arrow-down.png) no-repeat 11px 13px;
+}
+.information_combobox .sbSelector{
+    width: 290px;
+    color: #a7a9ac!important;
+    font-style: italic;
+    text-decoration: none!important;
+}
+.information_combobox .sbOptions a{
+    border-bottom: 1px solid #cac9ca;
+    color: #a7a9ac!important;
+    font-style: italic;
+    text-decoration: none!important;
+}
+.information_combobox .sbOptions li:last-of-type a{
+    border-bottom: none;
+}
+.edm_content .row .row_right {
+    margin-bottom: 6px;
+}
+.edm_content .row .row_right input {
+    width: 77px;
+    height: 16px;
+    font-size: 12px;
+    border: 1px solid #cac9ca;
+    padding: 6px 10px;
+    font-family: arial;
+}
+*::-webkit-input-placeholder {
+    color: #A7A9AC;
+    font-style: italic;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #A7A9AC;
+    font-style: italic;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #A7A9AC;
+    font-style: italic;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #A7A9AC;
+    font-style: italic;
+}
+.edm_content .row .row_left input:-moz-placeholder {  /* Firefox 19+ */
+    font-style:italic;
+}
+.edm_content .row .row_left input {
+    width: 193px;
+    height: 16px;
+    font-size: 12px;
+    border: 1px solid #cac9ca;
+    padding: 6px 10px;
+    
+    margin-right: 7px;
+    font-family: arial;
+}
+.edm_content .row .row_right2 {
+    width: 300px;
+    height: 26px;
+    float: left;
+    margin-bottom: 9px;
+}
+.edm_content .row .row_right2 input {
+    width: 300px;
+    height: 16px;
+    float: left;
+    font-size: 12px;
+    border: 1px solid #cac9ca;
+    padding: 6px 10px;
+    font-family: arial;
+}
+.edm_content .row .row_right3 {
+    width: 300px;
+    height: 26px;
+    float: left;
+    margin-bottom: 9px;
+}
+.edm_content_home .row .row_right3 {
+    width: auto;
+    height: auto;
+}
+.edm_content_home .row_right4{
+    width: 300px;
+}
+.edm_content_home #get_info_by_mail{
+    float: left;
+}
+.edm_content_home .row_right4 label{
+    width: 300px;
+    font-size: 12px;
+}
+.edm_content .row .row_right3 textarea {
+    width: 300px;
+    height: 74px;
+    float: left;
+    font-size: 12px;
+    border: 1px solid #cac9ca;
+    padding: 6px 10px;
+    font-family: arial;
+}
+.submit_edm {
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    background: #da1a21;
+    padding: 6px 18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 64px;
+    margin-right: 3px;
+}
+.edm_content_home .submit_edm {
+    margin: 5px 0 0 0;
+    
+}
+#footer .footer-wrap .footer_logo{
+    position:absolute;
+    top:290px;
+    left:0;
+}
+.submit_edm:hover {
+    opacity: .8;
+}
+.error_edm {
+    margin: 69px 0 0 10px;
+}
+.edm_content_home .error_edm {
+    margin: 10px 0 0 12px;
+}
+.success_edm {
+    color: #B18523!important;
+    font-weight: 700;
+}
+.edm_content .input_footer {
+    border: 1px solid #cac9ca;
+    font-family: arial;
+    font-size: 11px;
+    padding: 5px 57px 5px 10px;
+    position: relative;
+    z-index: 1;
+    width: 188px;
+}
+.edm_content #submit_footer {
+    font-family: arial;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    z-index: 10;
+    width: 47px;
+    height: 26px;
+    background: url(../images/bg_send_footer.png) no-repeat;
+    border: none;
+    left: 230px;
+    top: 40px;
+    cursor: pointer;
+}
+.version_b .menu-left-icon-share{
+    background: url(../images/btn_share.png) no-repeat 0 0;
+    width:32px;
+    height:32px;
+    float: left;
+    margin: 0!important;
+}
+.version_b .email_send{
+    background: url(../images/btn_share.png) no-repeat -35px 0!important;
+    width:32px;
+    height:32px;
+    float: left;
+    margin: 0!important;
+}
+.version_b .menu-left-icon-share:hover{
+    background-position: 0 -35px;
+}
+.version_b .email_send:hover{
+    background-position: -35px -35px!important;
+}
+.version_b .chiase_sosanh{
+    padding: 1px 0 0 13px;
+}
+.topic_contact_combobox{
+    float: left;
+    width: 344px;
+}
+.topic_contact_combobox .sbHolder{
+    width: 100%;
+    height: 26px;
+    border: none;
+    background: url(../images/icon/input_bg_new.png) no-repeat;
+}
+.topic_contact_combobox .sbOptions{
+    width: 100%;
+    max-height: 158px!important;
+    background: #fff;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+}
+.topic_contact_combobox .sbToggle{
+    background: url(../images/arrow-down.png) no-repeat 11px 10px;
+}
+.topic_contact_combobox .sbSelector{
+    width: 314px;
+    height: 26px;
+    line-height: 26px;
+    color: #a7a9ac!important;
+    font-style: italic;
+    text-decoration: none!important;
+}
+.topic_contact_combobox .sbOptions a{
+    border-bottom: 1px solid #cac9ca;
+    color: #a7a9ac!important;
+    font-style: italic;
+    text-decoration: none!important;
+}
+.topic_contact_combobox .sbOptions li:last-of-type a{
+    border-bottom: none;
+}
+#hilux-30g-4x4-mt{
+    height:111px !important;
+}
+.hilux-30g-4x4-mt{
+	height:100px !important;
+}
+.menu_right{
+    width: 46px;
+    position: fixed;
+    z-index: 9999;
+    right: 90px;
+    top: 110px;
+}
+
+.menu_right_text{
+    top: 250px;
+    position: fixed;
+}

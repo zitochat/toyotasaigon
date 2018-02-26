@@ -26,8 +26,6 @@ $products= \DB::table('products')->where('show', '1')->orderBy('slug')->get();
 </div>
 </div>
 </li>
-<li class=" has-sub"><a href='http://www.toyotadaquasudung.com/' target="_blank"><span>Xe cũ</span></a>
-</li>
 <li class=" has-sub longcat"><a href='dich-vu.html' ><span>Dịch vụ</span></a>
 <ul>
 <?php $__currentLoopData = $service_list; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -45,9 +43,10 @@ $products= \DB::table('products')->where('show', '1')->orderBy('slug')->get();
  
        <li><a href="tin-tuc/thi-truong-oto"><i class="fa fa-angle-right" aria-hidden="true"></i> Thị trường Ôtô</a></li>
  
-</ul>    </li>
-<li class="<?php echo e((Request::is('/tuyen-dung.html') ? 'active' : '')); ?> "><a href='tuyen-dung.html'>
-<span>Tuyển dụng</span></a>
+</ul>
+</li>
+<li>
+  <a href="dich-vu-tai-chinh"><span>Dịch vụ tài chính</span></a>
 </li>
 <li class=" last"><a href='/lien-he.html'>
 <span>Liên hệ</span></a>

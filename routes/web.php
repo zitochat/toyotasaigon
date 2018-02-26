@@ -271,3 +271,20 @@ Route::get('/ajax_vehicles.php', 'PagesController@AjaxVehiclesIndex');
 
 //ajax_price.php
 Route::get('/ajax_price.php', 'PagesController@AjaxPriceIndex');
+
+//dich-vu-tai-chinh
+Route::get('/dich-vu-tai-chinh', 'PagesController@getServiceIndex');
+//cong-ty-tai-chinh-toyota-viet-nam
+Route::get('/cong-ty-tai-chinh-toyota-viet-nam', 'PagesController@getAboutToyotaIndex');
+//su-menh-tam-nhin-va-triet-ly
+Route::get('/su-menh-tam-nhin-va-triet-ly', 'PagesController@getMissionIndex');
+//co-hoi-nghe-nghiep
+Route::get('/co-hoi-nghe-nghiep', 'PagesController@getJobIndex');
+//dieu-kien-dang-ky
+Route::get('/dieu-kien-dang-ky', 'PagesController@getRegisterRuleIndex');
+//hoi-dap
+Route::get('/hoi-dap', 'PagesController@getQuestionIndex');
+//san-pham-dich-vu
+Route::get('/san-pham-dich-vu', 'PagesController@getProductServiceIndex');
+//cach-tinh
+Route::get('/cach-tinh', 'PagesController@getCalcIndex');

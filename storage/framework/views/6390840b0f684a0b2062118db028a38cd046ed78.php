@@ -78,8 +78,6 @@ setcookie("f_chat_open", 0, time()+3600);
 </ul>
 
      </li>
-      <li class=" has-sub"><a href='http://www.toyotadaquasudung.com/' target="_blank"><span>Xe cũ</span></a>
-     </li>
      <li class=" has-sub"><a href='/dich-vu.html' ><span>Dịch vụ</span></a>
      <ul >
      <?php $__currentLoopData = $service_list; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -95,9 +93,7 @@ setcookie("f_chat_open", 0, time()+3600);
                  <li><a href="/tin-tuc/thi-truong-oto">Thị trường Ôtô</a></li>
            
       </ul>    </li>
-    <li class="active "><a href='/tuyen-dung.html'>
-      <span>Tuyển dụng</span></a>
-    </li>
+
     <li class=" last"><a href='/lien-he.html'>
       <span>Liên hệ</span></a>
     </li>

@@ -526,4 +526,51 @@ $headers = $headers . "From:" . $from;
         
     }
 
+    //dich-vu-tai-chinh
+    public function getServiceIndex()
+    {
+        return view('frontend.pages.service');
+    }
+
+    //cong-ty-tai-chinh-toyota-viet-nam
+    public function getAboutToyotaIndex()
+    {
+        return view('frontend.pages.abouttoyota');
+    }
+
+    //su-menh-tam-nhin-va-triet-ly
+    public function getMissionIndex()
+    {
+        return view('frontend.pages.mission');
+    }
+
+    //co-hoi-nghe-nghiep
+    public function getJobIndex()
+    {
+        return view('frontend.pages.job');
+    }
+
+    //dieu-kien-dang-ky
+    public function getRegisterRuleIndex()
+    {
+        return view('frontend.pages.registerrule');
+    }
+
+    //hoi-dap
+    public function getQuestionIndex()
+    {
+        return view('frontend.pages.question');
+    }
+
+    //san-pham-dich-vu
+    public function getProductServiceIndex()
+    {
+        return view('frontend.pages.productservice');
+    }
+
+    //cach-tinh
+    public function getCalcIndex()
+    {
+        return view('frontend.pages.calc');
+    }
 }

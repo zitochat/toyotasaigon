@@ -49,7 +49,7 @@
                 <?php echo $__env->make('frontend.includes.product_items', ['items'=> $safe], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
             </div>
             <div class="dacdiem-info dd-info-1259 ">
-                <?php echo $__env->make('frontend.includes.product_items', ['items'=> $accessories], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                <?php echo $__env->make('frontend.includes.phu_kien', ['items'=> $accessories], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
             </div>
             <div class="dacdiem-info dd-info-dac">
                 <?php echo $__env->make('frontend.includes.product_specifications', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

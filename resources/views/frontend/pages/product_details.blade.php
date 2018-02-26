@@ -51,7 +51,7 @@
                 @include('frontend.includes.product_items', ['items'=> $safe])
             </div>
             <div class="dacdiem-info dd-info-1259 ">
-                @include('frontend.includes.product_items', ['items'=> $accessories])
+                @include('frontend.includes.phu_kien', ['items'=> $accessories])
             </div>
             <div class="dacdiem-info dd-info-dac">
                 @include('frontend.includes.product_specifications')
