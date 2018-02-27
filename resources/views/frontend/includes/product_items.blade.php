@@ -1,7 +1,9 @@
 <div class="box_items_slick">
 @foreach($items->where('type', 'slider') as $row)
-<div class="image-slick">
-        <a href="javascript:void(0)"><img src="{{ $row->image }}" alt="" /></a>
+<div class="image-slick" style="position: relative">
+<a href="javascript:void(0)" style="">
+                <img src="{{ $row->image }}" alt="" /></a>
+<div class="description_info">{{ $row->description }}</div>
 </div>
 @endforeach              
 </div>

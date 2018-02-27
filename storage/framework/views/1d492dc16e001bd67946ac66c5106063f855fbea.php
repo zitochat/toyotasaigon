@@ -1,7 +1,9 @@
 <div class="box_items_slick">
 <?php $__currentLoopData = $items->where('type', 'slider'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-<div class="image-slick">
-        <a href="javascript:void(0)"><img src="<?php echo e($row->image); ?>" alt="" /></a>
+<div class="image-slick" style="position: relative">
+<a href="javascript:void(0)" style="">
+                <img src="<?php echo e($row->image); ?>" alt="" /></a>
+<div class="description_info"><?php echo e($row->description); ?></div>
 </div>
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>              
 </div>

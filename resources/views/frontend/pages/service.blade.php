@@ -38,7 +38,7 @@
 
 		<div class="link_item_des video">
 
-			<a href="http://www.toyota.com.vn/dich-vu-tai-chinh/gioi-thieu/cong-ty-tai-chinh-toyota-viet-nam" class="toyotaFontSize" title="Video Giới Thiệu">Xem ngay để khám phá TFS giúp bạn hiện thực hóa chiếc xe mơ ước như thế nào.</a>
+			<a href="/cong-ty-tai-chinh-toyota-viet-nam" class="toyotaFontSize" title="Video Giới Thiệu">Xem ngay để khám phá TFS giúp bạn hiện thực hóa chiếc xe mơ ước như thế nào.</a>
 
 		</div>
 
@@ -62,7 +62,7 @@
 
 		<div class="link_item_des contact">
 
-			<a href="/lien-he.html" class="toyotaFontSize" title="Liên hệ">Liên hệ ngay TFS <span style="color:#ad0c0c;font-weight: 700;">(84-28) 7309 0998 </span>để được tư vấn các gói tài chính phù hợp.</a>
+			<a href="/lien-he.html" class="toyotaFontSize" title="Liên hệ">Liên hệ ngay TFS <span style="color:#ad0c0c;font-weight: 700;">012 1900 6066 </span>để được tư vấn các gói tài chính phù hợp.</a>
 
 		</div>
 

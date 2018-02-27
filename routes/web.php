@@ -8,6 +8,7 @@ Auth::routes();
 Route::group(['middleware' => ['guest']], function () use ($router) {
     $router->get('login_user', 'HomeController@showLogin');
     $router->post('login_user', 'HomeController@doLogin');
+    $router->post('login', 'HomeController@doLogin');
 });
 
 /**

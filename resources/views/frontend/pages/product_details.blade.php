@@ -91,7 +91,7 @@
           $('.box_items_slick').slick({
               dots: false,
               autoplay:true,
-              arrows:false,
+              arrows:true,
               infinite: true,
               speed: 300,
               slidesToShow: 1,
@@ -119,4 +119,30 @@
             })
         });
         </script>
+
+<style type="text/css">
+    .description_info {
+        position: absolute;
+        bottom: 0px;
+        color: #f3f3f3;
+        padding: 20px;
+        font-size: 15px;
+        font-family: sans-serif;
+        background-color: #b5b3b359;
+        width: 100%;
+        border-top: 1px solid #929292bf;
+    }
+    .slick-next {
+        right: 40px;
+    }
+    .slick-prev {
+        left: 20px;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 50px;
+    }
+    .slick-prev {
+        z-index: 10;
+    }
+</style>
 @stop

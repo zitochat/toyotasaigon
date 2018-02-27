@@ -12,7 +12,11 @@ $products= \DB::table('products')->where('show', '1')->orderBy('slug')->get();
 <li class="<?php echo e((Request::is('/') ? 'active' : '')); ?> trangchu"><a href='index.html'>
 <span>Trang chủ</span></a>
 </li>
-<li class="<?php echo e((Request::is('/gioi-thieu.html') ? 'active' : '')); ?> has-sub"><a href='gioi-thieu.html' ><span>Giới thiệu</span></a>
+<li class="<?php echo e((Request::is('/gioi-thieu.html') ? 'active' : '')); ?> has-sub longcat"><a href='gioi-thieu.html' ><span>Giới thiệu</span></a>
+  <ul>
+    <li><a href="/ve-chung-toi"><i class="fa fa-angle-right" aria-hidden="true"></i> Về Toyota Việt Nam</a></li>
+    <li><a href="/gioi-thieu/ve-toyota-dong-sai-gon-10.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Về chúng tôi</a></li>
+  </ul>
 </li>
 <li class="<?php echo e((Request::is('/san-pham.html') ? 'active' : '')); ?> has-sub"><a href='san-pham.html' ><span>Xe mới</span></a>
 
@@ -40,9 +44,8 @@ $products= \DB::table('products')->where('show', '1')->orderBy('slug')->get();
 <span>Tin tức</span></a>
 <ul>
 <li><a href="tin-tuc/hoat-dong-tesc"><i class="fa fa-angle-right" aria-hidden="true"></i> Hoạt động TESC</a></li>
- 
-       <li><a href="tin-tuc/thi-truong-oto"><i class="fa fa-angle-right" aria-hidden="true"></i> Thị trường Ôtô</a></li>
- 
+<li><a href="tin-tuc/thi-truong-oto"><i class="fa fa-angle-right" aria-hidden="true"></i> Thị trường Ôtô</a></li>
+
 </ul>
 </li>
 <li>
