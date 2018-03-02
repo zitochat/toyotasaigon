@@ -3404,7 +3404,8 @@ p.dkbtn span{display:inline-block;border-radius: 50%;border: 1px solid #fff;padd
 }
 
 .xe-box .items {
-	position: static;
+  position: static;
+  width: 125px;
 }
 .xe-box .items>a{text-align:center}
 .xe-box .items>a >img{display: block;width: 120px;margin: 0 auto;}
@@ -3422,7 +3423,7 @@ p.dkbtn span{display:inline-block;border-radius: 50%;border: 1px solid #fff;padd
 }
 .xe-box h3{
   margin: 0;
-  color: #f00;
+  color: #e4e4e4;
   font-size: 14px;
   font-weight: 600;
   margin-top: 5px;
@@ -3433,7 +3434,7 @@ p.dkbtn span{display:inline-block;border-radius: 50%;border: 1px solid #fff;padd
   width: 100%;
   position: absolute;
   left: 0;
-  background: #fff url(../images/product_menu_info_bg.jpg) no-repeat 0 10px;
+  background: rgb(202, 211, 216) url(../images/product_menu_info_bg.jpg) no-repeat 0 10px;
   /* border-top: 10px solid #cd0500; */
   margin-top: 0;
   /* opacity: 0; */

@@ -7,6 +7,9 @@
   font-size: 15px;
 }
 
+#map {
+  height: 350px;
+}
 .car {
   height: 300px;
   position: relative;
@@ -257,7 +260,7 @@
   }
 
   #map {
-    height: 300px;
+    width: 100%;
   }
 
   #sidebar {
@@ -317,11 +320,6 @@
 
   aside {
     display: none;
-  }
-
-  .news-nb-wrap {
-    /* display:none; */
-    /* bottom: -120px; */
   }
 
   #agency .agency-list {
@@ -569,8 +567,8 @@
   }
 
   #agency .agency-list {
-    position: absolute;
-    width: 500px;
+    position: relative;
+    width: 100%;
     padding-left: 0;
   }
 
@@ -592,7 +590,7 @@
   }
 
   #map {
-    width: calc(100% - 500px);
+    width: 100%;
   }
 }
 
@@ -607,7 +605,7 @@
   }
 
   #map {
-    height: 600px;
+    width: 100%;
   }
 
   #sidebar {
@@ -769,7 +767,7 @@
 }
 
 #map {
-  height: 300px;
+  width: 100%;
 }
 
 #sidebar {
@@ -1059,8 +1057,8 @@ aside {
   }
 
   #agency .agency-list {
-    position: absolute;
-    width: 500px;
+    position: relative;
+    width: 100%;
     padding-left: 0;
   }
 
@@ -1082,7 +1080,7 @@ aside {
   }
 
   #map {
-    width: calc(100% - 500px);
+    width: 100%;
   }
 }
 
@@ -1114,7 +1112,7 @@ aside {
   }
 
   #map {
-    height: 600px;
+    width: 100%;
   }
 
   #sidebar {

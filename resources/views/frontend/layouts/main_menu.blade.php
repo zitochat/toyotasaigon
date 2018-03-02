@@ -20,7 +20,7 @@ $products= \DB::table('products')->where('show', '1')->orderBy('slug')->get();
 </li>
 <li class="{{ (Request::is('/san-pham.html') ? 'active' : '') }} has-sub"><a href='san-pham.html' ><span>Xe mới</span></a>
 
-<div class="xe-box-main clearfix">
+<div class="xe-box-main clearfix" style="background-image: url(/images/TT16s.jpg);">
 <div class="xe-box-wrap clearfix">
   
   @include('frontend.includes.menu', ['productx'=> $products])
@@ -87,6 +87,8 @@ slidesToScroll: 1
 });
 var $t;
 $(".items").hover(function(){
+$(".xe-content-main").removeClass("show-xeinfo");
+$(".xe-content-main").css({"visibility":"hidden","opacity":0});
 clearTimeout($t);
 // $(this).find(".xe-content-main").addClass("show-xeinfo");	 
 // $(this).find(".xe-slide-main").slick('reinit');

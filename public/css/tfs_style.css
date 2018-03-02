@@ -10,24 +10,24 @@
 .title_main{width:100%;margin:0 auto;border-bottom:1px solid #d4d4d4;padding-bottom:14px}
 .title_main .title{font-size:36px;color:#ad0c0c;font-weight:700;line-height:40px}
 .selectct .sbOptions a,.selectct .sbSelector{font-style:italic;color:#666;text-align:left}
-.content-calculator .content-left{float:left;width:540px;position: relative;z-index: 1;}
-.content-calculator .content-left .lable{float:left;width:200px;background:url(../images/bg-lable.png) 92% 5px no-repeat;font-size:16px;margin-top:7px}
-.content-calculator .content-left .select{float:left;width:301px;height:36px;background:url(../images/bg-selectbox.png) no-repeat}
-.content-calculator .content-left .selectct{float:left;width:301px;height:36px;background:url(../images/bg-selectbox1.png) no-repeat}
+.content-calculator .content-left{float:left;position: relative;z-index: 1;}
+.content-calculator .content-left .lable{float:left;width:100%;font-size:16px;margin-top:7px}
+.content-calculator .content-left .select{float:left;width:100%;height:34px;}
+.content-calculator .content-left .selectct{float:left;width:100%;height:34px;}
 .selectct .sbHolder{background:0 0;width:302px;height:36px;border:none}
 .selectct .sbToggle{width:50px;height:36px}
 .selectct .sbSelector{width:252px;height:36px;line-height:36px;font-size:18px}
 .selectct .sbOptions{margin-left:1px;width:300px;background:#fff;border:1px solid #666}
 .selectct .sbOptions a{font-size:18px}
 .selectct .sbOptions a.sbFocus,.selectct .sbOptions a:focus,.selectct .sbOptions a:hover{color:#000}
-.content-calculator .content-left .slider-price{float:left;width:301px;font-style:italic;color:#9c9a9a}
+.content-calculator .content-left .slider-price{float:left;width:100%;font-style:italic;color:#9c9a9a}
 .content-calculator .content-left .slider-price .price{text-align:center;font-size:24px}
 #slider-range-max{display:inline-block;width:223px;height:21px;margin-left:12px;background:url(../images/bg-slider-ui.png) center left no-repeat;border:none;border-radius:none;position:relative;z-index:0}
 #slider-range-max.ui-slider .ui-slider-range{background:0 0}
 #slider-range-max .ui-slider-handle{width:20px;height:21px;background:url(../images/icon-slider-ui.png) center left no-repeat;margin:0 0 0 -10px;top:0;border:none;cursor:pointer}
 .content-calculator .content-left .note{font-size:11px;font-style:italic;color:#494747;line-height:14px}
 .content-calculator .content-left .note .text{width:250px;padding-right:30px;margin-top:50px;}
-.content-calculator .content-right{width:440px;height:440px;background:url(../images/bg_right_calculator.png) top left no-repeat;text-align:center;font-size:27px;line-height:normal;position:relative;z-index:0}
+.content-calculator .content-right{background:url(../images/bg_right_calculator.png) top left no-repeat;text-align:center;font-size:27px;line-height:normal;position:relative;z-index:0;}
 .content-calculator .content-right .price{color:#494747;font-style:italic;font-size:18px;padding-top:28px}
 .content-calculator .content-right .img-car{width:206px;height:96px;position:absolute;z-index:1;top:221px;left:230px}
 .content-calculator .content-right .img-car img{width:206px}
@@ -87,7 +87,7 @@
 .sub_menu ul li .sub_tc li a.selected,.sub_menu ul li .sub_tc li a:hover{background:#ED1B2F!important;color:#fff!important;border-bottom:none!important}
 .sub_menu ul li .sub_tc li:hover .sub_li_menu{display: block;}
 .sub_tc li a{padding:6px 13px!important}
-.calculator_btn{height:27px;width:118px;background:url(../images/calculator_btn.png) no-repeat;display:inline-block;position:absolute;padding:0!important; margin-top: 4px !important;border:none!important}
+.calculator_btn{height:27px;width:118px;background:url(../images/calculator_btn.png) no-repeat;display:inline-block;padding:0!important; margin-top: 4px !important;border:none!important}
 .calculator_btn:hover{background-position:0 -27px}
 .wrap_links{margin:50px auto 20px;border-top:1px dotted #bdbaba;border-bottom:1px dotted #bdbaba;height:193px}
 .link_item{width:260px;margin-left:20px;float:left;line-height:15px}
@@ -189,9 +189,6 @@
 .select-date-bg .sbToggle{height:28px}
 .home-cntwrap{z-index:0}
 .select-date-bg .sbOptions a.sbFocus,.select-date-bg .sbOptions a:focus,.select-date-bg .sbOptions a:hover,.select-date-bg .sbSelector:hover,.select-date-bg .sbSelector:link,.select-date-bg .sbSelector:visited{color:#000}
-.mt10{
-	float:left;
-}
 .titile_sotien{
 	font-size:16px;
 	color:#000;
@@ -378,8 +375,5 @@
 }
 .sub_menu ul li .sub_tc li .sub_li_menu .lienhe_xemthem a:hover{
 	background:none !important;
-}
-.baoloi{
-	width:450px;
 }
 .sbOptions .last{width: auto!important}

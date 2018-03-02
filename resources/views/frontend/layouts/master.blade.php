@@ -93,7 +93,9 @@ setcookie("f_chat_open", 0, time()+3600);
                  <li><a href="/tin-tuc/thi-truong-oto">Thị trường Ôtô</a></li>
            
       </ul>    </li>
-
+      <li class=""><a href='/dich-vu-tai-chinh'>
+        <span>Dịch vụ tài chính</span></a>
+      </li>
     <li class=" last"><a href='/lien-he.html'>
       <span>Liên hệ</span></a>
     </li>
@@ -149,7 +151,7 @@ setcookie("f_chat_open", 0, time()+3600);
   var f_chat_star_2 = "Bạn cần hỗ trợ gì ?";
   var f_chat_star_3 = "<a href='javascript:;' id='f_bt_start_chat' onclick='f_bt_start_chat()'>Bắt đầu Chat</a>";
   var f_chat_star_4 = "Chú ý: Bạn phải đăng nhập <a href='http://facebook.com/' rel='nofollow' target='_blank'>Facebook</a> mới có thể trò chuyện.";
-  var f_chat_fanpage = "toyotasaigon.xyz"; /* Đây là địa chỉ Fanpage*/
+  var f_chat_fanpage = "toyotafp"; /* Đây là địa chỉ Fanpage*/
   var f_chat_background_title = "#c92228"; /* Lấy mã màu tại đây http://megapixelated.com/tags/ref_colorpicker.asp */
   var f_chat_color_title = "#fff";
   var f_chat_cr_vs = 21; /* Version ID */

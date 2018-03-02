@@ -1,5 +1,5 @@
 <?php $__env->startSection('content'); ?>
-<link href="http://www.toyota.com.vn/static/css/reset.css?v=1.0.0" rel="stylesheet" type="text/css"/>
+<link href="/css/reset.css?v=1.0.0" rel="stylesheet" type="text/css"/>
 <link href="/css/tfs_style.css?r=1519642775" rel="stylesheet" type="text/css"/>
 
 <link href="/css/style_toyota.css?v=1.0.0" rel="stylesheet" type="text/css"/>
