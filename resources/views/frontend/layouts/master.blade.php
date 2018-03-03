@@ -37,8 +37,8 @@ setcookie("f_chat_open", 0, time()+3600);
             
       @include('frontend.layouts.aside')
       <div class="notaside">
-      <div class="hotlinepanel" style="position: fixed"><p><i class="fa fa-phone-square" aria-hidden="true"></i>
-        <a href="tel:01219006066">012 1900 6066</a> - <a href="tel:0976848707">0976 848 707</a>
+      <div class="hotlinepanel" style="position: fixed;margin-right: 6px;"><p><i class="fa fa-phone-square phonecall" aria-hidden="true"></i>
+        <a href="tel:01219000031">012 1900 0031</a> <b class="dashphone">-</b> <a href="tel:0976848707">0976 848 707</a>
       </p></div>
 
       @yield('content')
@@ -145,7 +145,7 @@ setcookie("f_chat_open", 0, time()+3600);
 
 <script language='javascript'>
   var f_chat_vs = " ";
-  var f_chat_domain =  "http://toyotasaigon.xyz/";    
+  var f_chat_domain =  "http://toyotatphcm.com";    
   var f_chat_name = "Chát với chúng tôi";
   var f_chat_star_1 = "Chào bạn!";
   var f_chat_star_2 = "Bạn cần hỗ trợ gì ?";

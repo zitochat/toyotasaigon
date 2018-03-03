@@ -15,9 +15,10 @@
 
                     <p class="kind-agency" id="agent-6">18 Phan Văn Trị, P7, Quận Gò Vấp, TP.HCM</p>
                     <p class="kind-agency" style="display:none" id="toado-6">10.829018,106.683618</p>
-                    <p class="kind-agency"><span>Hotline 1:</span> 012 1900 6066  </p>
-                    <p class="kind-agency"><span>Hotline 2:</span> 0976 848 707  </p> 
-                    <p class="kind-agency"><span>Email:</span> banhang@toyotasaigon.xyz </p>
+                    <p class="kind-agency"><span>Hotline 1:</span> 012 1900 0031</p>
+                    <p class="kind-agency"><span>Hotline 2:</span> 0976 848 707</p> 
+                    <p class="kind-agency"><span>Email:</span> banhang@toyotatphcm.com </p>
+                    <p class="kind-agency"><span>Gmail:</span> viennguyen0088@gmail.com </p>
                 </div>
               </div>
     </li>
@@ -36,7 +37,7 @@ function initAutocomplete() {
   var myLatLng = {lat: 10.8289227, lng: 106.6839508};
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
+    zoom: 17,
     center: myLatLng
   });
 
@@ -44,7 +45,12 @@ function initAutocomplete() {
     position: myLatLng,
     map: map,
     title: 'ToYoTa Đông Sài Gòn - CN Gò Vấp',
-label:'ToYoTa Đông Sài Gòn',
+    label: {
+      text: "ToYoTa Đông Sài Gòn",
+      color: "#000",
+      fontSize: "30px",
+      fontWeight: "bold"
+    },
     animation: google.maps.Animation.DROP,
   });
 }

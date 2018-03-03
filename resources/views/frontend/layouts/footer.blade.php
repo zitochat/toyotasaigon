@@ -39,8 +39,8 @@
       <p style="color:#ff0f1e"><strong><span style="font-size:16px;">Công ty Cổ phần Toyota Đông Sài Gòn <br/>Đại lý xe ô tô Toyota chính hãng tại TP.HCM</span></strong></p>
 
 <p style="color:#fff"><span style="font-size:16px; font-weight: bold">Toyota Đông Sài Gòn (Chi Nhánh Gò Vấp)&nbsp;<br />
-Hotline: 0976 848 707 - 012 1900 6066&nbsp;<br />
-Email: viennguyen0088@gmail.com</span></p>
+Hotline: 0976 848 707 - 012 1900 0031&nbsp;<br />
+Email: banhang@toyotatphcm.com<br/>Gmail: viennguyen0088@gmail.com</span></p>
                     
       </div>
       

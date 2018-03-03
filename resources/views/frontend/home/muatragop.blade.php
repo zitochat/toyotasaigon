@@ -7,6 +7,7 @@
             <li><a href="{{ route('categories_details', ['category'=> 'tra-gop', 'slug'=>$row->slug, 'id'=> $row->id]) }}">{{ $row->name }}</a></li>
             @endforeach   
         </ul>
+        <p style="margin-left: 48px;" class="dkbtn text-uppercase"><a href="/cach-tinh"><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>Tính thử</a></p>
       </div>
     </div>
     

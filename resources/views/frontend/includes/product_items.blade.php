@@ -3,7 +3,7 @@
 <div class="image-slick" style="position: relative">
 <a href="javascript:void(0)" style="">
                 <img src="{{ $row->image }}" alt="" /></a>
-<div class="description_info">{{ $row->description }}</div>
+<div class="description_info">{!! $row->description !!}</div>
 </div>
 @endforeach              
 </div>

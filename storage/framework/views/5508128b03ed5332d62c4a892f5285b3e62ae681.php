@@ -7,6 +7,7 @@
             <li><a href="<?php echo e(route('categories_details', ['category'=> 'tra-gop', 'slug'=>$row->slug, 'id'=> $row->id])); ?>"><?php echo e($row->name); ?></a></li>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>   
         </ul>
+        <p style="margin-left: 48px;" class="dkbtn text-uppercase"><a href="/cach-tinh"><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>Tính thử</a></p>
       </div>
     </div>
     

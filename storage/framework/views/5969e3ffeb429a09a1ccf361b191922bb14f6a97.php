@@ -60,7 +60,7 @@
 
 		<div class="link_item_des contact">
 
-			<a href="/lien-he.html" class="toyotaFontSize" title="Liên hệ">Liên hệ ngay TFS <span style="color:#ad0c0c;font-weight: 700;">012 1900 6066 </span>để được tư vấn các gói tài chính phù hợp.</a>
+			<a href="/lien-he.html" class="toyotaFontSize" title="Liên hệ">Liên hệ ngay TFS <span style="color:#ad0c0c;font-weight: 700;">012 1900 0031 </span>để được tư vấn các gói tài chính phù hợp.</a>
 
 		</div>
 
